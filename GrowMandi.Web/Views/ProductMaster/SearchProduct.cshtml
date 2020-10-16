@@ -1,0 +1,79 @@
+﻿
+@using GrowIndigo.Utilities.Resources;
+@using GrowIndigo.DAL.DataModels.CommonModels;
+@using GrowIndigo.Utilities;
+
+@{
+    var Projectname = ConfigReader.ProjectName;
+    LoginViewModel loggedInUser = Session["LoggedInUser"] != null ? (LoginViewModel)Session["LoggedInUser"] : null;
+}
+
+
+
+
+
+
+
+<div class="col-lg-8 col-md-7 col-12">
+    <div class="search-bar-top text-right">
+        <div class="search-bar text-left">
+            <form>
+                <input name="search" id="txtButtonSearchBox" placeholder="@Resource.GrowOnline_Common_SearchProduct" type="text">
+                <button type="button" class="btnn" onclick="getButtonProductDetail()"><i class="ti-search"></i></button>
+                <span id="lblError"></span>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+
+
+    function getButtonProductDetail() {
+        debugger;
+        $("#txtButtonSearchBox").bind('paste', function () {
+            setTimeout(function () {
+                //get the value of the input text
+                var data = $('#txtButtonSearchBox').val();
+                //replace the special characters to ''
+                var dataFull = '';//data.replace(/[^\w\s]/gi, '');
+                //set the new value of the input text without special characters
+                $('#txtButtonSearchBox').val(dataFull);
+            });
+        });
+        $("#txtButtonSearchBox").keypress(function (e) {
+            var keyCode = e.keyCode || e.which;
+            $("#lblError").html("");
+            //Regex for Valid Characters i.e. Alphabets and Numbers.
+            var regex = /^[A-Za-z0-9 ]+$/;
+
+            //Validate TextBox value against the Regex.
+            var isValid = regex.test(String.fromCharCode(keyCode));
+            if (e.keyCode === 13) {
+                isValid = true;
+                // do something
+            }
+            if (!isValid) {
+                $("#lblError").html("Special characters not allowed.");
+            }
+            return isValid;
+        });
+        var categoryid = "N/A";
+        var companyName = "N/A";
+        var state = "N/A";
+        var search = $('#txtButtonSearchBox').val();
+        //localStorage.setItem("SearchValue", search);
+        
+        window.location.href = '@Url.Action("GetProductFilter", "ProductMaster")?CategoryName=' + categoryid + '&State=' + state + '&search=' + search + '&CompanyName=' + companyName;
+
+
+        //var Searchtxt = localStorage.getItem("ProductId");
+        //$('#txtButtonSearchBox').val(Searchtxt);
+        
+
+
+
+
+    }
+
+
+</script>

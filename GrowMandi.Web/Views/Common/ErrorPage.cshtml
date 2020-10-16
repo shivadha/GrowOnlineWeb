@@ -1,0 +1,43 @@
+﻿@model List<GrowIndigo.DAL.DataEntities.Shop_Shipping_address>
+@using GrowIndigo.Utilities.Resources;
+@using GrowIndigo.Utilities;
+@using GrowIndigo.DAL.DataModels.CommonModels;
+@{
+    var Projectname = ConfigReader.ProjectName;
+    LoginViewModel loggedInUser = Session["LoggedInUser"] != null ? (LoginViewModel)Session["LoggedInUser"] : null;
+}
+<!-- Meta Tag -->
+<!-- Title Tag  -->
+<title>Error Page </title>
+
+<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+      rel="stylesheet">
+<script src="@Projectname/Scripts/jquery-3.3.1.min.js"></script>
+<script src="@Projectname/Scripts/jquery.validate.min.js"></script>
+<script src="@Projectname/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+
+
+
+<!--Error Page-->
+<section class="error-block section">
+    <div class="container">
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-md-6">
+                <div class=" text-center">
+                    <img src="@Projectname/images/error-icon.jpg" />
+                    <h1 class="fw-500 mt-20">@Resource.GrowOnline_Message_500InternalServer</h1>
+                    <h5 class="fw-500">@Resource.GrowOnline_Message_Oops</h5>
+                    <p class="text-center mt-15">@Resource.GrowOnline_Message_Oops1</p>
+                    <div class="mg-b-40"><button class="btn btn-white pd-x-30" onclick="defaultPage()">@Resource.GrowOnline_Common_Backtohome</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    function defaultPage() {
+        window.location.href='@Projectname'
+
+    }
+    </script>

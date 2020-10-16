@@ -1,0 +1,322 @@
+﻿@model GrowIndigo.DAL.DataModels.CommonModels.LoginViewModel
+@using GrowIndigo.Utilities.Resources;
+@using GrowIndigo.Utilities;
+@{
+    /**/
+    var Projectname = ConfigReader.ProjectName;
+}
+
+<script src="@Projectname/Scripts/jquery-3.3.1.min.js"></script>
+<script src="@Projectname/Scripts/jquery.validate.min.js"></script>
+<script src="@Projectname/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+<div id="preloader" style="display:none; z-index:9999">
+
+    <img src="@Projectname/images/loader/ajax_loader.gif" />
+
+</div>
+
+<div role="tabpanel" class="tab-pane active" id="LoginMain">
+    @using (Html.BeginForm("UserLoginVerifyMobileNumber", "Account", FormMethod.Post, new { name = "LoginIndigo", id = "LoginIndigo" }))
+    {
+
+        <div class="card bg-light">
+
+            <article class="card-body mx-auto" style="width:380px;">
+
+
+                <div class="mb-20 text-center">
+                    <img src="@Projectname/images/phone-icon.jpg" alt="phone-icon" /><br />
+                    <h6 class="mt-10">@Resource.GrowOnline_Message_otpSend</h6>
+                </div>
+                <input type="hidden" name="ReturnUrl1" id="ReturnUrl1" value=@ViewBag.ReturnUrl1 />
+                @Html.AntiForgeryToken()
+
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
+                    </div>
+                    @*<input name="" class="form-control" placeholder="Enter Phone number" type="text">*@
+                    @Html.TextBoxFor(m => m.MobileNumber, new
+               {
+                   @class = "form-control",
+                   @id = "txtMobileNumber",
+                   @placeholder = Resource.GrowOnline_Message_EnterPhoneNumber
+
+               })
+                    @Html.ValidationMessageFor(m => m.MobileNumber, "", new { @class = "text-danger" })
+
+                    @*Enter OTP*@
+
+                    @Html.TextBoxFor(m => m.OTP, new
+               {
+                   @class = "form-control",
+                   @id = "txtOTp",
+
+                   @style = "display:none;",
+                      @placeholder = Resource.GrowOnline_Message_Enterotp
+               })
+                    @Html.ValidationMessageFor(m => m.OTP, "", new { @class = "text-danger" })
+
+                    <span id="MobileSpan" style="display:none" class="text-danger field-validation-error">@Resource.GrowOnline_Message_MobileNumberReq</span>
+                    @*<span id="MobileSpan" style="display:none" class="text-danger field-validation-error">@Resource.GrowOnline_Message_MobileNumberReq</span>*@
+                </div> <!-- form-group// -->
+
+                <div class="form-group">
+                    <div class="">
+                        <label class="form-check-label">
+
+                            <input type="checkbox" id="chkSalesTermsLogin" name=@Resource.GrowOnline_Message_AcceptTerms value="Terms-Of-use" onChange="CheckRadioButtonRegLogin();">
+                            <a class="href" href="@Projectname/Layout/Terms" target="_blank">@Resource.GrowOnline_Message_TermsCLogin</a>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                </div>
+                <button type="button" id="btnLogin" onclick="checkLogin()" disabled="disabled" class="btn btn-primary btn-block" title="Login">@Resource.GrowOnline_Common_Login</button>
+                <div id="divbtnOtp" style="display:none">
+                    <button type="button" id="btnOtp" onclick="checkOtpForLogin()" class="btn btn-primary btn-block btn custom-btn" title="Login2">@Resource.GrowOnline_Common_Login</button>
+                    <div>
+                        <!-- form-group// -->
+                        <</div>
+                    </div>
+
+
+            </article>
+        </div>
+
+    }
+
+    <!-- card.// -->
+</div>
+
+<script>
+    $(document).ready(function () {
+
+
+    });
+    function CheckRadioButtonRegLogin() {
+        debugger;
+
+        if ($('#chkSalesTermsLogin').is(":checked") == true) {
+            $("#btnLogin").attr("disabled", false);
+            document.getElementById("btnLogin").style.pointerEvents = "auto";
+            document.getElementById("btnLogin").style.cursor = "pointer";
+        }
+        else {
+
+            $("#btnLogin").attr("disabled", true);
+            document.getElementById("btnLogin").style.pointerEvents = "none";
+            document.getElementById("btnLogin").style.cursor = "default";
+        }
+
+
+    }
+    //});
+</script>
+
+
+<script>
+
+    function checkLogin() {
+       $('#preloader').show()
+            if ($('#txtMobileNumber').val() == '') {
+                $('#txtMobileNumber-error').show();
+                $('#MobileSpan').show();
+                return false;
+            }
+            else {
+
+                var dataPaymentModel = {
+                    "MobileNumber": $('#txtMobileNumber').val(),
+
+                };
+                if ($('#txtMobileNumber').val() != '') {
+                    $('#preloader').show()
+                   var url = '@Url.Action("UserLoginVerifyMobileNumber", "Account")';
+                    $.ajax({
+                        type: "Post",
+                        url: url,
+                       dataType: "json",
+                        data: dataPaymentModel,
+                        success: function (result) {
+                           if (result == true) {
+
+                                $("#txtMobileNumber").attr("disabled", true);
+                                $('#txtOTp').show();
+                                $('#btnLogin').hide();
+                                $('#divbtnOtp').show();
+                               $("#txtMobileNumber").attr("disabled", true);
+                               $("#preloader").hide();
+
+                                return;
+                            }
+                            else {
+
+                            }
+                        }
+
+
+                    });
+
+                }
+            }
+        }
+
+    //window.addEventListener('keyup', function (e) {
+
+
+    //    if (e.keyCode === 13) {
+    //        if ($('#LoginMain').hasClass('active') && $('#login:visible').length == 1) {
+    //            $('#btnLogin').click();
+    //        }
+    //    }
+    //}, false);
+
+
+
+
+
+</script>
+<script>
+
+    $('#txtMobileNumber').keyup(function () {
+        if ($(this).val() != "") {
+            $("#MobileSpan").hide();
+
+        } else {
+            $("#MobileSpan").show();
+        }
+    });
+    //$('#txtOTp').keyup(function () {
+    //    if ($(this).val() != "") {
+
+    //        $("#MobileSpan").show();
+
+    //    } else {
+    //        return false;
+    //        $("#MobileSpan").show();
+    //    }
+    //});
+
+
+
+    function checkOtpForLogin() {
+       debugger;
+
+        $('#preloader').show()
+        var dataLoginPaymentModel = {
+            "OTP": $('#txtOTp').val(),
+            "MobileNumber": $('#txtMobileNumber').val(),
+            "ReturnUrl": $('#ReturnUrl1').val(),
+        };
+        if ($('#txtOTp').val() != '') {
+
+            var url = '@Url.Action("CheckOTPForLogin", "Account")';
+            $.ajax({
+                type: "Post",
+                url: url,
+                dataType: "json",
+                data: dataLoginPaymentModel,
+                success: function (result) {
+                   // debugger;
+                    if (result == "true") {
+                        $("#preloader").hide();
+                        window.location.href = '@Projectname/Home/Index';
+                    }
+                    else if (result == "productPage")
+                    {
+                        //ajax call to check if user has updated profile or not
+
+
+            var url = '@Url.Action("CheckUserProfileUpdated", "ProductMaster")';
+                        $.ajax({
+                            type: "Post",
+                            url: url,
+                            dataType: "json",
+                            success: function (result) {
+                                //debugger;
+                                if (result == "true") {
+                                    $("#preloader").hide();
+                                    var productId = localStorage.getItem("ProductId");
+                                    var dataProductId = {
+                                        "productId": localStorage.getItem("ProductId")
+
+                                    };
+                                    //alert(productId)
+                                    //var url = '@Url.Action("AddCartDetailForUser", "Order")';
+                                    $.ajax({
+                                        type: "Post",
+                                        url: '@Projectname/Order/AddCartDetailForUser?productId='+ productId,
+                                        data: dataProductId,
+                                        dataType: "json",
+                                        success: function (result) {
+                                            debugger;
+                                            if (result == "true") {
+                                                $("#preloader").hide();
+                                                window.location.href = "@Projectname/Order/CartInfo"
+                                                //localStorage.removeItem("ProductId");
+                                            }
+                                            else if (result = "alreadyexits")
+                                            {
+                                                $("#preloader").hide();
+                                                swal("This product is already added in cart.");
+                                                window.location.href = "@Projectname/Order/CartInfo" + productId;
+                                                //localStorage.removeItem("ProductId");
+                                            }
+                                            else {
+                                                $("#preloader").hide();
+                                                swal("Error while adding Product in cart");
+
+
+                                                window.location.href = "@Projectname/Order/CartInfo" + productId;
+                                            }
+                                        }
+
+
+                                    });
+                                    @*window.location.href = "@Projectname/Order/CartInfo";*@
+                                }
+
+
+                                else {
+                                    $("#preloader").hide();
+                                    swal("Please update your profile before saving products in cart.");
+                                  
+                                    //for updating  user Profile
+
+                                    window.location.href = "@Projectname/Account/UpdateUserProfile?type=" + "cart";
+                                }
+                            }
+
+
+                        });
+
+                    }
+                    else if (result == "ReturnUrl") {
+                        debugger;
+                         window.location.href = '@ViewBag.ReturnUrl';
+                    }
+                    else {
+                        alert("incorrect OTP");
+                        $("#preloader").hide();
+                        swal("OTP which you enter is incorrect.");
+                    }
+                }
+
+
+            });
+
+        }
+        else {
+            $("#preloader").hide();
+            swal("Please enter OTP");
+        }
+    }
+
+
+
+
+
+
+</script>

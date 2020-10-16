@@ -1,0 +1,176 @@
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\App_Start\UnityConfig.cs
+RegisterComponents 3
+RegisterComponents 0
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\BussinessServices\Common\CommonService.cs
+CheckMobileNumberExits 3
+CheckMobileNumberExits 0
+CheckExistingMobileNumber 3
+CheckExistingMobileNumber 0
+CheckExistingMobileNumberforLogin 3
+CheckExistingMobileNumberforLogin 0
+CheckOTPForLogin 4
+CheckOTPForLogin 15
+CheckExistingMobileNumberForLogin 3
+CheckExistingMobileNumberForLogin 0
+BindAllState 2
+BindAllState 0
+GetAddressForUser 4
+GetAddressForUser 0
+GetCartDetails 3
+GetCartDetails 0
+GetCompanyProduct 3
+GetCompanyProduct 0
+GetAllStatewithProduct 2
+GetAllStatewithProduct 0
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\BussinessServices\Common\ICommonService.cs
+CheckMobileNumberExits 2
+CheckMobileNumberExits 0
+CheckExistingMobileNumber 2
+CheckExistingMobileNumber 0
+BindAllState 2
+BindAllState 0
+CheckExistingMobileNumberForLogin 2
+CheckExistingMobileNumberForLogin 0
+CheckOTPForLogin 2
+CheckOTPForLogin 0
+CheckExistingMobileNumberforLogin 14
+CheckExistingMobileNumberforLogin 0
+GetAddressForUser 2
+GetAddressForUser 0
+GetCartDetails 2
+GetCartDetails 0
+GetCompanyProduct 2
+GetCompanyProduct 0
+GetAllStatewithProduct 2
+GetAllStatewithProduct 0
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\BussinessServices\Order\IOrderService.cs
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\BussinessServices\Order\OrderService.cs
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\BussinessServices\Product\IProductService.cs
+GetAllProduct 2
+GetAllProduct 0
+GetProductDetail 2
+GetProductDetail 0
+AddOrderDetails 2
+AddOrderDetails 0
+CheckCartProduct 2
+CheckCartProduct 0
+GetAllCategory 2
+GetAllCategory 0
+CheckMinProductPrice 2
+CheckMinProductPrice 0
+CheckMaxProductPrice 2
+CheckMaxProductPrice 0
+GetSubCategoryProductList 3
+GetSubCategoryProductList 0
+GetAllProductList 2
+GetAllProductList 0
+GetProductsbyCategory 2
+GetProductsbyCategory 0
+GetManufactureDetailsProduct 2
+GetManufactureDetailsProduct 0
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\BussinessServices\Product\ProductService.cs
+GetAllProduct 2
+GetAllProduct 0
+GetAllCategory 3
+GetAllCategory 0
+GetProductDetail 3
+GetProductDetail 0
+AddOrderDetails 5
+AddOrderDetails 0
+GetProductsbyCategory 2
+GetProductsbyCategory 0
+TotalPrice 4
+TotalPrice 0
+CheckCartProduct 3
+CheckCartProduct 0
+GetAllProductList 3
+GetAllProductList 0
+GetSubCategoryProductList 3
+GetSubCategoryProductList 0
+GetManufactureDetailsProduct 2
+GetManufactureDetailsProduct 0
+CheckMinProductPrice 2
+CheckMinProductPrice 0
+CheckMaxProductPrice 2
+CheckMaxProductPrice 0
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\BussinessServices\User\IUserServices.cs
+GetOrderDetailByOrderId 2
+GetOrderDetailByOrderId 0
+UpdateOrderDeatils 2
+UpdateOrderDeatils 0
+Addcontact 2
+Addcontact 0
+AddUser 2
+AddUser 0
+AddUserOtp 2
+AddUserOtp 0
+GetCartDetailByMobileNumber 2
+GetCartDetailByMobileNumber 0
+CheckOtpFromDb 2
+CheckOtpFromDb 0
+CheckUserProfileUpdated 2
+CheckUserProfileUpdated 0
+GetuserInfo 2
+GetuserInfo 0
+UpdateUserProfile 2
+UpdateUserProfile 0
+AddAddreessForUser 2
+AddAddreessForUser 0
+DeleteCartProduct 2
+DeleteCartProduct 0
+GetOrderList 2
+GetOrderList 0
+AddOrderDetails 2
+AddOrderDetails 0
+DeleteCartProducts 2
+DeleteCartProducts 0
+GetOrderHistory 2
+GetOrderHistory 0
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\BussinessServices\User\UserServices.cs
+AddUser 2
+AddUser 0
+AddUserOtp 7
+AddUserOtp 0
+CheckOtpFromDb 2
+CheckOtpFromDb 0
+CheckUserProfileUpdated 3
+CheckUserProfileUpdated 0
+GetCartDetailByMobileNumber 4
+GetCartDetailByMobileNumber 0
+DeleteCartProduct 3
+DeleteCartProduct 0
+GetuserInfo 3
+GetuserInfo 0
+UpdateUserProfile 2
+UpdateUserProfile 0
+AddAddreessForUser 3
+AddAddreessForUser 0
+AddOrderDetails 2
+AddOrderDetails 0
+UpdateOrderDeatils 4
+UpdateOrderDeatils 15
+DeleteCartProducts 3
+DeleteCartProducts 0
+GetOrderHistory 3
+GetOrderHistory 0
+GetOrderList 3
+GetOrderList 0
+Addcontact 3
+Addcontact 0
+GetOrderDetailByOrderId 3
+GetOrderDetailByOrderId 0
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\Class1.cs
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\Properties\AssemblyInfo.cs
+
+C:\Users\Shivam dhagat\AppData\Local\Temp\.NETFramework,Version=v4.6.1.AssemblyAttributes.cs
+

@@ -1,0 +1,1003 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BEA0E51D-0820-47D3-BBC7-F1CC0F4C22F3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GrowMandi.Web</RootNamespace>
+    <AssemblyName>GrowMandi.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CommonServiceLocator, Version=2.0.4.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonServiceLocator.2.0.4\lib\net46\CommonServiceLocator.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="LinqKit, Version=1.1.17.0, Culture=neutral, PublicKeyToken=bc217f8844052a91, processorArchitecture=MSIL">
+      <HintPath>..\packages\LinqKit.1.1.17\lib\net45\LinqKit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Hosting.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Hosting.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Hosting.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Hosting.Server.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Hosting.Server.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Http.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Http.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http.Features, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Http.Features.2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Http.Features.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=3.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.3.1.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileProviders.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.FileProviders.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.Extensions.FileProviders.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Hosting.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Hosting.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.Extensions.Hosting.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Primitives.2.2.0\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Win32.Primitives.4.3.0\lib\net46\Microsoft.Win32.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PredicateBuilder, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\PredicateBuilder.1.0.0\lib\netstandard1.0\PredicateBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Razorpay, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Razorpay.3.0.0\lib\net45\Razorpay.dll</HintPath>
+    </Reference>
+    <Reference Include="RazorPay.Indian.Financial.System.Code.Client, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RazorPay.IFSC.Client.1.0.0\lib\netstandard2.0\RazorPay.Indian.Financial.System.Code.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="RazorPay.Indian.Financial.System.Code.Shared, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RazorPay.IFSC.Client.Shared.1.0.0\lib\netstandard2.0\RazorPay.Indian.Financial.System.Code.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=106.2.1.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.106.2.1\lib\net452\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.AppContext, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.AppContext.4.3.0\lib\net46\System.AppContext.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Buffers, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.4.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Configuration.ConfigurationManager.4.4.1\lib\net461\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Console, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Console.4.3.0\lib\net46\System.Console.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Globalization.Calendars, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Globalization.Calendars.4.3.0\lib\net46\System.Globalization.Calendars.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Compression.4.3.0\lib\net46\System.IO.Compression.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.IO.Compression.ZipFile, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Compression.ZipFile.4.3.0\lib\net46\System.IO.Compression.ZipFile.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.FileSystem, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.4.3.0\lib\net46\System.IO.FileSystem.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.Primitives.4.3.0\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.1\lib\netstandard2.0\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Http.4.3.0\lib\net46\System.Net.Http.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Sockets, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Sockets.4.3.0\lib\net46\System.Net.Sockets.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.4.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net461\System.Security.Cryptography.Algorithms.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.X509Certificates.4.3.0\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.4.5.0\lib\netstandard2.0\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.2\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.4.0\lib\net461\System.ValueTuple.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.ReaderWriter, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Xml.ReaderWriter.4.3.0\lib\net46\System.Xml.ReaderWriter.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Unity.Abstractions, Version=5.11.1.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Unity.5.11.5\lib\net46\Unity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Configuration, Version=5.11.1.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.Configuration.5.11.1\lib\net46\Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Container, Version=5.11.1.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Unity.5.11.5\lib\net46\Unity.Container.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Interception, Version=5.11.1.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.Interception.5.11.1\lib\net46\Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Interception.Configuration, Version=5.11.1.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.Interception.Configuration.5.11.1\lib\net46\Unity.Interception.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mvc5, Version=1.4.0.0, Culture=neutral, PublicKeyToken=43da31bc42a85347, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.Mvc5.1.4.0\lib\net45\Unity.Mvc5.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RegistrationByConvention, Version=5.11.1.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.RegistrationByConvention.5.11.1\lib\net46\Unity.RegistrationByConvention.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ServiceLocation, Version=5.11.1.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.ServiceLocation.5.11.1\lib\net46\Unity.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebActivatorEx.2.2.0\lib\net40\WebActivatorEx.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Diagnostics.DiagnosticSource">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.4.1\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.TelemetryCorrelation">
+      <HintPath>..\packages\Microsoft.AspNet.TelemetryCorrelation.1.0.0\lib\net45\Microsoft.AspNet.TelemetryCorrelation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\UnityConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\CommonController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LanguageMangController.cs" />
+    <Compile Include="Controllers\LayoutController.cs" />
+    <Compile Include="Controllers\OrderController.cs" />
+    <Compile Include="Controllers\ProductMasterController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Customfilter\CustomExceptionFilter.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\cdn\font-awesome.min.css" />
+    <Content Include="Content\cdn\googleapi.css" />
+    <Content Include="Content\cdn\jquery-1.10.2.min.js" />
+    <Content Include="Content\cdn\jquery-ui.min.css" />
+    <Content Include="Content\cdn\jquery-ui.min.js" />
+    <Content Include="Content\cdn\jquery.dataTables.min.js" />
+    <Content Include="Content\cdn\owl.carousel.min.css" />
+    <Content Include="Content\cdn\owl.carousel.min.js" />
+    <Content Include="Content\cdn\sweetalert.min.css" />
+    <Content Include="Content\cdn\sweetalert.min.js" />
+    <Content Include="Content\easyzoom.css" />
+    <Content Include="Content\flex-slider.min.css" />
+    <Content Include="Content\jquery.dataTables.min.css" />
+    <Content Include="Content\niceselect.css" />
+    <Content Include="Content\owl-carousel.css" />
+    <Content Include="Content\perfect-scrollbar.css" />
+    <Content Include="Content\reset.css" />
+    <Content Include="Content\slicknav.min.css" />
+    <Content Include="Content\style.css" />
+    <Content Include="Content\sweetalert.css" />
+    <Content Include="Content\themify-icons.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="images\123.gif" />
+    <Content Include="images\123Vikram_301_Bumper_dhamaka.jpg" />
+    <Content Include="images\AgriRise.png" />
+    <Content Include="images\banner1.jpg" />
+    <Content Include="images\banner11.jpg" />
+    <Content Include="images\bg-01.jpg" />
+    <Content Include="images\Biological.jpg" />
+    <Content Include="images\bl1.jpg" />
+    <Content Include="images\contact.jpg" />
+    <Content Include="images\crpimage\1Leak.png" />
+    <Content Include="images\crpimage\Amarantus.png" />
+    <Content Include="images\crpimage\AshGourd.png" />
+    <Content Include="images\crpimage\Bajra.png" />
+    <Content Include="images\crpimage\Beetroot.png" />
+    <Content Include="images\crpimage\Berseem.png" />
+    <Content Include="images\crpimage\Bhendi.png" />
+    <Content Include="images\crpimage\Bittergourd.png" />
+    <Content Include="images\crpimage\Bottlegourd.png" />
+    <Content Include="images\crpimage\Brinjal.png" />
+    <Content Include="images\crpimage\Cabbage.png" />
+    <Content Include="images\crpimage\Capsicum.png" />
+    <Content Include="images\crpimage\Carrot.png" />
+    <Content Include="images\crpimage\Celery.png" />
+    <Content Include="images\crpimage\Chickpea.png" />
+    <Content Include="images\crpimage\Chilly.png" />
+    <Content Include="images\crpimage\CLUSTER-BEAN.png" />
+    <Content Include="images\crpimage\CORIANDER.png" />
+    <Content Include="images\crpimage\Cotton.png" />
+    <Content Include="images\crpimage\Cowpea.png" />
+    <Content Include="images\crpimage\Cucumber.png" />
+    <Content Include="images\crpimage\Cumin-Seeds.png" />
+    <Content Include="images\crpimage\Fennel-Seeds.png" />
+    <Content Include="images\crpimage\Fenugreek-leaves.png" />
+    <Content Include="images\crpimage\FRENCH-BEAN.png" />
+    <Content Include="images\crpimage\gold.png" />
+    <Content Include="images\crpimage\Green-Gram%28Mug%29.png" />
+    <Content Include="images\crpimage\Green-peas.png" />
+    <Content Include="images\crpimage\img.png" />
+    <Content Include="images\crpimage\Jowar.png" />
+    <Content Include="images\crpimage\Leak.png" />
+    <Content Include="images\crpimage\Lettuce.png" />
+    <Content Include="images\crpimage\Lucerne.png" />
+    <Content Include="images\crpimage\m2.png" />
+    <Content Include="images\crpimage\m3.png" />
+    <Content Include="images\crpimage\maize.png" />
+    <Content Include="images\crpimage\MUSK-MELON.png" />
+    <Content Include="images\crpimage\Mustard.png" />
+    <Content Include="images\crpimage\Okra.png" />
+    <Content Include="images\crpimage\ONION.png" />
+    <Content Include="images\crpimage\Packchoi.png" />
+    <Content Include="images\crpimage\PUMPKIN.png" />
+    <Content Include="images\crpimage\Radish.png" />
+    <Content Include="images\crpimage\rice.png" />
+    <Content Include="images\crpimage\Ridge-gourd.png" />
+    <Content Include="images\crpimage\seedling.jpeg" />
+    <Content Include="images\crpimage\Snake-gourd.png" />
+    <Content Include="images\crpimage\SPINACH.png" />
+    <Content Include="images\crpimage\SPONGE-GOURD.png" />
+    <Content Include="images\crpimage\Squash.png" />
+    <Content Include="images\crpimage\Tinda.png" />
+    <Content Include="images\crpimage\Tomato.png" />
+    <Content Include="images\crpimage\Watermelon.png" />
+    <Content Include="images\crpimage\Wheat.png" />
+    <Content Include="images\crpimage\Yardlong.png" />
+    <Content Include="images\Eagle Logo.jpg" />
+    <Content Include="images\equipment.png" />
+    <Content Include="images\error-icon.jpg" />
+    <Content Include="images\favicon.ico" />
+    <Content Include="images\Field-Crop.jpg" />
+    <Content Include="images\footer-logo.png" />
+    <Content Include="images\gentex.png" />
+    <Content Include="images\gold.png" />
+    <Content Include="images\Grow-Indigo.png" />
+    <Content Include="images\growindigo.png" />
+    <Content Include="images\GrowOnline_CMYK-page-001.jpg" />
+    <Content Include="images\HectareBig.jpg" />
+    <Content Include="images\indigo.png" />
+    <Content Include="images\inner-bg1.jpg" />
+    <Content Include="images\inner-bg3.jpg" />
+    <Content Include="images\JK Logo 01.png" />
+    <Content Include="images\ju.jpg" />
+    <Content Include="images\KalashSeed.png" />
+    <Content Include="images\l1.jpg" />
+    <Content Include="images\Leadbeter.png" />
+    <Content Include="images\loader\ajax_loader.gif" />
+    <Content Include="images\loader\loader.gif" />
+    <Content Include="images\loader\newwpayment-logo.jpg" />
+    <Content Include="images\loader\payment-logo.jpg" />
+    <Content Include="images\logo - Copy.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\logo2.png" />
+    <Content Include="images\m2.png" />
+    <Content Include="images\m3.png" />
+    <Content Include="images\Mahyco-Grow-Logo.png" />
+    <Content Include="images\Mahyco-Grow-Logo11.png" />
+    <Content Include="images\Mahyco-Grow.png" />
+    <Content Include="images\map-marker.png" />
+    <Content Include="images\mulch.png" />
+    <Content Include="images\OfferBAnner.jpg" />
+    <Content Include="images\p-1.jpg" />
+    <Content Include="images\p-2.jpg" />
+    <Content Include="images\p-3.jpg" />
+    <Content Include="images\p-4.jpg" />
+    <Content Include="images\p-6.png" />
+    <Content Include="images\p-7.png" />
+    <Content Include="images\payment-logo.jpg" />
+    <Content Include="images\payment-method.png" />
+    <Content Include="images\payment-option.png" />
+    <Content Include="images\payments.png" />
+    <Content Include="images\phone-icon.jpg" />
+    <Content Include="images\Prerak-logo.png" />
+    <Content Include="images\rupee-sign-solid.svg" />
+    <Content Include="images\safal.jpg" />
+    <Content Include="images\Sahyog agro sprayers.png" />
+    <Content Include="images\SaveGrianBags.jpg" />
+    <Content Include="images\seed.png" />
+    <Content Include="images\seedlin122g.jpeg" />
+    <Content Include="images\seedling.jpeg" />
+    <Content Include="images\seedling1.png" />
+    <Content Include="images\seedling2.jpeg" />
+    <Content Include="images\Sheetal Hybrid Seeds.jpg" />
+    <Content Include="images\shukan.jpg" />
+    <Content Include="images\slider-one.jpg" />
+    <Content Include="images\slider-three.jpg" />
+    <Content Include="images\slider-two.jpg" />
+    <Content Include="images\SSF LOGO.jpg" />
+    <Content Include="images\Storagebags.png" />
+    <Content Include="images\Sungro.png" />
+    <Content Include="images\Vegetables.jpg" />
+    <Content Include="images\Vikram.png" />
+    <Content Include="images\Vikram13.png" />
+    <Content Include="images\Vikram_301_Bumper_dhamaka.jpg" />
+    <Content Include="images\Vikram_301_Bumper_dhamaka123.jpg" />
+    <Content Include="images\Vikram_301_Bumper_dhamaka1234.jpg" />
+    <Content Include="images\Vikram_301_Marathi.jpg" />
+    <Content Include="libman.json" />
+    <Content Include="Scripts-exist\bootstrap.js" />
+    <Content Include="Scripts-exist\bootstrap.min.js" />
+    <Content Include="Content\bootstrap\mixins.less" />
+    <Content Include="Content\bootstrap\variables.less" />
+    <None Include="Scripts-exist\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts-exist\jquery-3.3.1.js" />
+    <Content Include="Scripts-exist\jquery-3.3.1.min.js" />
+    <Content Include="Scripts-exist\jquery-3.3.1.slim.js" />
+    <Content Include="Scripts-exist\jquery-3.3.1.slim.min.js" />
+    <None Include="Scripts-exist\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts-exist\jquery.validate.js" />
+    <Content Include="Scripts-exist\jquery.validate.min.js" />
+    <Content Include="Scripts-exist\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts-exist\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts-exist\modernizr-2.8.3.js" />
+    <Content Include="Scripts\active.js" />
+    <Content Include="Scripts\bootstrap-datetimepicker.min.js" />
+    <Content Include="Scripts\bootstrap-select.js" />
+    <Content Include="Scripts\bootstrap-treeview.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\easyzoom.js" />
+    <Content Include="Scripts\flex-slider.js" />
+    <Content Include="Scripts\GrowOnline\OrderHistory.js" />
+    <Content Include="Scripts\jquery-3.3.1.min.js" />
+    <Content Include="Scripts\jquery-migrate-3.0.0.js" />
+    <Content Include="Scripts\jquery-ui.min.js" />
+    <Content Include="Scripts\jquery.dataTables.min.js" />
+    <Content Include="Scripts\jquery.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\onepage-nav.min.js" />
+    <Content Include="Scripts\owl-carousel.js" />
+    <Content Include="Scripts\perfect-scrollbar.min.js" />
+    <Content Include="Scripts\slicknav.min.js" />
+    <Content Include="Scripts\waypoints.min.js" />
+    <Content Include="Upload\1-kg.jpg" />
+    <Content Include="Upload\1.jpg" />
+    <Content Include="Upload\100-kg.jpg" />
+    <Content Include="Upload\118652629_3365701266989158_1820369294867010571_o.jpg" />
+    <Content Include="Upload\118791221_1027041474412819_529400144452976297_n.jpg" />
+    <Content Include="Upload\118812566_628503004743475_3890788863800144943_n.jpg" />
+    <Content Include="Upload\172.jpg" />
+    <Content Include="Upload\2-kg.jpg" />
+    <Content Include="Upload\2.jpg" />
+    <Content Include="Upload\20181004_134046.jpg" />
+    <Content Include="Upload\20190801_171551.jpg" />
+    <Content Include="Upload\205 Ishika.jpg" />
+    <Content Include="Upload\2301 .jpg" />
+    <Content Include="Upload\25-kg.jpg" />
+    <Content Include="Upload\26 gold packshot.jpg" />
+    <Content Include="Upload\4.jpg" />
+    <Content Include="Upload\5-kg.jpg" />
+    <Content Include="Upload\50-kg.jpg" />
+    <Content Include="Upload\6.jpg" />
+    <Content Include="Upload\9.jpg" />
+    <Content Include="Upload\Agraj.jpg" />
+    <Content Include="Upload\Albina.jpg" />
+    <Content Include="Upload\All Green.jpg" />
+    <Content Include="Upload\Amaranthus - Amol.jpg" />
+    <Content Include="Upload\Arnav.jpg" />
+    <Content Include="Upload\Arpit.jpg" />
+    <Content Include="Upload\Aryan.jpg" />
+    <Content Include="Upload\Ash Gourd - BSS 989 Vijaya.jpg" />
+    <Content Include="Upload\Azomax.jpg" />
+    <Content Include="Upload\Beetroot Mahyco Lal II  Final.jpg" />
+    <Content Include="Upload\Bhendi - BSS 893.jpg" />
+    <Content Include="Upload\Bhendi - KSP 1208.jpg" />
+    <Content Include="Upload\Bhendi Deepika.jpg" />
+    <Content Include="Upload\Bhendi Divya.jpg" />
+    <Content Include="Upload\Bhindi -319.jpg" />
+    <Content Include="Upload\BHINDI 10.jpg" />
+    <Content Include="Upload\bhindi 64.jpg" />
+    <Content Include="Upload\BHINDI EXP NO 1.jpg" />
+    <Content Include="Upload\BHINDI MAHY PAHAL.jpg" />
+    <Content Include="Upload\BHINDI-10.jpg" />
+    <Content Include="Upload\Bitter Gourd - BSS691.jpg" />
+    <Content Include="Upload\Bitter Gourd - KSP 1266.jpg" />
+    <Content Include="Upload\Blow.jpg" />
+    <Content Include="Upload\Bottle Gourd - BSS 951.jpg" />
+    <Content Include="Upload\Bottle Gourd - KSP 1122.jpg" />
+    <Content Include="Upload\Brijwala.jpg" />
+    <Content Include="Upload\Brinjal - BSS 1030.jpg" />
+    <Content Include="Upload\Brinjal - BSS 537.jpg" />
+    <Content Include="Upload\Brinjal - BSS 866.jpg" />
+    <Content Include="Upload\Brinjal -BSS 791.jpg" />
+    <Content Include="Upload\brinjal mahy 11.jpg" />
+    <Content Include="Upload\Cabbage - Fieldman.jpg" />
+    <Content Include="Upload\Capsicum - BSS 518.jpg" />
+    <Content Include="Upload\Capsicum - BSS 877.jpg" />
+    <Content Include="Upload\Celery - Truimph.jpg" />
+    <Content Include="Upload\checkpeaSP.jpg" />
+    <Content Include="Upload\checkpeaSP1.jpg" />
+    <Content Include="Upload\CHILLI  MAHY kalai 331.jpg" />
+    <Content Include="Upload\Chilli Basanti.jpg" />
+    <Content Include="Upload\Chilli Bijli.jpg" />
+    <Content Include="Upload\Chilli Singham.jpg" />
+    <Content Include="Upload\Chilli Tadka.jpg" />
+    <Content Include="Upload\Chilly - BSS 273.jpg" />
+    <Content Include="Upload\Chilly - KSP 1232.jpg" />
+    <Content Include="Upload\Chilly - KSP 1233.jpg" />
+    <Content Include="Upload\Chilly - KSP 1255.jpg" />
+    <Content Include="Upload\Chilly - KSP 1417.jpg" />
+    <Content Include="Upload\Chinese Cabbage - Optico.jpg" />
+    <Content Include="Upload\Closeup -pack .jpg" />
+    <Content Include="Upload\Cowpea - KSP 145.jpg" />
+    <Content Include="Upload\Cucumber - KSP 1222.jpg" />
+    <Content Include="Upload\Cucumber - KSP 1339.jpg" />
+    <Content Include="Upload\Deepika.jpg" />
+    <Content Include="Upload\Dr Brent PACK.jpg" />
+    <Content Include="Upload\Dr Brent PACK123.jpg" />
+    <Content Include="Upload\E-338.jpg" />
+    <Content Include="Upload\E-721.jpg" />
+    <Content Include="Upload\Eagle Green.jpg" />
+    <Content Include="Upload\Eagle Lali.jpg" />
+    <Content Include="Upload\Eagle Red Long.jpg" />
+    <Content Include="Upload\Eagle Red.jpg" />
+    <Content Include="Upload\Eagle Royal Star.jpg" />
+    <Content Include="Upload\Eagle Star.jpg" />
+    <Content Include="Upload\Eagle Yello.jpg" />
+    <Content Include="Upload\Eagle-11 +.jpg" />
+    <Content Include="Upload\Eagle-11.jpg" />
+    <Content Include="Upload\Ecomax Bag.jpg" />
+    <Content Include="Upload\FB_IMG_1547890125860.jpg" />
+    <Content Include="Upload\FB_IMG_1576645249288.jpg" />
+    <Content Include="Upload\final---nasik-red.jpg" />
+    <Content Include="Upload\final-curve-light-red.jpg" />
+    <Content Include="Upload\Fulldose.jpg" />
+    <Content Include="Upload\Fulldose_bucket.jpg" />
+    <Content Include="Upload\Green Aroma.jpg" />
+    <Content Include="Upload\Himal.jpg" />
+    <Content Include="Upload\Ice Kettle.jpg" />
+    <Content Include="Upload\IMG-20190309-WA0028.jpg" />
+    <Content Include="Upload\IMG-20190309-WA0030.jpg" />
+    <Content Include="Upload\IMG-20190322-WA0005.jpg" />
+    <Content Include="Upload\IMG-20190322-WA0049.jpg" />
+    <Content Include="Upload\IMG-20190502-WA0001.jpg" />
+    <Content Include="Upload\IMG-20191111-WA0004.jpg" />
+    <Content Include="Upload\IMG-20191111-WA0010.jpg" />
+    <Content Include="Upload\IMG-20191208-WA0140.jpg" />
+    <Content Include="Upload\IMG-20191222-WA0005.jpg" />
+    <Content Include="Upload\IMG-20191231-WA0020.jpg" />
+    <Content Include="Upload\IMG-20191231-WA0021.jpg" />
+    <Content Include="Upload\IMG-20200105-WA0021.jpg" />
+    <Content Include="Upload\IMG-20200517-WA0018.jpg" />
+    <Content Include="Upload\IMG-20200517-WA0019.jpg" />
+    <Content Include="Upload\IMG-20200611-WA0039.jpg" />
+    <Content Include="Upload\IMG-20200623-WA0005.jpg" />
+    <Content Include="Upload\IMG-20200904-WA0002.jpg" />
+    <Content Include="Upload\IMG_7762.jpg" />
+    <Content Include="Upload\Jairam.jpg" />
+    <Content Include="Upload\JK 5202.jpg" />
+    <Content Include="Upload\JK 533.jpg" />
+    <Content Include="Upload\JK 8031png.jpg" />
+    <Content Include="Upload\JK ATI MADHUR.jpg" />
+    <Content Include="Upload\JK DESI.jpg" />
+    <Content Include="Upload\JK NANDINI.jpg" />
+    <Content Include="Upload\JK PAAS PAAS.jpg" />
+    <Content Include="Upload\JK UTKRISHTA.jpg" />
+    <Content Include="Upload\JK VAANI.jpg" />
+    <Content Include="Upload\JK VARSHA.jpg" />
+    <Content Include="Upload\JK VICTOR.jpg" />
+    <Content Include="Upload\JK WMH 007 GOLD.jpg" />
+    <Content Include="Upload\JKBH-1486.jpeg" />
+    <Content Include="Upload\JKBH-1486.jpg" />
+    <Content Include="Upload\JKCH 99 BGII.jpg" />
+    <Content Include="Upload\JKHPH178 %281%29.jpg" />
+    <Content Include="Upload\JKOH 1054.jpg" />
+    <Content Include="Upload\JKoh 502.jpg" />
+    <Content Include="Upload\JKOH 700 .jpg" />
+    <Content Include="Upload\JKOH 7315.jpg" />
+    <Content Include="Upload\JKRH 401 Plus Packshot.jpg" />
+    <Content Include="Upload\JKRH-2082 %282%29.jpg" />
+    <Content Include="Upload\JKSGH 710.jpg" />
+    <Content Include="Upload\JKTH 100 .jpg" />
+    <Content Include="Upload\JKTH 447.jpg" />
+    <Content Include="Upload\JKTH 633.jpg" />
+    <Content Include="Upload\JOWAR-JK-22.jpg" />
+    <Content Include="Upload\JOWAR-JK-JYOTI.jpg" />
+    <Content Include="Upload\kalpatru.jpg" />
+    <Content Include="Upload\Kashi Kanchan.jpg" />
+    <Content Include="Upload\Khushi.jpg" />
+    <Content Include="Upload\Kinjil.jpg" />
+    <Content Include="Upload\Kshipra.jpg" />
+    <Content Include="Upload\Kumulika.jpg" />
+    <Content Include="Upload\Leek - Lincoln.jpg" />
+    <Content Include="Upload\Lettuce - Loloroso.jpg" />
+    <Content Include="Upload\lok1.jpg" />
+    <Content Include="Upload\lok2.jpg" />
+    <Content Include="Upload\m1.jpg" />
+    <Content Include="Upload\MAHY GOTYA.jpg" />
+    <Content Include="Upload\MAHY RAVAIYA.jpg" />
+    <Content Include="Upload\MAHY-701.jpg" />
+    <Content Include="Upload\Mahyco Paddy  Raftar 5629 1 kg and 3 kg.jpg" />
+    <Content Include="Upload\Mahyco Paddy 5477 pack 6  kg and 10 kg.jpg" />
+    <Content Include="Upload\Mahyco Paddy 54R80 pack 6 kg.jpg" />
+    <Content Include="Upload\Mahyco Paddy 55R95 6 kg and 10 kg pack.jpg" />
+    <Content Include="Upload\Maize 10.jpg" />
+    <Content Include="Upload\Maize-09.jpg" />
+    <Content Include="Upload\Maize-20.jpg" />
+    <Content Include="Upload\Mallika.jpg" />
+    <Content Include="Upload\Malvi.jpg" />
+    <Content Include="Upload\marrigold.jpg" />
+    <Content Include="Upload\motor.jpg" />
+    <Content Include="Upload\MRC 7160 BG II  pack.jpg" />
+    <Content Include="Upload\MRC 7355 BGII %28maharashtra%29 packshot.jpg" />
+    <Content Include="Upload\MRC 7367 BG-II pack.jpg" />
+    <Content Include="Upload\MT01.jpg" />
+    <Content Include="Upload\Musterd - Black Wonder.jpg" />
+    <Content Include="Upload\Naaj.jpg" />
+    <Content Include="Upload\Navya.jpg" />
+    <Content Include="Upload\no-image-png.jpg" />
+    <Content Include="Upload\no-image.jpg" />
+    <Content Include="Upload\on1.png" />
+    <Content Include="Upload\on2.png" />
+    <Content Include="Upload\on3.png" />
+    <Content Include="Upload\on4.png" />
+    <Content Include="Upload\on5.png" />
+    <Content Include="Upload\on6.png" />
+    <Content Include="Upload\on7.png" />
+    <Content Include="Upload\on8.png" />
+    <Content Include="Upload\Onion---Sheetal-Red.jpg" />
+    <Content Include="Upload\Oorjit_Granule.png" />
+    <Content Include="Upload\Oorjit_Liquid.png" />
+    <Content Include="Upload\otherImages\123.gif" />
+    <Content Include="Upload\otherImages\123Vikram_301_Bumper_dhamaka.jpg" />
+    <Content Include="Upload\otherImages\banner1.jpg" />
+    <Content Include="Upload\otherImages\banner11.jpg" />
+    <Content Include="Upload\otherImages\banner2.jpg" />
+    <Content Include="Upload\otherImages\banner2_old.jpg" />
+    <Content Include="Upload\otherImages\banner3.jpg" />
+    <Content Include="Upload\otherImages\banner4.jpg" />
+    <Content Include="Upload\otherImages\crpimage\Amarantus.png" />
+    <Content Include="Upload\otherImages\crpimage\AshGourd.png" />
+    <Content Include="Upload\otherImages\crpimage\Bajra.png" />
+    <Content Include="Upload\otherImages\crpimage\Bhendi.png" />
+    <Content Include="Upload\otherImages\crpimage\Bittergourd.png" />
+    <Content Include="Upload\otherImages\crpimage\Bottlegourd.png" />
+    <Content Include="Upload\otherImages\crpimage\Brinjal.png" />
+    <Content Include="Upload\otherImages\crpimage\Cabbage.png" />
+    <Content Include="Upload\otherImages\crpimage\Capsicum.png" />
+    <Content Include="Upload\otherImages\crpimage\Celery.png" />
+    <Content Include="Upload\otherImages\crpimage\Chilly.png" />
+    <Content Include="Upload\otherImages\crpimage\CLUSTER-BEAN.png" />
+    <Content Include="Upload\otherImages\crpimage\CORIANDER.png" />
+    <Content Include="Upload\otherImages\crpimage\Cotton.png" />
+    <Content Include="Upload\otherImages\crpimage\Cowpea.png" />
+    <Content Include="Upload\otherImages\crpimage\Cucumber.png" />
+    <Content Include="Upload\otherImages\crpimage\FRENCH-BEAN.png" />
+    <Content Include="Upload\otherImages\crpimage\img.png" />
+    <Content Include="Upload\otherImages\crpimage\Jowar.png" />
+    <Content Include="Upload\otherImages\crpimage\Leak.png" />
+    <Content Include="Upload\otherImages\crpimage\Lettuce.png" />
+    <Content Include="Upload\otherImages\crpimage\maize.png" />
+    <Content Include="Upload\otherImages\crpimage\MUSK-MELON.png" />
+    <Content Include="Upload\otherImages\crpimage\Mustard.png" />
+    <Content Include="Upload\otherImages\crpimage\Okra.png" />
+    <Content Include="Upload\otherImages\crpimage\ONION.png" />
+    <Content Include="Upload\otherImages\crpimage\Packchoi.png" />
+    <Content Include="Upload\otherImages\crpimage\PUMPKIN.png" />
+    <Content Include="Upload\otherImages\crpimage\Radish.png" />
+    <Content Include="Upload\otherImages\crpimage\rice.png" />
+    <Content Include="Upload\otherImages\crpimage\Ridge-gourd.png" />
+    <Content Include="Upload\otherImages\crpimage\seedling.jpeg" />
+    <Content Include="Upload\otherImages\crpimage\Snake-gourd.png" />
+    <Content Include="Upload\otherImages\crpimage\SPINACH.png" />
+    <Content Include="Upload\otherImages\crpimage\SPONGE-GOURD.png" />
+    <Content Include="Upload\otherImages\crpimage\Squash.png" />
+    <Content Include="Upload\otherImages\crpimage\Tinda.png" />
+    <Content Include="Upload\otherImages\crpimage\Tomato.png" />
+    <Content Include="Upload\otherImages\crpimage\Watermelon.png" />
+    <Content Include="Upload\otherImages\crpimage\Wheat.png" />
+    <Content Include="Upload\otherImages\crpimage\Yardlong.png" />
+    <Content Include="Upload\otherImages\Eagle Logo.jpg" />
+    <Content Include="Upload\otherImages\equipment.png" />
+    <Content Include="Upload\otherImages\Grow-Indigo.png" />
+    <Content Include="Upload\otherImages\growindigo.png" />
+    <Content Include="Upload\otherImages\HectareBig.jpg" />
+    <Content Include="Upload\otherImages\JK Logo 01.png" />
+    <Content Include="Upload\otherImages\ju.jpg" />
+    <Content Include="Upload\otherImages\KalashSeed.png" />
+    <Content Include="Upload\otherImages\Leadbeter.png" />
+    <Content Include="Upload\otherImages\Mahyco-Grow-Logo.png" />
+    <Content Include="Upload\otherImages\Mahyco-Grow-Logo11.png" />
+    <Content Include="Upload\otherImages\Mahyco-Grow.png" />
+    <Content Include="Upload\otherImages\mahyco-logo2.png" />
+    <Content Include="Upload\otherImages\OfferBAnner.jpg" />
+    <Content Include="Upload\otherImages\Prerak-logo.png" />
+    <Content Include="Upload\otherImages\safal.jpg" />
+    <Content Include="Upload\otherImages\SaveGrianBags.jpg" />
+    <Content Include="Upload\otherImages\seed.png" />
+    <Content Include="Upload\otherImages\seedlin122g.jpeg" />
+    <Content Include="Upload\otherImages\Seedling-001.jpg" />
+    <Content Include="Upload\otherImages\Seedling-002.jpg" />
+    <Content Include="Upload\otherImages\Seedling-003.jpg" />
+    <Content Include="Upload\otherImages\seedling.jpeg" />
+    <Content Include="Upload\otherImages\seedling1.png" />
+    <Content Include="Upload\otherImages\seedling2.jpeg" />
+    <Content Include="Upload\otherImages\Sheetal Hybrid Seeds.jpg" />
+    <Content Include="Upload\otherImages\shukan.jpg" />
+    <Content Include="Upload\otherImages\SSF LOGO.jpg" />
+    <Content Include="Upload\otherImages\Storagebags.png" />
+    <Content Include="Upload\otherImages\Sungro.png" />
+    <Content Include="Upload\otherImages\Vikram.png" />
+    <Content Include="Upload\otherImages\Vikram13.png" />
+    <Content Include="Upload\otherImages\Vikram_301_Bumper_dhamaka.jpg" />
+    <Content Include="Upload\otherImages\Vikram_301_Bumper_dhamaka123.jpg" />
+    <Content Include="Upload\otherImages\Vikram_301_Bumper_dhamaka1234.jpg" />
+    <Content Include="Upload\otherImages\Vikram_301_Marathi.jpg" />
+    <Content Include="Upload\output-onlinejpgtools.jpg" />
+    <Content Include="Upload\Ovel King.jpg" />
+    <Content Include="Upload\pack Chilli tanaya.jpg" />
+    <Content Include="Upload\Packchoi - KSP 29.jpg" />
+    <Content Include="Upload\Paddy 103.jpg" />
+    <Content Include="Upload\Paddy 202.jpg" />
+    <Content Include="Upload\Paddy 303.jpg" />
+    <Content Include="Upload\Paddy-2609-Pack %282%29.jpg" />
+    <Content Include="Upload\Paddy-401--Suraksha-Pack_1_.jpg" />
+    <Content Include="Upload\Pintu.jpg" />
+    <Content Include="Upload\power.jpg" />
+    <Content Include="Upload\Prerak.jpg" />
+    <Content Include="Upload\Prerak.png" />
+    <Content Include="Upload\PrerakCheakpea.JPG" />
+    <Content Include="Upload\prerakPules.jpg" />
+    <Content Include="Upload\Preraksoyabean.jpg" />
+    <Content Include="Upload\PrerakWheat.JPG" />
+    <Content Include="Upload\pumps.jpg" />
+    <Content Include="Upload\Radish - KSP 79.jpg" />
+    <Content Include="Upload\Ragni.jpg" />
+    <Content Include="Upload\Rajeswari.jpg" />
+    <Content Include="Upload\Rajveer.jpg" />
+    <Content Include="Upload\Ridge Gourd - BSS 836.jpg" />
+    <Content Include="Upload\Rimzhim.jpg" />
+    <Content Include="Upload\Ruchita.jpg" />
+    <Content Include="Upload\Samrus.jpg" />
+    <Content Include="Upload\Sanskar.jpg" />
+    <Content Include="Upload\seedling.jpeg" />
+    <Content Include="Upload\SG-Ecomax-G.jpg" />
+    <Content Include="Upload\Shweta.jpg" />
+    <Content Include="Upload\Snake Gourd - BSS 694.jpg" />
+    <Content Include="Upload\Sponge Gourd - KSP 1125.jpg" />
+    <Content Include="Upload\SPONGEGOURD HARILOK PACK.jpg" />
+    <Content Include="Upload\SPONGEGOURD MAHY 42.jpg" />
+    <Content Include="Upload\Squase - KSP 16.jpg" />
+    <Content Include="Upload\SSB-450.jpg" />
+    <Content Include="Upload\ST01.jpg" />
+    <Content Include="Upload\Subhas.jpg" />
+    <Content Include="Upload\Subrat.jpg" />
+    <Content Include="Upload\Super 16.jpg" />
+    <Content Include="Upload\Super Kathi.jpg" />
+    <Content Include="Upload\superhot.JPG" />
+    <Content Include="Upload\Tinda - BSS 695.jpg" />
+    <Content Include="Upload\tomato %281%29.png" />
+    <Content Include="Upload\Tomato - BSS 908.jpg" />
+    <Content Include="Upload\Tomato Khushi.jpg" />
+    <Content Include="Upload\Tomato Kohinoor.jpg" />
+    <Content Include="Upload\Tomato S-85.jpg" />
+    <Content Include="Upload\Tomato SSB-450.jpg" />
+    <Content Include="Upload\Tomato Zakkas.jpg" />
+    <Content Include="Upload\Tomato3619.jpg" />
+    <Content Include="Upload\Topisto.jpg" />
+    <Content Include="Upload\TP1.jpg" />
+    <Content Include="Upload\Utrast.jpg" />
+    <Content Include="Upload\Vanshika.jpg" />
+    <Content Include="Upload\Vedika.jpg" />
+    <Content Include="Upload\vich15.png" />
+    <Content Include="Upload\vich311.png" />
+    <Content Include="Upload\VICH_301_BG_II_2019.jpg" />
+    <Content Include="Upload\VICH_301_BG_II_2019.png" />
+    <Content Include="Upload\VICH_301_BG_II_MH.jpg" />
+    <Content Include="Upload\VICH_301_BG_II_Non_MH.jpg" />
+    <Content Include="Upload\VICH_KRK.jpg" />
+    <Content Include="Upload\VICH_KRK.png" />
+    <Content Include="Upload\Watermelon - BSS 2000.jpg" />
+    <Content Include="Upload\Watermelon - KSP 1127.jpg" />
+    <Content Include="Upload\WH1.jpg" />
+    <Content Include="Upload\Wheat Lok1.jpg" />
+    <Content Include="Upload\Wheat VRW 5001.jpg" />
+    <Content Include="Upload\Wheat-Lok1.jpg" />
+    <Content Include="Upload\Wheat-VRW-5001.jpg" />
+    <Content Include="Upload\whetSp.JPG" />
+    <Content Include="Upload\whetSp1.JPG" />
+    <Content Include="Upload\Yardlong - KSP 150.jpg" />
+    <Content Include="Upload\Zakkas.jpg" />
+    <Content Include="Upload\Zenith.jpg" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Account\UserRegistration.cshtml" />
+    <Content Include="Views\Account\TermofUse.cshtml" />
+    <Content Include="Views\Account\LoginView.cshtml" />
+    <Content Include="Views\ProductMaster\GetAllProduct.cshtml" />
+    <Content Include="Views\ProductMaster\GetProductDetail.cshtml" />
+    <Content Include="Views\Account\UpdateUserProfile.cshtml" />
+    <Content Include="Views\Order\CartInfo.cshtml" />
+    <Content Include="Views\User\GetAddressForUser.cshtml" />
+    <Content Include="Views\User\AddNewAddressForUser.cshtml" />
+    <Content Include="Views\User\GetCartDetailsForUser.cshtml" />
+    <Content Include="Views\Order\CheckOut.cshtml" />
+    <Content Include="Views\Order\ProductInCartInfo.cshtml" />
+    <Content Include="Views\Home\Test.cshtml" />
+    <Content Include="Views\Order\PaymentStatus.cshtml" />
+    <Content Include="Views\Order\PaymentMethod.cshtml" />
+    <Content Include="Views\Order\OrderHistory.cshtml" />
+    <Content Include="Views\Account\PrivacyPolicy.cshtml" />
+    <Content Include="Views\Common\ErrorPage.cshtml" />
+    <Content Include="Views\ProductMaster\GetAllCategory.cshtml" />
+    <Content Include="Views\ProductMaster\GetProductFilter.cshtml" />
+    <Content Include="Views\ProductMaster\CompanyBasedProduct.cshtml" />
+    <Content Include="Views\ProductMaster\ManufactureDetails.cshtml" />
+    <Content Include="Views\ProductMaster\SearchProduct.cshtml" />
+    <Content Include="Views\Home\GetStateList.cshtml" />
+    <Content Include="Views\ProductMaster\GetSubCategoriesProductFilter.cshtml" />
+    <Content Include="Views\ProductMaster\GetCompanyForSlider.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+    <Folder Include="Views\Base\" />
+    <Folder Include="Views\Email\" />
+    <Folder Include="Views\LanguageMang\" />
+    <Folder Include="Views\Layout\" />
+    <Folder Include="Views\MandiUser\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <None Include="packages.config" />
+    <Content Include="Scripts-exist\jquery-3.3.1.min.map" />
+    <Content Include="Scripts-exist\jquery-3.3.1.slim.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GrowIndigo.BAL\GrowIndigo.BAL.csproj">
+      <Project>{506D8CF8-8B25-4BD6-9CD8-9CA64D4D6D17}</Project>
+      <Name>GrowIndigo.BAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GrowIndigo.DAL\GrowIndigo.DAL.csproj">
+      <Project>{9BBE9BAB-77C5-4475-9C8C-5B89A7D1792C}</Project>
+      <Name>GrowIndigo.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GrowIndigo.Utilities\GrowIndigo.Utilities.csproj">
+      <Project>{9f12e2f4-ef21-4a8d-9785-24c11295c416}</Project>
+      <Name>GrowIndigo.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49262</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:63605/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

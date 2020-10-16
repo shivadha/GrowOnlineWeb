@@ -1,0 +1,164 @@
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowMandi.Web\App_Start\BundleConfig.cs
+RegisterBundles 6
+RegisterBundles 15
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowMandi.Web\App_Start\FilterConfig.cs
+RegisterGlobalFilters 2
+RegisterGlobalFilters 0
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowMandi.Web\App_Start\RouteConfig.cs
+RegisterRoutes 4
+RegisterRoutes 0
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowMandi.Web\App_Start\UnityConfig.cs
+RegisterComponents 4
+RegisterComponents 15
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowMandi.Web\Controllers\AccountController.cs
+Index 2
+Index 0
+UserRegistration 2
+UserRegistration 0
+UserLoginVerifyMobileNumber 4
+UserLoginVerifyMobileNumber 0
+CheckOTPForLogin 4
+CheckOTPForLogin 15
+CheckMobileNumber 4
+CheckMobileNumber 0
+CheckMobileNumberForLogin 3
+CheckMobileNumberForLogin 0
+LogOut 12
+LogOut 0
+UpdateUserProfile 2
+UpdateUserProfile 0
+UpdateUserProfile 2
+UpdateUserProfile 0
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowMandi.Web\Controllers\BaseController.cs
+Index 2
+Index 0
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowMandi.Web\Controllers\CommonController.cs
+Index 3
+Index 0
+CheckExistingMobileNumber 2
+CheckExistingMobileNumber 0
+ErrorPage 3
+ErrorPage 0
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowMandi.Web\Controllers\HomeController.cs
+Index 3
+Index 0
+About 3
+About 0
+Contact 2
+Contact 0
+Contact 2
+Contact 0
+Test 3
+Test 0
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowMandi.Web\Controllers\LanguageMangController.cs
+Index 2
+Index 0
+ChangeLanguage 2
+ChangeLanguage 0
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowMandi.Web\Controllers\LayoutController.cs
+RegisterView 2
+RegisterView 0
+LoginView 2
+LoginView 0
+Terms 3
+Terms 0
+PrivacyPolicy 2
+PrivacyPolicy 0
+GetAddressForUser 2
+GetAddressForUser 0
+AddNewAddressForUser 2
+AddNewAddressForUser 0
+GetCartDetails 2
+GetCartDetails 0
+ProductInCartInfo 2
+ProductInCartInfo 0
+GetCompanyProduct 3
+GetCompanyProduct 0
+ManufactureDetails 3
+ManufactureDetails 0
+SearchBox 3
+SearchBox 0
+GetStateList 6
+GetStateList 0
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowMandi.Web\Controllers\OrderController.cs
+Index 2
+Index 0
+CartInfo 2
+CartInfo 0
+PaymentMethod 2
+PaymentMethod 0
+GetRazorPayOrderID 2
+GetRazorPayOrderID 0
+CheckOut 2
+CheckOut 0
+DeleteCartProduct 2
+DeleteCartProduct 0
+AddCartDetailForUser 2
+AddCartDetailForUser 0
+PaymentStatus 2
+PaymentStatus 0
+DeleteCartAfterPayment 2
+DeleteCartAfterPayment 0
+OrderHistory 2
+OrderHistory 0
+GetOrderList 2
+GetOrderList 0
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowMandi.Web\Controllers\ProductMasterController.cs
+Index 3
+Index 0
+GetProductsbyCategory 3
+GetProductsbyCategory 0
+GetAllProductForFilter 3
+GetAllProductForFilter 0
+GetAllProductForFilter 3
+GetAllProductForFilter 0
+GetAllFilterProduct 2
+GetAllFilterProduct 0
+GetAllCategory 2
+GetAllCategory 0
+GetProductDetail 2
+GetProductDetail 0
+CheckUserProfileUpdated 2
+CheckUserProfileUpdated 0
+GetProductFilter 2
+GetProductFilter 0
+GetProductList 4
+GetProductList 0
+GetSubCategoriesProductFilter 2
+GetSubCategoriesProductFilter 0
+GetSubCategoryProductList 4
+GetSubCategoryProductList 15
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowMandi.Web\Controllers\UserController.cs
+Index 2
+Index 0
+AddAddreessForUser 2
+AddAddreessForUser 0
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowMandi.Web\Customfilter\CustomExceptionFilter.cs
+OnException 2
+OnException 0
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowMandi.Web\Global.asax.cs
+Application_Start 3
+Application_Start 0
+Application_BeginRequest 2
+Application_BeginRequest 0
+Application_BeginRequest 3
+Application_BeginRequest 0
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowMandi.Web\Properties\AssemblyInfo.cs
+
+C:\Users\Shivam dhagat\AppData\Local\Temp\.NETFramework,Version=v4.6.1.AssemblyAttributes.cs
+

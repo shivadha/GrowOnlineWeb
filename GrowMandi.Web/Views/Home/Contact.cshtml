@@ -1,0 +1,118 @@
+﻿@model GrowIndigo.DAL.DataModels.Contact.ContactViewModel
+@using GrowIndigo.Utilities;
+@{
+    ViewBag.Title = "UpdateUserProfile";
+    var Projectname = ConfigReader.ProjectName;
+}
+
+<script src="@Projectname/Scripts/jquery-3.3.1.min.js"></script>
+<script src="@Projectname/Scripts/jquery.validate.min.js"></script>
+<script src="@Projectname/Scripts/jquery.validate.unobtrusive.min.js"></script>
+<!-- Slider Area -->
+<section class="inner-banner-bg contact-banner-bg">&nbsp;</section>
+<!-- Start Cowndown Area -->
+
+<!-- Start Contact -->
+<section id="contact-us" class="contact-us section">
+    <div class="section-title">
+        <h2>Contact Us</h2>
+    </div>
+    <div class="container">
+        <div class="contact-head">
+            <div class="row">
+                <div class="col-lg-8 col-12">
+                    <div class="form-main">
+                        <div class="title">
+                            <h4>Get in Touch</h4>
+                            <h3>Write Us a Message</h3>
+                        </div>
+
+                        @using (Html.BeginForm())
+                        {
+                            <div class="row">
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label" })
+                                        @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.Subject, htmlAttributes: new { @class = "control-label" })
+                                        @Html.EditorFor(model => model.Subject, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.Subject, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label" })
+                                        @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.MobileNumber, htmlAttributes: new { @class = "control-label" })
+                                        @Html.EditorFor(model => model.MobileNumber, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.MobileNumber, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group message">
+                                        @Html.LabelFor(model => model.Message, htmlAttributes: new { @class = "control-label" })
+                                        @Html.TextAreaFor(model => model.Message, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.Message, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group button">
+                                        <button type="submit" class="btn ">Send Message</button>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="single-head">
+                        <div class="single-info">
+                            <i class="fa fa-phone"></i>
+                            <h4 class="title">Call us Now:</h4>
+                            <ul>
+                                <li>
+                                    <b>Office No.</b>- <a href="tel:02482- 262471-75" class="Blondie">
+                                        02482-
+                                        262471-75
+                                    </a> ( Jalna )
+                                </li>
+                                <li>
+                                    <b>Phone No.</b>- <a href="tel:+91 9607911377" class="Blondie">
+    +91
+    9607911377
+</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="single-info">
+                            <i class="fa fa-envelope-open"></i>
+                            <h4 class="title">Email:</h4>
+                            <ul>
+                                <li><a href="mailto:info@growindigo.co.in">info@growindigo.co.in</a></li>
+                                <li><a href="mailto:sales@growindigo.co.in">sales@growindigo.co.in</a></li>
+                            </ul>
+                        </div>
+                        <!-- <div class="single-info">
+                                <i class="fa fa-location-arrow"></i>
+                                <h4 class="title">Our Address:</h4>
+                                <ul>
+                                    <li>KA-62/1, Travel Agency, 45 Grand Central Terminal, New York.</li>
+                                </ul>
+                            </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/ End Contact -->

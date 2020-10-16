@@ -1,0 +1,66 @@
+﻿@model List<GrowIndigo.DAL.DataEntities.Shop_Shipping_address>
+@using GrowIndigo.Utilities.Resources;
+@using GrowIndigo.Utilities;
+@using GrowIndigo.DAL.DataModels.CommonModels;
+@{
+    var Projectname = ConfigReader.ProjectName;
+    LoginViewModel loggedInUser = Session["LoggedInUser"] != null ? (LoginViewModel)Session["LoggedInUser"] : null;
+}
+
+<div class="col-lg-8 col-12">
+    <div class="checkout-form mt-0">
+
+        @if (Model.Count != 0)
+        {
+
+            <h2>
+                Delivery Address
+            </h2>
+            <p>Use any of your address as pickup address where user will pick up his product or create new</p>  
+            <div id="container" class="sroll-wrapper-address">
+                @foreach (var address in Model)
+                {
+                <div class=" address-box">
+                    <input id="address" onclick="SetValueInLocalStorage(@address.tr_id)" name="a_ddress" type="radio" value="@address.tr_id" />
+                    @address.reciver_name<br>
+                    @address.email_id,  @address.retailer_mobile<br>
+
+                    @address.HouseNumber, @address.StreetLine1,  @address.StreetLine2<br>
+
+
+                    @address.StateCode,   @address.DistrictCode,    @address.TalukaCode,  @address.VillageCode
+
+
+
+
+                    @address.pincode<br>
+                </div>
+                }
+            </div>
+                }
+                else
+                {
+                <div class="bd-example">
+                    <div class="alert alert-danger" role="alert">
+                        <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> No Address Found
+                    </div>
+                </div>
+
+                }
+            
+
+        <h2 class="mt-2">Add New Address </h2>
+        <p>Please update address to checkout more quickly</p>
+        <!-- Form -->
+        @Html.Action("AddNewAddressForUser", "Layout", new { MobileNumber = loggedInUser.MobileNumber })
+
+        <!--/ End Form -->
+    </div>
+</div>
+<script>
+    function SetValueInLocalStorage(addressId) {
+       // debugger;
+       // alert(addressId)
+        localStorage.setItem("Address", addressId);
+    }
+    </script>

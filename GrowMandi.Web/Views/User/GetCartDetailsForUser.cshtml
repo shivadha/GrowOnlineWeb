@@ -1,0 +1,66 @@
+﻿
+@using GrowIndigo.Utilities.Resources;
+@using GrowIndigo.Utilities;
+@using GrowIndigo.DAL.DataModels.CommonModels;
+@{
+    var Projectname = ConfigReader.ProjectName;
+    LoginViewModel loggedInUser = Session["LoggedInUser"] != null ? (LoginViewModel)Session["LoggedInUser"] : null;
+}
+
+<div class="col-lg-4 col-12">
+    <div class="order-details mt-lg-0">
+
+        <div class="single-widget">
+            <h2>CART TOTALS</h2>
+            <div class="content">
+                <ul>
+                    <li>Sub Total<span>@ViewBag.TotalPricePartial</span></li>
+                    <li>(+) Shipping<span>Free</span></li>
+                    <li class="last">Total<span>@ViewBag.TotalPricePartial</span></li>
+                </ul>
+            </div>
+        </div>
+        <!--/ End Order Widget -->
+        <!-- Order Widget -->
+        <div class="single-widget">
+            <h2>Payments</h2>
+
+            <div class="single-widget get-button mt-4">
+                <div class="content">
+                    <div class="button mb-3 mb-md-0">
+                        @*<a href="#" class="btn" onclick="Razor()">proceed to checkout</a>**@
+                        <a href="#" class="btn mt-15" onclick="GetPaymentMethod()" data-toggle="modal" data-target="#selectpayment-modal">
+                            Select Payment
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--/ End Button Widget -->
+        </div>
+    </div>
+</div>
+
+<script>
+
+    function GetPaymentMethod() {
+    
+       // debugger;
+        var getAddress = localStorage.getItem("Address");
+        //alert(getAddress);
+
+        if ($("input[type=radio]:checked").length > 0) {
+               // alert("it's checked");
+
+                @*window.location.href = '@Projectname/Order/PaymentMethod?totalPrice=@Price &addressId=' + getAddress + '&Email=@Email &UserName=@UserName'*@
+                window.location.href = '@Projectname/Order/PaymentMethod?addressId=' + getAddress + ''
+            }
+            else {
+                swal("Please select pick address first ")
+            }
+
+
+
+        }
+
+</script>
+

@@ -1,0 +1,16 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/GrowIndigo/bin
+/GrowIndigo.BAL/bin/Debug
+/GrowIndigo.DAL/bin/Debug
+/GrowIndigo.DAL/obj
+/GrowIndigo.Utilities/bin/Debug
+/GrowIndigo.Utilities/obj
+/GrowIndigo.Web/bin
+/GrowIndigo.Web/obj
+/GrowMandi.Web/bin
+/GrowMandi.Web/obj
+/.vs/GrowIndigo/v15/Server/sqlite3
+/.vs/app-setup/v15/.suo

@@ -1,0 +1,104 @@
+﻿@model GrowIndigo.DAL.DataModels.MandiModels.UserInfoViewModel
+@using GrowIndigo.Utilities.Resources;
+@using GrowIndigo.Utilities;
+@{
+
+
+    var Projectname = ConfigReader.ProjectName;
+}
+<script src="@Projectname/Scripts/jquery-3.3.1.min.js"></script>
+<script src="@Projectname/Scripts/jquery.validate.min.js"></script>
+<script src="@Projectname/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+
+<div class="row">
+    <div class="col-md-12 register login-form bg-light pt-3 pb-3">
+        <div style="width:380px; margin:0 auto;" class="content-block-width">
+            @using (Html.BeginForm("UserRegistration", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form", id = "register" }))
+            {
+                @Html.AntiForgeryToken()
+
+
+            <div class="form-group d-flex pt-3">
+                <div class="col-md-12 leftsection-field">
+                    @Html.TextBoxFor(m => m.FirmName, new { @class = "form-control",
+                   @placeholder = Resource.GrowOnline_Common_FirmName
+               })
+                    @Html.ValidationMessageFor(m => m.FirmName, "", new { @class = "text-danger" })
+                </div>
+            </div>
+                <div class="form-group d-flex">
+                    <div class="col-md-12">
+                        @Html.TextBoxFor(m => m.MobileNumber, new { @class = "form-control",
+                       @placeholder = Resource.GrowOnline_Common_MobileNumber
+                   })
+                        @Html.ValidationMessageFor(m => m.MobileNumber, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group d-flex">
+                    <div class="col-md-12">
+
+                        @Html.DropDownListFor(model => model.StateId, ViewBag.state as IEnumerable<SelectListItem>,Resource.GrowOnline_Common_SelectState,
+            htmlAttributes: new { @class = "form-control", @id = "ddlState" , required = "required" })
+
+                        @Html.ValidationMessageFor(m => m.StateId, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <input type="checkbox" id="chkSalesTerms" name=@Resource.GrowOnline_Message_acceptTerm value="Terms-Of-use" onChange="CheckRadioButtonReg();">
+                        <a class="href" href="@Projectname/Layout/Terms" target="_blank">@Resource.GrowOnline_Common_Termofuse</a>
+                    </div>
+                </div>
+                <div class="col-md-12 text-center">
+                    <button type="submit" id="btnreg" disabled="disabled" class="btn btn-light btn-radius btn-brd grd1 btn-block">
+
+                        @Resource.GrowOnline_Common_Register
+                    </button>
+                </div>
+                @*</div>*@
+                }
+            </div>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+<script>
+    //$('#btnreg').click(function () {
+
+    //});
+    //function Registered() {
+    //    swal({
+    //        title: "Good job!",
+    //        text: "You have succesfully registered!",
+    //        icon: "success",
+    //        buttons: ["Yes", "No!"],
+    //    });
+    //};
+
+    function CheckRadioButtonReg() {
+
+
+        if ($('#chkSalesTerms').is(":checked") == true) {
+            $("#btnreg").attr("disabled", false);
+            document.getElementById("btnreg").style.pointerEvents = "auto";
+            document.getElementById("btnreg").style.cursor = "pointer";
+        }
+        else {
+
+            $("#btnreg").attr("disabled", true);
+            document.getElementById("btnreg").style.pointerEvents = "none";
+            document.getElementById("btnreg").style.cursor = "default";
+        }
+
+
+    }
+</script>

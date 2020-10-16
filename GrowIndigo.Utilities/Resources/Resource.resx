@@ -1,0 +1,751 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="GrowOnline_Common_AboutUs" xml:space="preserve">
+    <value>About us</value>
+  </data>
+  <data name="GrowOnline_Common_BiologicalTreatment" xml:space="preserve">
+    <value>Biological Treatment</value>
+  </data>
+  <data name="GrowOnline_Common_ChangeLanguage" xml:space="preserve">
+    <value>Change Language</value>
+  </data>
+  <data name="GrowOnline_Common_Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="GrowOnline_Common_ContactUs" xml:space="preserve">
+    <value>Contact Us</value>
+  </data>
+  <data name="GrowOnline_Common_CreateAccount" xml:space="preserve">
+    <value>Create Account!</value>
+  </data>
+  <data name="GrowOnline_Common_EmailIds" xml:space="preserve">
+    <value>Email Id's</value>
+  </data>
+  <data name="GrowOnline_Common_Feedback" xml:space="preserve">
+    <value>Feedback</value>
+  </data>
+  <data name="GrowOnline_Common_Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="GrowOnline_Common_Login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="GrowOnline_Common_Logout" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="GrowOnline_Common_MobileNumber" xml:space="preserve">
+    <value>Mobile Number</value>
+  </data>
+  <data name="GrowOnline_Common_MyAccount" xml:space="preserve">
+    <value>My Account</value>
+  </data>
+  <data name="GrowOnline_Common_MyOrders" xml:space="preserve">
+    <value>My Orders</value>
+  </data>
+  <data name="GrowOnline_Common_MyProfile" xml:space="preserve">
+    <value>My Profile</value>
+  </data>
+  <data name="GrowOnline_Common_pRICAVYpOLICY" xml:space="preserve">
+    <value>Privacy Policy</value>
+  </data>
+  <data name="GrowOnline_Common_Register" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="GrowOnline_Common_SelectState" xml:space="preserve">
+    <value>Select State</value>
+  </data>
+  <data name="GrowOnline_Common_Termofuse" xml:space="preserve">
+    <value>Term of use</value>
+  </data>
+  <data name="GrowOnline_Common_TermSANDcONDITIONS" xml:space="preserve">
+    <value>Terms and Conditions</value>
+  </data>
+  <data name="GrowOnline_Common_User" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="GrowOnline_Message_acceptTerm" xml:space="preserve">
+    <value>Accept Term of Use</value>
+  </data>
+  <data name="GrowOnline_Message_AcceptTerms" xml:space="preserve">
+    <value>Accept Terms and Privacy Policy</value>
+  </data>
+  <data name="GrowOnline_Message_Enterotp" xml:space="preserve">
+    <value>Enter OTP</value>
+  </data>
+  <data name="GrowOnline_Message_EnterPhoneNumber" xml:space="preserve">
+    <value>Enter Phone number</value>
+  </data>
+  <data name="GrowOnline_Message_FirmNameReq" xml:space="preserve">
+    <value>The Firm Name field is required.</value>
+  </data>
+  <data name="GrowOnline_Message_LgnMobilecheck" xml:space="preserve">
+    <value>This Mobile Number is not registered with us . Please Register with your mobile number and try again.</value>
+  </data>
+  <data name="GrowOnline_Message_LoginFailed" xml:space="preserve">
+    <value>There was an error while registration</value>
+  </data>
+  <data name="GrowOnline_Message_MobileNumberAlreadyExits" xml:space="preserve">
+    <value>The Mobile Number already exists .</value>
+  </data>
+  <data name="GrowOnline_Message_MobileNumberCorrectFormat" xml:space="preserve">
+    <value>The Mobile Number field should be of 9 numeric digits.</value>
+  </data>
+  <data name="GrowOnline_Message_MobileNumberReq" xml:space="preserve">
+    <value>The Mobile Number field is required.</value>
+  </data>
+  <data name="GrowOnline_Message_OTPCorrectFormat" xml:space="preserve">
+    <value>The OTP field should be of 4 numeric digits.</value>
+  </data>
+  <data name="GrowOnline_Message_OTPNotfound" xml:space="preserve">
+    <value>The OTP is incorrect</value>
+  </data>
+  <data name="GrowOnline_Message_OtpRequired" xml:space="preserve">
+    <value>The OTP  field is required.</value>
+  </data>
+  <data name="GrowOnline_Message_otpSend" xml:space="preserve">
+    <value>We will send you OTP.</value>
+  </data>
+  <data name="GrowOnline_Message_RegistrationSuccess" xml:space="preserve">
+    <value>Congratulation, your account has been successfullty created. Please Login to sign in</value>
+  </data>
+  <data name="GrowOnline_Common_Address" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="GrowOnline_Common_cstn_Number" xml:space="preserve">
+    <value>CSTN  Number</value>
+  </data>
+  <data name="GrowOnline_Common_District" xml:space="preserve">
+    <value>District</value>
+  </data>
+  <data name="GrowOnline_Common_DOB" xml:space="preserve">
+    <value>Date of Birth</value>
+  </data>
+  <data name="GrowOnline_Common_Email" xml:space="preserve">
+    <value>Email Address</value>
+  </data>
+  <data name="GrowOnline_Common_FirmName" xml:space="preserve">
+    <value>Firm Name</value>
+  </data>
+  <data name="GrowOnline_Common_gst_number" xml:space="preserve">
+    <value>GST Number</value>
+  </data>
+  <data name="GrowOnline_Common_houseNo" xml:space="preserve">
+    <value>House No.</value>
+  </data>
+  <data name="GrowOnline_Common_imeiNumber" xml:space="preserve">
+    <value>IMEI Number</value>
+  </data>
+  <data name="GrowOnline_Common_license_no" xml:space="preserve">
+    <value>License number</value>
+  </data>
+  <data name="GrowOnline_Common_PanNumber" xml:space="preserve">
+    <value>Pan Number</value>
+  </data>
+  <data name="GrowOnline_Common_Pincode" xml:space="preserve">
+    <value>Pincode</value>
+  </data>
+  <data name="GrowOnline_Common_RetailerFirstName" xml:space="preserve">
+    <value>Retailer FirstName</value>
+  </data>
+  <data name="GrowOnline_Common_RetailerLastName" xml:space="preserve">
+    <value>Retailer LastName</value>
+  </data>
+  <data name="GrowOnline_Common_SeedLicenceValidity" xml:space="preserve">
+    <value>Seed License Validity</value>
+  </data>
+  <data name="GrowOnline_Common_State" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="GrowOnline_Common_Streetline1" xml:space="preserve">
+    <value>Street Line 1</value>
+  </data>
+  <data name="GrowOnline_Common_Streetline12" xml:space="preserve">
+    <value>Street Line 2</value>
+  </data>
+  <data name="GrowOnline_Common_Taluka" xml:space="preserve">
+    <value>Taluka</value>
+  </data>
+  <data name="GrowOnline_Common_Town" xml:space="preserve">
+    <value>Town</value>
+  </data>
+  <data name="GrowOnline_Common_UserCompany" xml:space="preserve">
+    <value>User Company</value>
+  </data>
+  <data name="GrowOnline_Common_vatNumber" xml:space="preserve">
+    <value>Vat Number</value>
+  </data>
+  <data name="GrowOnline_Message_Address" xml:space="preserve">
+    <value>The Address field is required.</value>
+  </data>
+  <data name="GrowOnline_Message_cstn_Number" xml:space="preserve">
+    <value>The CSTN  Number field is required.</value>
+  </data>
+  <data name="GrowOnline_Message_District" xml:space="preserve">
+    <value>The District field is required.</value>
+  </data>
+  <data name="GrowOnline_Message_DOB" xml:space="preserve">
+    <value>The Date of Birth field is required.</value>
+  </data>
+  <data name="GrowOnline_Message_Email" xml:space="preserve">
+    <value>The Email Address filed is required.</value>
+  </data>
+  <data name="GrowOnline_Message_EmailCorrectFormat" xml:space="preserve">
+    <value>Email address is not in correct format.</value>
+  </data>
+  <data name="GrowOnline_Message_gst_number" xml:space="preserve">
+    <value>The GST Number filed is required.</value>
+  </data>
+  <data name="GrowOnline_Message_houseNo" xml:space="preserve">
+    <value>The House Number field is required.</value>
+  </data>
+  <data name="GrowOnline_Message_imeiNumber" xml:space="preserve">
+    <value>The IMEI Number filed is required.</value>
+  </data>
+  <data name="GrowOnline_Message_license_no" xml:space="preserve">
+    <value>The License number field is required.</value>
+  </data>
+  <data name="GrowOnline_Message_PanNumber" xml:space="preserve">
+    <value>The Pan Number field is required.</value>
+  </data>
+  <data name="GrowOnline_Message_Pincode" xml:space="preserve">
+    <value>The Pincode field is required.</value>
+  </data>
+  <data name="GrowOnline_Message_RetailerFirstName" xml:space="preserve">
+    <value>The Retailer FirstName filed is required.</value>
+  </data>
+  <data name="GrowOnline_Message_RetailerFirstNameMaxLength" xml:space="preserve">
+    <value>Retailer First Name cannot be longer than 150 characters.</value>
+  </data>
+  <data name="GrowOnline_Message_RetailerLastName" xml:space="preserve">
+    <value>The Retailer LastName filed is required.</value>
+  </data>
+  <data name="GrowOnline_Message_RetailerLastNameMaxLength" xml:space="preserve">
+    <value>Retailer Last Name cannot be longer than 150 characters.</value>
+  </data>
+  <data name="GrowOnline_Message_SeedLicenceValidity" xml:space="preserve">
+    <value>The Seed License Validity filed is required</value>
+  </data>
+  <data name="GrowOnline_Message_State" xml:space="preserve">
+    <value>The State field is required.</value>
+  </data>
+  <data name="GrowOnline_Message_Streetline1" xml:space="preserve">
+    <value>The Street Line 1 filed is required.</value>
+  </data>
+  <data name="GrowOnline_Message_Streetline2" xml:space="preserve">
+    <value>The Street Line 2 filed is required.</value>
+  </data>
+  <data name="GrowOnline_Message_Taluka" xml:space="preserve">
+    <value>The Taluka field is required.</value>
+  </data>
+  <data name="GrowOnline_Message_Town" xml:space="preserve">
+    <value>The Town field is required.</value>
+  </data>
+  <data name="GrowOnline_Message_UserCompany" xml:space="preserve">
+    <value>The User Company field is required.</value>
+  </data>
+  <data name="GrowOnline_Message_vatNumber" xml:space="preserve">
+    <value>The Vat Number field is required.</value>
+  </data>
+  <data name="GrowOnline_Common_BuyNow" xml:space="preserve">
+    <value>Buy Now</value>
+  </data>
+  <data name="GrowOnline_Common_City" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="GrowOnline_Common_Crop" xml:space="preserve">
+    <value>Crop</value>
+  </data>
+  <data name="GrowOnline_Common_CropCategory" xml:space="preserve">
+    <value>Crop Category</value>
+  </data>
+  <data name="GrowOnline_Common_CropType" xml:space="preserve">
+    <value>Crop Type</value>
+  </data>
+  <data name="GrowOnline_Common_CurrentQuantity" xml:space="preserve">
+    <value>Current Quantity</value>
+  </data>
+  <data name="GrowOnline_Common_Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="GrowOnline_Common_GstPercentage" xml:space="preserve">
+    <value>GST Percent</value>
+  </data>
+  <data name="GrowOnline_Common_ItemCode" xml:space="preserve">
+    <value>Item Code</value>
+  </data>
+  <data name="GrowOnline_Common_MaxQuantity" xml:space="preserve">
+    <value>Maximum Quantity to Book</value>
+  </data>
+  <data name="GrowOnline_Common_MinQuantity" xml:space="preserve">
+    <value>Minimum Quantity to Book</value>
+  </data>
+  <data name="GrowOnline_Common_PackingSize" xml:space="preserve">
+    <value>Packing Size</value>
+  </data>
+  <data name="GrowOnline_Common_Price" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="GrowOnline_Common_PrimaryDetails" xml:space="preserve">
+    <value>Primary Details</value>
+  </data>
+  <data name="GrowOnline_Common_productComName" xml:space="preserve">
+    <value>Product Company Name</value>
+  </data>
+  <data name="GrowOnline_Common_ProductDetail" xml:space="preserve">
+    <value>Product Detail</value>
+  </data>
+  <data name="GrowOnline_Common_ProductId" xml:space="preserve">
+    <value>Product Id</value>
+  </data>
+  <data name="GrowOnline_Common_ProductName" xml:space="preserve">
+    <value>Product Name</value>
+  </data>
+  <data name="GrowOnline_Common_ReceiverName" xml:space="preserve">
+    <value>Receiver Name</value>
+  </data>
+  <data name="GrowOnline_Common_ShippingAddress" xml:space="preserve">
+    <value>Shipping Address</value>
+  </data>
+  <data name="GrowOnline_Common_Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="GrowOnline_Common_SubInfo" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="GrowOnline_Message_CityReq" xml:space="preserve">
+    <value>The City filed is required.</value>
+  </data>
+  <data name="GrowOnline_Message_ReceiverNameREq" xml:space="preserve">
+    <value>The Receiver Name field is required.</value>
+  </data>
+  <data name="GrowOnline_Message_ShippingAddressREq" xml:space="preserve">
+    <value>The Shipping Address field is required.</value>
+  </data>
+  <data name="GrowOnline_Common_AboutGrowINd" xml:space="preserve">
+    <value>About Grow Indigo</value>
+  </data>
+  <data name="GrowOnline_Common_AboutGrowINdTitle1" xml:space="preserve">
+    <value>Agricultural sustainability is a looming question as climate change is creating more uncertainty
+                    around the weather. The soil resource is central to agriculture and therefore sustainable agriculture is
+                    inherently dependent on soil health. Providing solutions that will help to sustain in the future is a driver for GrowIndigo offering biological and digital solutions to empower farmers to have relevant information and also improve soil health.</value>
+  </data>
+  <data name="GrowOnline_Common_AboutGrowINdTitle2" xml:space="preserve">
+    <value>Grow Indigo is a joint initiative of Mahyco Grow and Indigo Ag established in 2017. Combining the
+                    technological innovation of the two market leaders we will help maximize farmers' benefits. Our primary
+                    objective is to tackle the challenges farmers face every day and assist them to improve their yields,
+                    generate more revenue and implement sustainable farming practices.</value>
+  </data>
+  <data name="GrowOnline_Common_AboutGrowINdTitle3" xml:space="preserve">
+    <value>is the earliest agri-innovation corporate in India, founded on a vision to bring modern science to resolve
+                    farming
+                    challenges, with a view to improve farmers welfare and the nutritional security of the country. Mahyco Grow™
+                    has
+                    pioneered several agri innovations including many crop hybrids for the first time in India. Its Seed
+                    Innovation
+                    vertical has expanded to Africa and South East Asia in the recent years.</value>
+  </data>
+  <data name="GrowOnline_Common_AboutGrowINdTitle4" xml:space="preserve">
+    <value>improves grower profitability, environmental sustainability, and consumer health through
+                    the
+                    use of natural microbiology and digital technologies. The company's scientific discoveries and digital
+                    innovations
+                    create new value from soil to sale, benefiting tens of thousands of growers across millions of acres.
+                    Working
+                    across the supply chain, Indigo is furthering its mission of harnessing nature to help farmers sustainably
+                    feed
+                    the planet. In 2019, Indigo established The Terraton Initiative, a global effort to drawdown one trillion
+                    tons of
+                    atmospheric carbon dioxide through agricultural soils. Ranked #1 on CNBC's Disruptor 50 list, Indigo is
+                    headquartered in Boston, MA, with additional offices in Memphis, TN; Research Triangle Park, NC; Sydney,
+                    Australia; Buenos Aires, Argentina; São Paulo, Brazil; and Switzerland.</value>
+  </data>
+  <data name="GrowOnline_Common_Backtohome" xml:space="preserve">
+    <value>Back to Home</value>
+  </data>
+  <data name="GrowOnline_Common_BestPrice" xml:space="preserve">
+    <value>Best Price</value>
+  </data>
+  <data name="GrowOnline_Common_CartDetail" xml:space="preserve">
+    <value>Cart Details</value>
+  </data>
+  <data name="GrowOnline_Common_CheckOut" xml:space="preserve">
+    <value>Checkout</value>
+  </data>
+  <data name="GrowOnline_Common_CheckoutDetails" xml:space="preserve">
+    <value>Checkout Detail</value>
+  </data>
+  <data name="GrowOnline_Common_CompanyProduct" xml:space="preserve">
+    <value>Company Product</value>
+  </data>
+  <data name="GrowOnline_Common_continueShop" xml:space="preserve">
+    <value>Continue shopping</value>
+  </data>
+  <data name="GrowOnline_Common_ErrorProductRemoved" xml:space="preserve">
+    <value>Error while removing product from cart.</value>
+  </data>
+  <data name="GrowOnline_Common_FastDeli" xml:space="preserve">
+    <value>Fast Delivery</value>
+  </data>
+  <data name="GrowOnline_Common_FastDeliWith30" xml:space="preserve">
+    <value>Within minimum defined days</value>
+  </data>
+  <data name="GrowOnline_Common_Free" xml:space="preserve">
+    <value>Free</value>
+  </data>
+  <data name="GrowOnline_Common_GuranteeBestPrice" xml:space="preserve">
+    <value>Guaranteed price</value>
+  </data>
+  <data name="GrowOnline_Common_Name" xml:space="preserve">
+    <value>NAME</value>
+  </data>
+  <data name="GrowOnline_Common_noCartProduct" xml:space="preserve">
+    <value>There is no product in cart</value>
+  </data>
+  <data name="GrowOnline_Common_Orderhistory" xml:space="preserve">
+    <value>Order History</value>
+  </data>
+  <data name="GrowOnline_Common_OrderOnline" xml:space="preserve">
+    <value>Order Online</value>
+  </data>
+  <data name="GrowOnline_Common_OrderOVer" xml:space="preserve">
+    <value>Orders over 1000k</value>
+  </data>
+  <data name="GrowOnline_Common_PayComp" xml:space="preserve">
+    <value>Payment Complete</value>
+  </data>
+  <data name="GrowOnline_Common_PayDetail" xml:space="preserve">
+    <value>Payment Detail</value>
+  </data>
+  <data name="GrowOnline_Common_PayDetail1" xml:space="preserve">
+    <value>Please select a payment option to purchase the products</value>
+  </data>
+  <data name="GrowOnline_Common_Product" xml:space="preserve">
+    <value>PRODUCT</value>
+  </data>
+  <data name="GrowOnline_Common_ProductCat" xml:space="preserve">
+    <value>Product list</value>
+  </data>
+  <data name="GrowOnline_Common_ProductRemoved" xml:space="preserve">
+    <value>Product is removed from cart successfully.</value>
+  </data>
+  <data name="GrowOnline_Common_Quantity" xml:space="preserve">
+    <value>QUANTITY</value>
+  </data>
+  <data name="GrowOnline_Common_ReadMore" xml:space="preserve">
+    <value>Read More</value>
+  </data>
+  <data name="GrowOnline_Common_SecurePay" xml:space="preserve">
+    <value>Secure Payment</value>
+  </data>
+  <data name="GrowOnline_Common_SecurePayMessage" xml:space="preserve">
+    <value>100% secure payment</value>
+  </data>
+  <data name="GrowOnline_Common_SubTotal" xml:space="preserve">
+    <value>Subtotal</value>
+  </data>
+  <data name="GrowOnline_Common_ViewCart" xml:space="preserve">
+    <value>View Cart</value>
+  </data>
+  <data name="GrowOnline_MessageError_ProductRemove" xml:space="preserve">
+    <value>Error while removing product from cart.</value>
+  </data>
+  <data name="GrowOnline_Message_AboutUsHeading" xml:space="preserve">
+    <value>Welcome to Grow Indigo</value>
+  </data>
+  <data name="GrowOnline_Message_AboutUsHeadingTextbox" xml:space="preserve">
+    <value>Agricultural sustainability is a looming question as climate change is creating more
+                            uncertainty around the weather. The soil resource is central to agriculture and therefore sustainable
+                            agriculture is inherently dependent on soil health.</value>
+  </data>
+  <data name="GrowOnline_Message_AboutUsHeadingTextbox2" xml:space="preserve">
+    <value>Agricultural sustainability is a looming question as climate change is creating more uncertainty
+                            around the weather. The soil resource is central to agriculture and therefore sustainable agriculture
+                            is inherently dependent on soil health.</value>
+  </data>
+  <data name="GrowOnline_Message_CartDetail" xml:space="preserve">
+    <value>CART TOTALS</value>
+  </data>
+  <data name="GrowOnline_Message_NoProduct" xml:space="preserve">
+    <value>No Product Added for Now</value>
+  </data>
+  <data name="GrowOnline_Message_PayComp" xml:space="preserve">
+    <value>Thank you for your transfer</value>
+  </data>
+  <data name="GrowOnline_Message_ProductRemove" xml:space="preserve">
+    <value>Product is removed from cart successfully.</value>
+  </data>
+  <data name="GrowOnline_Common_Cat" xml:space="preserve">
+    <value>CATEGORIES</value>
+  </data>
+  <data name="GrowOnline_Common_ChnageState" xml:space="preserve">
+    <value>Change State</value>
+  </data>
+  <data name="GrowOnline_Common_Companyname" xml:space="preserve">
+    <value>Company Name</value>
+  </data>
+  <data name="GrowOnline_Common_Daqte" xml:space="preserve">
+    <value>Created Date</value>
+  </data>
+  <data name="GrowOnline_Common_gst" xml:space="preserve">
+    <value>GST  Percentage</value>
+  </data>
+  <data name="GrowOnline_Common_maxQuan" xml:space="preserve">
+    <value>Maximum Quantity to Book</value>
+  </data>
+  <data name="GrowOnline_Common_minQuan" xml:space="preserve">
+    <value>Minimum Quantity to Book</value>
+  </data>
+  <data name="GrowOnline_Common_PleaseSelect" xml:space="preserve">
+    <value>Please select</value>
+  </data>
+  <data name="GrowOnline_Common_Product_CatDetails" xml:space="preserve">
+    <value>Product Listing</value>
+  </data>
+  <data name="GrowOnline_Common_QuickShop" xml:space="preserve">
+    <value>Quick Shop</value>
+  </data>
+  <data name="GrowOnline_Common_SearchProduct" xml:space="preserve">
+    <value>Search Products Here.....</value>
+  </data>
+  <data name="GrowOnline_Common_sEEDSsUBcAT" xml:space="preserve">
+    <value>Shop per Crop</value>
+  </data>
+  <data name="GrowOnline_Common_SellerList" xml:space="preserve">
+    <value>Sellers List</value>
+  </data>
+  <data name="GrowOnline_Common_SortBy" xml:space="preserve">
+    <value>Sort By:</value>
+  </data>
+  <data name="GrowOnline_Message_ContactUs" xml:space="preserve">
+    <value>Got Question? Call Us</value>
+  </data>
+  <data name="GrowOnline_Message_CurrentQuality" xml:space="preserve">
+    <value>The Current Quantity field is required.</value>
+  </data>
+  <data name="GrowOnline_Message_Description" xml:space="preserve">
+    <value>The Description field is required.</value>
+  </data>
+  <data name="GrowOnline_Message_ErrorProductAdded" xml:space="preserve">
+    <value>Error while adding Product in cart</value>
+  </data>
+  <data name="GrowOnline_Message_Footer1" xml:space="preserve">
+    <value>is a joint initiative of Mahyco Grow and Indigo Ag established in
+                                2017.
+                                Combining the technological innovation of the two market leaders we will help maximize farmers'
+                                benefits. Our primary objective is to tackle the challenges farmers face every day and assist them to
+                                improve their yields.</value>
+  </data>
+  <data name="GrowOnline_Message_ItemCodeReq" xml:space="preserve">
+    <value>The Item Code field is required.</value>
+  </data>
+  <data name="GrowOnline_Message_NoProductAvai" xml:space="preserve">
+    <value>No Products Available for now</value>
+  </data>
+  <data name="GrowOnline_Message_NoSubCatProductAvai" xml:space="preserve">
+    <value>No Sub-Products Available for now</value>
+  </data>
+  <data name="GrowOnline_Message_Price" xml:space="preserve">
+    <value>The Price field is required.</value>
+  </data>
+  <data name="GrowOnline_Message_ProductAdded" xml:space="preserve">
+    <value>This product is already added in cart.</value>
+  </data>
+  <data name="GrowOnline_Message_ProductIDReq" xml:space="preserve">
+    <value>Product Id</value>
+  </data>
+  <data name="GrowOnline_Message_ProductName" xml:space="preserve">
+    <value>The Product Name filed is required.</value>
+  </data>
+  <data name="GrowOnline_Message_UserProfileUpdate" xml:space="preserve">
+    <value>User Profile Updated successfully.</value>
+  </data>
+  <data name="GrowOnline_Message_ErrorUserProfileUpdate" xml:space="preserve">
+    <value>Error while updating the entries</value>
+  </data>
+  <data name="GrowOnline_Message_AddAddress" xml:space="preserve">
+    <value>Addrees has been saved successfully.</value>
+  </data>
+  <data name="GrowOnline_Message_CiontactUs" xml:space="preserve">
+    <value>Thank you for submitting your query. Our Team member will contact you as soon as possible</value>
+  </data>
+  <data name="GrowOnline_Message_ErrorAddAddress" xml:space="preserve">
+    <value>Error while saving addrees.</value>
+  </data>
+  <data name="GrowOnline_Message_ProducAdded" xml:space="preserve">
+    <value>Product added in cart successfull.</value>
+  </data>
+  <data name="GrowOnline_Message_UpdateCartProfile" xml:space="preserve">
+    <value>Please Update your Profile to continue to cart</value>
+  </data>
+  <data name="GrowOnline_Common_CrpPriority" xml:space="preserve">
+    <value>Crop Priority</value>
+  </data>
+  <data name="GrowOnline_Common_PackSize" xml:space="preserve">
+    <value>Packing Size</value>
+  </data>
+  <data name="GrowOnline_Common_SaveandCont" xml:space="preserve">
+    <value>Save and continue</value>
+  </data>
+  <data name="GrowOnline_Common_Shipping" xml:space="preserve">
+    <value>Shipping</value>
+  </data>
+  <data name="GrowOnline_Common_Tax" xml:space="preserve">
+    <value>Tax</value>
+  </data>
+  <data name="GrowOnline_Common_Total" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="GrowOnline_Message_500InternalServer" xml:space="preserve">
+    <value>500 Internal Server Error</value>
+  </data>
+  <data name="GrowOnline_Message_ErrorSaveandCont" xml:space="preserve">
+    <value>Failed to retreive state .Please try again!</value>
+  </data>
+  <data name="GrowOnline_Message_Oops" xml:space="preserve">
+    <value>Opps. There was an error, please try again later.</value>
+  </data>
+  <data name="GrowOnline_Message_Oops1" xml:space="preserve">
+    <value>The server encountered an internal server error and was unable to complete your request.</value>
+  </data>
+  <data name="GrowOnline_Message_SaveandCont" xml:space="preserve">
+    <value>Products will be displayed according to your respective selected state!</value>
+  </data>
+  <data name="GrowOnline_Message_TermsC" xml:space="preserve">
+    <value>Terms and Conditions</value>
+  </data>
+  <data name="GrowOnline_Message_TermsCLogin" xml:space="preserve">
+    <value>Agree to our terms of use</value>
+  </data>
+  <data name="GrowOnline_Common_ProCat" xml:space="preserve">
+    <value>Product Categories List</value>
+  </data>
+  <data name="GrowOnline_Message_HouseNoReq" xml:space="preserve">
+    <value>House No.</value>
+  </data>
+  <data name="GrowOnline_Message_HouseNoRequired" xml:space="preserve">
+    <value>TheHouse No. is required</value>
+  </data>
+  <data name="GrowOnline_Message_StreetLine1Display" xml:space="preserve">
+    <value>Street Line 1</value>
+  </data>
+  <data name="GrowOnline_Message_Streetline2Display" xml:space="preserve">
+    <value>Street Line 2</value>
+  </data>
+</root>

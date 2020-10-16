@@ -1,0 +1,346 @@
+﻿@model GrowIndigo.DAL.DataModels.MandiModels.ShippingAddressViewModel
+@using GrowIndigo.Utilities.Resources;
+@using GrowIndigo.Utilities;
+@using GrowIndigo.DAL.DataModels.CommonModels;
+@{
+    var Projectname = ConfigReader.ProjectName;
+    LoginViewModel loggedInUser = Session["LoggedInUser"] != null ? (LoginViewModel)Session["LoggedInUser"] : null;
+}
+<script src="@Projectname/Scripts/jquery-3.3.1.min.js"></script>
+<script src="@Projectname/Scripts/jquery.validate.min.js"></script>
+<script src="@Projectname/Scripts/jquery.validate.unobtrusive.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.7/jquery.validate.min.js"></script>
+
+
+@using (Html.BeginForm("AddAddreessForUser", "User", FormMethod.Post, new { id = "address_Post", @class = "form-horizontal", role = "form" }))
+{
+
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-12">
+            <div class="form-group">
+                @Html.LabelFor(model => model.reciver_name, htmlAttributes: new { @class = "control-label" })
+                @Html.EditorFor(model => model.reciver_name, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.reciver_name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-12">
+            <div class="form-group">
+                @Html.LabelFor(model => model.email_id, htmlAttributes: new { @class = "control-label" })
+                @Html.EditorFor(model => model.email_id, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.email_id, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-12">
+            <div class="form-group">
+                @Html.LabelFor(model => model.HouseNumber, htmlAttributes: new { @class = "control-label" })
+                @Html.EditorFor(model => model.HouseNumber, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.HouseNumber, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-12">
+            <div class="form-group">
+                @Html.LabelFor(model => model.StreetLine1, htmlAttributes: new { @class = "control-label" })
+                @Html.EditorFor(model => model.StreetLine1, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.StreetLine1, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-12">
+            <div class="form-group">
+                @Html.LabelFor(model => model.StreetLine2, htmlAttributes: new { @class = "control-label" })
+                @Html.EditorFor(model => model.StreetLine2, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.StreetLine2, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-12">
+            <div class="form-group">
+                @Html.LabelFor(model => model.pincode, htmlAttributes: new { @class = "control-label" })
+                @Html.EditorFor(model => model.pincode, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.pincode, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-12">
+            <div class="form-group">
+                @Html.LabelFor(model => model.StateId, htmlAttributes: new { @class = "control-label" })
+                @Html.DropDownListFor(model => model.StateId, ViewBag.state as IEnumerable<SelectListItem>, Resource.GrowOnline_Common_PleaseSelect,
+       htmlAttributes: new { @class = "form-control", @id = "ddlStateData" })
+                @Html.ValidationMessageFor(model => model.StateId, "", new { @class = "text-danger" })
+
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-12">
+            <div class="form-group">
+                @Html.LabelFor(model => model.DistrictId, htmlAttributes: new { @class = "control-label" })
+                @Html.DropDownListFor(model => model.DistrictId, ViewBag.district as IEnumerable<SelectListItem>, Resource.GrowOnline_Common_PleaseSelect,
+        htmlAttributes: new { @class = "form-control", @id = "ddlDistrictData" })
+                @*@Html.DropDownListFor(model => model.DistrictId, new SelectList(Model.DistrictId, "ddlDistrictData", "ddlDistrictData", 1), Resource.GrowOnline_Common_PleaseSelect)*@
+                @Html.ValidationMessageFor(model => model.DistrictId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-12">
+            <div class="form-group">
+                @Html.LabelFor(model => model.TalukaId, htmlAttributes: new { @class = "control-label" })
+                @Html.DropDownListFor(model => model.TalukaId, ViewBag.taluka as IEnumerable<SelectListItem>, Resource.GrowOnline_Common_PleaseSelect,
+       htmlAttributes: new { @class = "form-control", @id = "ddlTalukaData" })
+                @Html.ValidationMessageFor(model => model.TalukaId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-12">
+            <div class="form-group">
+                @Html.LabelFor(model => model.VillageId, htmlAttributes: new { @class = "control-label" })
+                @Html.DropDownListFor(model => model.VillageId, ViewBag.village as IEnumerable<SelectListItem>, Resource.GrowOnline_Common_PleaseSelect,
+       htmlAttributes: new { @class = "form-control", @id = "ddlVillageData" })
+                @Html.ValidationMessageFor(model => model.VillageId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 col-md-12 col-12">
+            <div class="button text-right">
+                <button type="button" onclick="SaveAddress()" id="btnAddress" class="btn w-100">
+                    Add New Address
+                </button>
+            </div>
+        </div>
+    </div>
+
+}
+<script>
+
+    $(document).ready(function () {
+        $("#ddlDistrictData").prop("disabled", true);
+        $("#ddlTalukaData").prop("disabled", true);
+        $("#ddlVillageData").prop("disabled", true);
+
+        jQuery("#ddlStateData").change(function () {
+
+            $("#ddlDistrictData").prop("disabled", true);
+            $("#ddlTalukaData").prop("disabled", true);
+            $("#ddlVillageData").prop("disabled", true);
+
+
+
+            $("#ddlDistrictData").empty();
+            $("#ddlTalukaData").empty();
+            $("#ddlVillageData").empty();
+
+
+
+            var dist_code = $("#ddlStateData").val();
+            //jQuery("#ddlStateData").empty();
+            if (dist_code != "") {
+                $("#preloader").show();
+                $.ajax({
+                    type: 'POST',
+                    url: '@Url.Action("BindStatebyDistrictId","Layout")',
+                    dataType: 'json',
+
+                    data: { 'dist_code': dist_code },
+                    success: function (states) {
+                        $("#preloader").hide();
+                        $("#ddlDistrictData").val("");
+                        $("#ddlTalukaData").val("");
+                        $("#ddlVillage").val("");
+                        $("#ddlDistrictData").append('<option value="">@Resource.GrowOnline_Common_PleaseSelect</option>');
+                        $("#ddlTalukaData").append('<option value="">@Resource.GrowOnline_Common_PleaseSelect</option>');
+                            $("#ddlVillageData").append('<option value="">@Resource.GrowOnline_Common_PleaseSelect</option>');
+                        $.each(states, function (i, state) {
+
+                            $("#ddlDistrictData").prop("disabled", false);
+
+                            if (state.Value != "") {
+
+
+                                    $("#ddlDistrictData").append
+                                        ('<option value="' + state.Value + '">' + state.Text + '</option>')
+                                }
+                                else {
+                                $("#ddlDistrictData").append('<option value="">@Resource.GrowOnline_Common_PleaseSelect</option>');
+                                }
+                            })
+                        }, error: function (ex) { alert('No State to display ' + ex) }
+                }); return !1
+            }
+            else {
+                $("#ddlDistrictData").attr("disabled", "disabled");
+                $("#ddlDistrictData").append('<option value="">@Resource.GrowOnline_Common_PleaseSelect</option>');
+                $("#ddlDistrictData").change();
+            }
+        })
+
+        //for district
+        jQuery("#ddlDistrictData").change(function () {
+
+
+
+
+            var tal_code = $("#ddlDistrictData").val();
+            //jQuery("#ddlStateData").empty();
+            if (tal_code != "") {
+                $("#preloader").show();
+                $.ajax({
+                    type: 'POST',
+                    url: '@Url.Action("FindTalukaForDistrictCode","Layout")',
+                    dataType: 'json',
+
+                    data: { 'tal_code': tal_code },
+                    success: function (Talukas) {
+                        $("#preloader").hide();
+
+                        $("#ddlTalukaData").empty();
+
+                        $("#ddlVillage").val("");
+
+                        $("#ddlTalukaData").append('<option value="">@Resource.GrowOnline_Common_PleaseSelect</option>');
+                         $("#ddlVillageData").append('<option value="">@Resource.GrowOnline_Common_PleaseSelect</option>');
+                        $.each(Talukas, function (i, Taluka) {
+                          console.log("Taluka", Talukas)
+                            $("#ddlTalukaData").prop("disabled", false);
+
+                            if (Taluka.Value != "") {
+
+                                $("#ddlTalukaData").val("");
+                                $("#ddlTalukaData").append
+                                    ('<option value="' + Taluka.Value + '">' + Taluka.Text + '</option>')
+                                }
+                                else {
+                                $("#ddlTalukaData").append('<option value="">@Resource.GrowOnline_Common_PleaseSelect</option>');
+                                }
+                            })
+                        }, error: function (ex) { alert('No State to display ' + ex) }
+                }); return !1
+            }
+            else {
+                $("#ddlTalukaData").attr("disabled", "disabled");
+                $("#ddlTalukaData").append('<option value="">@Resource.GrowOnline_Common_PleaseSelect</option>');
+                $("#ddlTalukaData").change();
+            }
+        })
+
+        //for village
+        jQuery("#ddlTalukaData").change(function () {
+            $("#preloader").show();
+
+            var vil_code = $("#ddlTalukaData").val();
+            //jQuery("#ddlStateData").empty();
+            if (vil_code != "") {
+                $.ajax({
+                    type: 'POST',
+                    url: '@Url.Action("FindVillageForTalukaCode","Layout")',
+                    dataType: 'json',
+
+                    data: { 'vil_code': vil_code },
+                    success: function (villages) {
+                        $("#preloader").hide();
+                        $("#ddlVillageData").empty();
+                            $("#ddlVillageData").append('<option value="">@Resource.GrowOnline_Common_PleaseSelect</option>');
+                        $.each(villages, function (i, village) {
+                          //  console.log("Taluka", Talukas)
+                            $("#ddlVillageData").prop("disabled", false);
+
+                            if (village.Value != "") {
+
+                                $("#ddlVillageData").val("");
+                                $("#ddlVillageData").append
+                                    ('<option value="' + village.Value + '">' + village.Text + '</option>')
+                                }
+                                else {
+                                $("#ddlVillageData").append('<option value="">@Resource.GrowOnline_Common_PleaseSelect</option>');
+                                }
+                            })
+                        }, error: function (ex) { alert('No State to display ' + ex) }
+                }); return !1
+            }
+            else {
+                $("#ddlVillageData").attr("disabled", "disabled");
+                $("#ddlVillageData").append('<option value="">@Resource.GrowOnline_Common_PleaseSelect</option>');
+                $("#ddlVillageData").change();
+            }
+        })
+
+
+
+
+    });
+</script>
+
+<script>
+    function SaveAddress() {
+
+
+
+
+        var reciver_name = $('#reciver_name').val();
+        var pincode = $('#pincode').val();
+        var HouseNumber = $('#HouseNumber').val();
+        var StreetLine1 = $('#StreetLine1').val();
+        var StreetLine2 = $('#StreetLine2').val();
+        var StateId = $("#ddlStateData option:selected").text();
+        var DistrictId = $("#ddlDistrictData option:selected").text();
+        var TalukaId = $("#ddlTalukaData option:selected").text();
+        var VillageId = $("#ddlVillageData option:selected").text();
+        var email_id = $('#email_id').val();
+
+        if (reciver_name == '' || pincode == '' || HouseNumber == '' || StreetLine1 == '' || StreetLine2 == '' || StateId == '' || DistrictId == '' || TalukaId == '' || VillageId == '' || email_id == '') {
+            swal("Please try again you have missed some entries")
+        }
+        else {
+
+        var dataAddressModel = {
+
+            "reciver_name": $('#reciver_name').val(),
+            "ship_address": $('#ship_address').val(),
+            "city": $('#city').val(),
+            "pincode": $('#pincode').val(),
+
+            "HouseNumber": $('#HouseNumber').val(),
+            "StreetLine1": $('#StreetLine1').val(),
+            "StreetLine2": $('#StreetLine2').val(),
+            "StateId": $("#ddlStateData option:selected").text(),
+            "DistrictId": $("#ddlDistrictData option:selected").text(),
+            "TalukaId": $("#ddlTalukaData option:selected").text(),
+            "VillageId": $("#ddlVillageData option:selected").text(),
+
+
+
+
+            "email_id": $('#email_id').val(),
+            "ship_mobile": $('#ship_mobile').val(),
+            "landline_number": $('#landline_number').val(),
+
+        };
+
+
+            $.ajax({
+                type: "Post",
+                url: '@Projectname/User/AddAddreessForUser',
+                data: dataAddressModel,
+                dataType: "json",
+                success: function (result) {
+                    debugger;
+                    console.log("Re", result)
+                    if (result == true) {
+                        $("#preloader").hide();
+                        swal("Addrees has been saved successfully.");
+                        location.reload(true);
+
+                    }
+
+                    else {
+                        $("#preloader").hide();
+
+                        swal("Error while adding address");
+
+
+                       location.reload(true);
+                    }
+                }
+
+
+            });
+
+        }
+
+    }
+</script>

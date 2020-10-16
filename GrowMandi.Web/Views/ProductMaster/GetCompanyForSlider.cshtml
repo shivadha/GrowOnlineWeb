@@ -1,0 +1,33 @@
+﻿@model IEnumerable<GrowIndigo.DAL.DataEntities.shop_cmp_image>
+
+@using GrowIndigo.Utilities.Resources;
+@using GrowIndigo.DAL.DataModels.CommonModels;
+@using GrowIndigo.Utilities;
+
+@{
+    var Projectname = ConfigReader.ProjectName;
+
+    LoginViewModel loggedInUser = Session["LoggedInUser"] != null ? (LoginViewModel)Session["LoggedInUser"] : null;
+}
+
+@foreach (var companyProduct in Model)
+{
+    <div class="item">
+        <div class="single-product">
+            <a href="#" onclick="getCompanyProduct('@companyProduct.cmpName')">
+                <img src="https://growonline.mahyco.com/otherImages/@companyProduct.imgUrl" />
+            </a>
+        </div>
+    </div>
+}
+
+@*<script>
+    function getCompanyProduct() {
+        var getStateId = localStorage.getItem("HomePageStateId");
+        var CategoryName = "N/A";
+
+        window.location.href = '@Projectname/ProductMaster/GetProductFilter?CategoryName=' + CategoryName + ' &State=' + getStateId
+         window.location.href = '@Projectname/ProductMaster/GetProductFilter?CategoryName=' + CategoryName + ' &State=' + getStateId
+    }
+    </script>*@
+  

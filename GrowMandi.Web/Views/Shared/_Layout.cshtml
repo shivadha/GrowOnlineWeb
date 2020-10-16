@@ -1,0 +1,680 @@
+﻿@using GrowIndigo.Utilities;
+@using GrowIndigo.DAL.DataModels.CommonModels;
+@using GrowIndigo.DAL.DataModels.MandiModels;
+@using GrowIndigo.Utilities.Resources;
+
+@{
+
+    LoginViewModel loggedInUser = Session["LoggedInUser"] != null ? (LoginViewModel)Session["LoggedInUser"] : null;
+    var Projectname = ConfigReader.ProjectName;
+
+
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>@ViewBag.Title</title>
+    <!-- Favicon -->
+    <link rel="icon" type="~/images/png" href="~/images/favicon.ico">
+    <!-- Web Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+          rel="stylesheet">
+
+    @Scripts.Render("~/bundles/modernizr")
+
+    <!-- StyleSheet -->
+    <!-- Bootstrap CSS -->
+    <link href="@Projectname/Content/sweetalert.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link href="@Projectname/Content/cdn/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <!-- Nice Select CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
+    <!-- Slicknav -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.css">
+    @*<link href="@Projectname/Content/owl-carousel.css" rel="stylesheet" />*@
+    <link href="@Projectname/Content/perfect-scrollbar.css" rel="stylesheet" />
+    @Styles.Render("~/Content/css")
+    <script src="@Projectname/Scripts/jquery-3.3.1.min.js"></script>
+
+    <script type="text/javascript" src="https://checkout.razorpay.com/v1/razorpay.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body class="js">
+    <div id="preloader" style="display:none; z-index:9999">
+        <img src="@Projectname/images/loader/ajax_loader.gif" />
+    </div>
+    <a id="scrollUp" href="#" style="display: none;"><span><i class="fa fa-angle-up"></i></span></a>
+    <!-- Header -->
+    <header class="header shop">
+        <!-- Topbar -->
+        <div class="topbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 col-12">
+                        <!-- Top Left -->
+                        <div class="top-left">
+                            <ul class="list-main">
+                                <li><a href="tel:9011087473"><i class="fa fa-phone" aria-hidden="true"></i> +91 9607911377 </a></li>
+                                <li>
+                                    <a href="mailto:sales@growindigo.co.in">
+                                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                        sales@growindigo.co.in
+                                    </a>
+                                </li>
+                                <li></li>
+
+                            </ul>
+                        </div>
+                        <!--/ End Top Left -->
+                    </div>
+
+                    <div class="col-lg-8 col-md-12 col-12">
+                        <!-- Top Right -->
+                        <div class="right-content">
+                            <ul class="list-main">
+                                <li class="lang-wrap lang-wra-ml-0">
+                                    <a href="javascript:void(0)" class="dropdown-toggle lang-select" data-toggle="dropdown" name="Chnage Language" id="sLanguage">
+                                        <i class="fa fa-language" aria-hidden="true"></i>
+                                        <span id="spanLanguage">@Resource.GrowOnline_Common_ChangeLanguage</span>
+
+
+                                        <span class="icomoon-globe"></span>
+                                        <div class="dropdown-menu">
+
+                                            <a class="dropdown-item" id="en" href="javascript:void(0)" onclick="ChangeLanguage('en',this)">English<span id="text"></span></a>
+
+                                            <a class="dropdown-item" id="hi" href="javascript:void(0)" onclick="ChangeLanguage('hi',this)">Hindi<span></span></a>
+                                            <a class="dropdown-item" id="mr" href="javascript:void(0)" onclick="ChangeLanguage('mr',this)">Marathi<span></span></a>
+                                            <a class="dropdown-item" id="te" href="javascript:void(0)" onclick="ChangeLanguage('te',this)">Telegu<span></span></a>
+                                        </div>
+                                    </a>
+
+                                </li>
+                               
+                                    <li id="changeStatIde"><a href="#" onclick="openStateModelPoopup()"><i class="fa fa-bank"></i>@Resource.GrowOnline_Common_ChnageState</a></li>
+                                    @*<span id="spanLanguage" onclick="openStateModelPoopup()">Change State</span>*@
+                                
+                                @if (loggedInUser == null)
+                                {
+                                    <li>
+                                        <i class="ti-user"></i>
+                                        <a id="loginuser" onclick="setDefaultLogin()" href="#" data-toggle="modal" data-target="#authentication-modal">
+                                            @Resource.GrowOnline_Common_MyAccount
+                                        </a>
+                                    </li>
+                                }
+
+                                @if (loggedInUser != null)
+                                {
+                                    <li class="dropdown">
+                                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                            <i class="fa fa-user-o"></i>@Resource.GrowOnline_Common_User
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="@Projectname/Account/UpdateUserProfile">
+                                                <i class="fa fa-user"></i><span>
+                                                    @Resource.GrowOnline_Common_MyProfile
+                                                </span>
+                                            </a>
+                                            <a class="dropdown-item" href="@Projectname/Order/OrderHistory">
+                                                <i class="fa fa-shopping-basket"></i><span>
+                                                    @Resource.GrowOnline_Common_MyOrders
+                                                </span>
+                                            </a>
+                                            <a class="dropdown-item logout" href="@Projectname/Account/LogOut">
+                                                <i class="fa fa-unlock-alt"></i><span>@Resource.GrowOnline_Common_Logout</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                }
+
+                            </ul>
+                        </div>
+                        <!-- End Top Right -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Topbar -->
+        <div class="middle-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-2 col-12">
+                        <!-- Logo -->
+                        <div class="logo">
+                            @*<img src="~/images/GrowOnline_CMYK-page-001.jpg" />*@
+                            <a href="@Projectname/Home/Index"><img src="@Projectname/Images/GrowOnline_CMYK-page-001.jpg" alt="logo" style="height:65px"></a>
+                        </div>
+                        <!--/ End Logo -->
+                        <div class="mobile-nav"></div>
+                    </div>
+                    <!-- Search Form -->
+                    <div class="col-lg-7 col-md-7 col-12">
+                        <div class="search-top">&nbsp;</div>
+                    </div>
+
+                    <!--/ End Search Form -->
+                    <div class="col-lg-3 col-md-3 col-12">
+                        <div class="right-bar">
+                            <img src="~/images/logo.png" class="right-logo" />
+                            <!-- Search Form -->
+                            @if (loggedInUser != null)
+                            {
+                                @*<div class="sinlge-bar">
+                                        <a href="#" class="single-icon"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                                    </div>*@
+                                <div class="sinlge-bar">
+                                    <a href="@Projectname/Account/UpdateUserProfile" class="single-icon"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+                                </div>
+
+
+                                @Html.Action("ProductInCartInfo", "Layout")
+                            }
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header Inner -->
+        <div class="header-inner">
+            <div class="container">
+                <div class="cat-nav-head">
+                    <div class="row">
+                        @Html.Action("GetCompanyProduct", "Layout")
+                        <div class="col-lg-9 col-12">
+                            <div class="menu-area">
+                                <!-- Main Menu -->
+                                <nav class="navbar navbar-expand-lg">
+                                    <div class="navbar-collapse">
+                                        <div class="nav-inner">
+                                            <ul class="nav main-menu menu navbar-nav">
+                                                <li class="active link"><a href="@Projectname">@Resource.GrowOnline_Common_Home</a></li>
+                                                <li class="link"><a href="@Projectname/Home/About">@Resource.GrowOnline_Common_AboutUs</a></li>
+
+                                                @*<li>
+                                                        <a href="#">Register with us<i class="ti-angle-down"></i></a>
+                                                        <ul class="dropdown">
+                                                            <li><a href="register.html">Retailers</a></li>
+
+                                                        </ul>
+                                                    </li>*@
+                                                <li class="link"><a href="@Projectname/Home/Contact">@Resource.GrowOnline_Common_ContactUs</a></li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </nav>
+                                <!--/ End Main Menu -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/ End Header Inner -->
+    </header>
+    <!--/ End Header -->
+    <div class="body-content">
+        @RenderBody()
+    </div>
+    <!-- Start Footer Area -->
+    <footer class="footer">
+        <!-- Footer Top -->
+        <div class="footer-top section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-4 col-12">
+                        <!-- Single Widget -->
+                        <div class="single-footer about">
+                            <div class="logo">
+                                <a href="@Projectname/Home/Index"><img src="@Projectname/images/footer-logo.png" alt="footer-logo"></a>
+                            </div>
+                            <p class="text">
+                                <b>Grow Indigo</b> @Resource.GrowOnline_Message_Footer1
+                            </p>
+                            <p class="call">@Resource.GrowOnline_Message_ContactUs<span><a href="tel:9011087473"> +91 9607911377 </a></span></p>
+                        </div>
+                        <!-- End Single Widget -->
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-12">
+                        <!-- Single Widget -->
+                        <div class="single-footer links">
+                            <h4>Pages</h4>
+                            <ul>
+                                <li><a href="@Projectname/Home/Index">@Resource.GrowOnline_Common_Home</a></li>
+
+                                <li><a href="@Projectname/Home/About">@Resource.GrowOnline_Common_AboutUs</a></li>
+                                <li><a href="@Projectname/Home/Contact">@Resource.GrowOnline_Common_ContactUs</a></li>
+                                @*<li><a href="javascript:void(0)">@Resource.GrowOnline_Common_Feedback</a></li>*@
+                                <li><a href="@Projectname/Layout/Terms">@Resource.GrowOnline_Common_TermSANDcONDITIONS</a></li>
+                                <li><a href="@Projectname/Layout/PrivacyPolicy">@Resource.GrowOnline_Common_pRICAVYpOLICY</a></li>
+                            </ul>
+                        </div>
+                        <!-- End Single Widget -->
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-12">
+                        <!-- Single Widget -->
+                        <div class="single-footer social">
+                            <h4>Get in Touch</h4>
+                            <!-- Single Widget -->
+                            <div class="contact">
+                                <ul>
+                                    <li><b>@Resource.GrowOnline_Common_EmailIds</b></li>
+                                    <li><a href="mailto:info@growindigo.co.in">info@growindigo.co.in</a></li>
+                                    <li><a href="mailto:sales@growindigo.co.in">sales@growindigo.co.in</a></li>
+                                </ul>
+                                <div class="call-contact mt-15">
+                                    <b>Office No.</b>- <a href="tel:02482- 262471-75" class="Blondie">02482- 262471-75</a> ( Jalna
+                                    )<br />
+                                    <b>Phone No.</b>- <a href="tel:+91 9607911377" class="Blondie">+91 9607911377</a>
+                                </div>
+                            </div>
+
+                            <!-- End Single Widget -->
+                            <ul>
+                                <li><a href="#"><i class="ti-facebook"></i></a></li>
+                                <li><a href="#"><i class="ti-twitter"></i></a></li>
+                                <li><a href="#"><i class="ti-flickr"></i></a></li>
+                                <li><a href="#"><i class="ti-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                        <!-- End Single Widget -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer Top -->
+        <div class="copyright">
+            <div class="container">
+                <div class="inner">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <div class="left">
+                                <p class="footer-company-name mb-0">Copyright &copy; 2020 Grow Indigo.&nbsp; All Rights Reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /End Footer Area -->
+    <!-- Start Authentication Modal-->
+    <div class="modal" tabindex="-1" role="dialog" id="authentication-modal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">@Resource.GrowOnline_Common_MyAccount</h5>
+                    <button type="button" onclick="setDefaultLogin()" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#LoginMain" role="tab" data-toggle="tab">@Resource.GrowOnline_Common_Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Registration" role="tab" data-toggle="tab">@Resource.GrowOnline_Common_CreateAccount</a>
+                        </li>
+
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+
+                        <!-- Start Registration tab panes-->
+                        @if (loggedInUser == null)
+                        {
+                            <div class="tab-pane active" id="LoginMain">
+                                @Html.Action("LoginView", "Layout")
+                            </div>
+
+                            <div class="tab-pane" id="Registration">
+                                @Html.Action("RegisterView", "Layout")
+                            </div>
+
+
+
+                        }
+
+
+                        <!-- End Registration tab panes-->
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">@Resource.GrowOnline_Common_Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @*starup Model Poopup*@
+    <div id="StateModalPoopup" class="modal fade" role="dialog" data-backdrop="static">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">@Resource.GrowOnline_Common_SelectState</h5>
+                    @*<button type="button" class="close" data-dismiss="modal">&times;</button>*@
+                </div>
+                <div class="modal-body ">
+                    <div class="row">
+                        <div class="col-md-12">
+                            @Html.Action("GetStateList", "Layout")
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- End Authentication Modal-->
+    @Scripts.Render("~/bundles/jquery")
+
+    @*@Scripts.Render("~/bundles/bootstrap")*@
+    @RenderSection("scripts", required: false)
+    @*<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/1.5.0/perfect-scrollbar.min.js"></script>*@
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Slicknav JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.js"></script>
+    <!-- Waypoints JS -->
+    @*<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>*@
+    <!-- Nice Select JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.js"></script>
+
+    <script src="@Projectname/Content/cdn/owl.carousel.min.js"></script>
+
+
+    <!-- Scrollbar Nav JS -->
+    <script src="@Projectname/Content/cdn/jquery.dataTables.min.js"></script>
+
+</body>
+</html>
+<div class="name" id="nome">
+</div>
+<script>
+
+
+
+    $(document).ready(function () {
+        $('.owl-carousel').owlCarousel({
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true,
+            loop: true,
+            nav: true,
+            navigation: true,
+            //navigationText: [
+            //    "<i class='icon-chevron-left icon-white'><</i>",
+            //    "<i class='icon-chevron-right icon-white'>></i>"
+            //],
+            //navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+            navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 6
+                },
+                1600: {
+                    items: 8
+                },
+                1900: {
+                    items: 10
+                }
+
+            }
+        });
+        //$(".owl-prev").html('<i class="fa fa-chevron-left"></i>');
+        //$(".owl-next").html('<i class="fa fa-chevron-right"></i>');
+        $('.owl-carousel').trigger('owl.play', 2000);
+    });
+
+</script>
+<script>
+    //$(function () {
+    //    $('nav li').on('click', function () {
+    //        $(this).parent().find('li.active').removeClass('active');
+    //        $(this).addClass('active');
+    //    });
+    //});
+
+
+
+
+    $(document).ready(function () {
+        //debugger;
+        //ReapplyCarousel()
+        $('.link').each(function (index, item) {
+            if (window.location.href.indexOf($(item).children('a').attr('href')) != -1 || $(item).children('a').attr('href') == '#') {
+                $('li').removeClass('active');
+                $(item).addClass('active')
+
+            }
+        });
+        // executes when HTML-Document is loaded and DOM is ready
+        $(function () {
+            $('nav li').click(function (e) {
+                //debugger;
+                e.preventDefault();
+                $('li').removeClass('active');
+                $(this).addClass('active');
+                window.location.href = $(this).children('a').attr('href');
+
+            });
+        });
+    });
+</script>
+<script type="text/javascript">
+    //alert("ijn")
+    //new PerfectScrollbar('#container');
+
+
+
+
+    $(function () {
+        var current = location.pathname;
+        $('#nav li a').each(function () {
+            var $this = $(this);
+            // if the current path is like this link, make it active
+            if ($this.attr('href').indexOf(current) !== -1) {
+                $this.addClass('active');
+            }
+        })
+        console.log("rahul", current)
+    });
+
+    function getCookie(cname) {
+        var name = cname + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+
+
+
+
+    $('#loginuser').click(function () {
+
+        $('#txtMobileNumber').val("");
+        $('#txtOTp').val("");
+        $('#txtMobileNumber-error').hide();
+        $('#txtMobileNumber-error').hide();
+        document.getElementById("chkSalesTermsLogin").checked = false;
+        //$("#chkSalesTermsLogin").removeClass('active');
+        $('#FirmName').val("");
+        $('#ddlState').val("");
+        $('#MobileNumber').val("");
+        $('#MobileNumber-error').hide();
+        $('#FirmName-error').hide();
+        $('#ddlState-error').hide();
+
+        document.getElementById("chkSalesTerms").checked = false;
+
+
+    })
+
+    $('#registeruser').click(function () {
+
+        $('#FirmName').val("");
+        $('#ddlState').val("");
+        $('#MobileNumber').val("");
+        $('#MobileNumber-error').hide();
+        $('#FirmName-error').hide();
+        $('#ddlState-error').hide();
+
+        document.getElementById("chkSalesTerms").checked = false;
+
+    })
+
+</script>
+<script>
+    $(document).ready(function () {
+
+        var culture = getCookie("Language")
+        $('#' + culture).find("span").addClass("check fa fa-check-circle")
+    });
+
+</script>
+<script>
+
+
+        function ChangeLanguage(lang, obj) {
+
+            debugger;
+
+            if (lang == 'en') {
+                lang = 'en';
+
+
+                $(obj).find("span").addClass("check fa fa-check-circle")
+
+
+            }
+            else if (lang == 'hi') {
+                lang = 'hi'
+
+                $(obj).find("span").addClass("check fa fa-check-circle")
+            }
+            else if (lang == 'mr') {
+                lang = 'mr'
+                $(obj).find("span").addClass("check fa fa-check-circle")
+
+
+            }
+            else {
+                lang = 'te'
+
+                $(obj).find("span").addClass("check fa fa-check-circle")
+            }
+            var url = '@Url.Action("ChangeLanguage", "LanguageMang")?lang=' + lang;
+
+            $.ajax({
+                url: url,
+                type: "GET",
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+                dataType: "json",
+                beforeSend: function () {
+                    $("#loaderImg").show();
+                },
+                success: function (result) {
+
+                    window.location.reload();
+                    location.reload(true)
+
+
+                },
+
+            });
+        }
+
+
+</script>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.0/jquery.cookie.min.js">
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        debugger;
+
+        //for checking statename
+        debugger;
+
+        var getStateName = localStorage.getItem("HomePageStateName");
+        if (getStateName != null) {
+            $('#changeStatIde').html('<a href="#" onclick="openStateModelPoopup()"><i class="fa fa-bank"></i>' + getStateName + '</a>');
+        }
+
+
+
+
+        localStorage.getItem("HomePageStateId")
+        var getStatevalueForHomePage = localStorage.getItem("HomePageStateId");
+        // alert(getStatevalueForHomePage);
+
+        if (getStatevalueForHomePage != null) {
+            $('#StateModalPoopup').modal('hide');
+        }
+        else {
+            $('#StateModalPoopup').modal('show');
+        }
+
+
+    });
+
+    function openStateModelPoopup() {
+
+        $('#StateModalPoopup').modal('show');
+    }
+
+    function setDefaultLogin() {
+      
+        $("#txtMobileNumber").attr("disabled", false);
+        $('#txtOTp').hide();
+        $('#btnLogin').show();
+        $('#divbtnOtp').hide();
+        $("#txtMobileNumber").attr("disabled", false);
+   
+
+
+    }
+</script>
+

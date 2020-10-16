@@ -1,0 +1,168 @@
+﻿@using GrowIndigo.Utilities.Resources;
+@using GrowIndigo.Utilities.Resources;
+@using GrowIndigo.Utilities;
+@using GrowIndigo.DAL.DataModels.CommonModels;
+@{
+    ViewBag.Title = "Home Page";
+    var Projectname = ConfigReader.ProjectName;
+    LoginViewModel loggedInUser = Session["LoggedInUser"] != null ? (LoginViewModel)Session["LoggedInUser"] : null;
+}
+
+<!-- Start Product Area -->
+<div class="product-area wrapper pt-0 home-product-area pb-0">
+    <div class="home-banner-2 mb-15 text-center">
+        <img src="@Projectname/Upload/otherImages/banner2.jpg" />
+    </div>
+    <div class="container product-categories-block">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title">
+                    <h2>@Resource.GrowOnline_Common_ProCat</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="product-info">
+
+                    <div class="tab-content" id="myTabContent">
+                        <!-- Start Single Tab -->
+                        <div class="tab-pane fade show active" id="man" role="tabpanel">
+                            @Html.Action("GetAllCategory", "ProductMaster")
+                            @*@Html.Action("GetAllProduct", "ProductMaster")*@
+
+                            <!--/ End Single Tab -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Product Area -->
+<section class="section home-company-product">
+    <div class="home-banner-1 mb-15 text-center">
+        <img src="@Projectname/Upload/otherImages/Vikram_301_Bumper_dhamaka.jpg" style="width:1920px;height:300px;" />
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title">
+                    <h2>@Resource.GrowOnline_Common_CompanyProduct</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="owl-carousel popular-slider">
+
+                    @Html.Action("GetCompanyForSlider", "Layout")
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+</section>
+<!-- Start Shop Services Area -->
+<section class="shop-services section home">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-12">
+                <!-- Start Single Service -->
+                <div class="single-service">
+                    <i class="ti-rocket"></i>
+                    <h4>@Resource.GrowOnline_Common_OrderOnline</h4>
+                    <p>@Resource.GrowOnline_Common_OrderOVer</p>
+                </div>
+                <!-- End Single Service -->
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <!-- Start Single Service -->
+                <div class="single-service">
+                    <i class="ti-reload"></i>
+                    <h4>@Resource.GrowOnline_Common_FastDeli</h4>
+                    <p>@Resource.GrowOnline_Common_FastDeliWith30</p>
+                </div>
+                <!-- End Single Service -->
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <!-- Start Single Service -->
+                <div class="single-service">
+                    <i class="ti-lock"></i>
+                    <h4>@Resource.GrowOnline_Common_SecurePay</h4>
+                    <p>@Resource.GrowOnline_Common_SecurePayMessage</p>
+                </div>
+                <!-- End Single Service -->
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <!-- Start Single Service -->
+                <div class="single-service">
+                    <i class="ti-tag"></i>
+                    <h4>@Resource.GrowOnline_Common_BestPrice</h4>
+                    <p>@Resource.GrowOnline_Common_GuranteeBestPrice</p>
+                </div>
+                <!-- End Single Service -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Shop Services Area -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<!-- OWL Nav JS -->
+@*<script src="@Projectname/Scripts/owl-carousel.js"></script>*@
+@*<script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>*@
+<script type="text/javascript">
+    var msg = '@TempData["RegisterSuccess"]';
+    if (msg !='') {
+        swal(msg);
+    }
+      var msg = '@TempData["RegisterFailed"]';
+    if (msg !='') {
+        swal(msg);
+    }
+
+
+</script>
+<script>
+        function getCompanyProduct(companyName) {
+        //alert("here we go")
+        //alert(companyName)
+        //debugger;
+        var getStateId = localStorage.getItem("HomePageStateId");
+        var CategoryName = "N/A";
+
+            window.location.href = '@Projectname/ProductMaster/GetProductFilter?CategoryName=' + CategoryName + ' &State=' + getStateId + ' &CompanyName=' + companyName;
+    }
+</script>
+@*<script>
+        function getCompanyProduct(companyName) {
+            alert("here we go")
+            alert(companyName)
+            debugger;
+            var getStateId = localStorage.getItem("HomePageStateId");
+            var CategoryName = "N/A";
+
+            window.location.href = '@Projectname/ProductMaster/GetProductFilter?CategoryName=' + CategoryName + ' &State=' + getStateId + ' &CompanyName=' + companyName
+        }
+    </script>*@
+
+<script>
+
+        var msg = '@TempData["ContactUs"]';
+    if (msg !='') {
+        swal(msg);
+    }
+
+
+
+</script>

@@ -1,0 +1,22 @@
+﻿@using GrowIndigo.Utilities;
+@using GrowIndigo.Utilities.Resources;
+@using GrowIndigo.Utilities;
+@using GrowIndigo.DAL.DataModels.CommonModels;
+@model IEnumerable<GrowIndigo.DAL.DataEntities.shop_cmp_image>
+@{
+
+    LoginViewModel loggedInUser = Session["LoggedInUser"] != null ? (LoginViewModel)Session["LoggedInUser"] : null;
+    var Projectname = ConfigReader.ProjectName;
+
+}
+<div class="single-widget category">
+    <h3 class="title">@Resource.GrowOnline_Common_SellerList</h3>
+    <ul class="sroll-wrapper categor-list">
+        @foreach (var companyProduct in Model.Select(s => s.cmpName).Distinct())
+        {
+            <li><a href="@Projectname/ProductMaster/GetProductFilter?CategoryName=N/A&State=0&search=N/A&CompanyName=@companyProduct">@companyProduct</a></li>
+        }
+
+     
+    </ul>
+</div>

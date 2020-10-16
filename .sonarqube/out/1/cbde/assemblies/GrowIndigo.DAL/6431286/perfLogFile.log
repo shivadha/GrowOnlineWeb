@@ -1,0 +1,10 @@
+File name	Line	Function	Duration[ms]	Explored nodes
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataRepositories\Common\CommonRepository.cs	174	_GrowIndigo.DAL.DataRepositories.Common.CommonRepository.GetCompanyProduct$$	0	2
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataEntities\GrowIndigoLocalDBEntities.Context.cs	22	_GrowIndigo.DAL.DataEntities.GrowOnlineDevEntities.OnModelCreating$System.Data.Entity.DbModelBuilder$	0	2
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataRepositories\Repository\Repository.cs	102	_GrowIndigo.DAL.DataRepositories.Repository.Repository$T$.GetAllList$outint.System.Linq.Expressions.Expression$System.Func$T.bool$$.System.Func$System.Linq.IQueryable$T$.System.Linq.IOrderedQueryable$T$$.bool.int.int.string$	0	2
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataRepositories\Repository\Repository.cs	517	_GrowIndigo.DAL.DataRepositories.Repository.Repository$T$.Exists$paramsobject$$$	0	2
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataRepositories\Repository\Repository.cs	583	_GrowIndigo.DAL.DataRepositories.Repository.Repository$T$.Dispose$$	0	5
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataRepositories\UnitOfWork\UnitOfWork.cs	192	_GrowIndigo.DAL.DataRepositories.UnitOfWork.UnitOfWork.SaveChanges$$	0	3
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataRepositories\UnitOfWork\UnitOfWork.cs	196	_GrowIndigo.DAL.DataRepositories.UnitOfWork.UnitOfWork.Dispose$$	0	3
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\App_Start\UnityConfig.cs	8	_GrowIndigo.DAL.UnityConfig.RegisterComponents$$	0	3
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataRepositories\User\UserRepository.cs	256	_GrowIndigo.DAL.DataRepositories.User.UserRepository.Addcontact$GrowIndigo.DAL.DataEntities.shop_ContactUs$	0	2

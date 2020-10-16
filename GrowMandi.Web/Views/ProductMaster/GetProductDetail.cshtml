@@ -1,0 +1,511 @@
+﻿@model GrowIndigo.DAL.DataModels.Product.ProductMasterViewModel
+@using GrowIndigo.Utilities.Resources;
+@using GrowIndigo.DAL.DataModels.CommonModels;
+@using GrowIndigo.Utilities;
+@{
+
+    var Projectname = ConfigReader.ProjectName;
+    LoginViewModel loggedInUser = Session["LoggedInUser"] != null ? (LoginViewModel)Session["LoggedInUser"] : null;
+    var ServerProductImage = ConfigReader.ServerProductImage;
+    var ServerSubProductImage = ConfigReader.ServerSubProductImage;
+}
+
+<script src="@Projectname/Scripts/jquery-3.3.1.min.js"></script>
+<script src="@Projectname/Scripts/jquery.validate.min.js"></script>
+<script src="@Projectname/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+<div class="">
+
+    <section class="product-area product-detail section shopping-cart pb-0">
+        <div class="section-title">
+            <h2>@Resource.GrowOnline_Common_ProductDetail </h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-5 col-12">
+                    <div class="easyzoom easyzoom--overlay">
+                        <a href="#">
+                            <img src="@ServerProductImage/@Model.imageUrl" alt="product" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-7 col-12">
+                    <div class="product-details-content">
+                        <div class="product-prize-content">
+                            <div class="mb-1">
+                                @*<label>@Html.DisplayNameFor(model => model.SkuName):</label>*@
+                                <h3 class="pro-name">@Html.DisplayFor(model => model.SkuName)</h3>
+                            </div>
+                            @*<div class="mb-1 fs-18">
+                                <label>@Html.DisplayNameFor(model => model.pkSkuId)</label>
+                                <span>@Html.DisplayFor(model => model.pkSkuId)</span>
+                            </div>*@
+                            @*<div class="mb-1 fs-18">
+                                <label>@Html.DisplayNameFor(model => model.ItemCode):</label>
+                                <span>@Html.DisplayFor(model => model.ItemCode)</span>
+                            </div>*@
+                            <div class="mb-1 fs-18">
+                                <label>@Html.DisplayNameFor(model => model.packingSize):</label>
+                                <span>@Html.DisplayFor(model => model.packingSize)</span>
+                            </div>
+                            <div class="mb-1 fs-18">
+                                <label>@Html.DisplayNameFor(model => model.GSTPercent):</label>
+                                <span>@Html.DisplayFor(model => model.GSTPercent)%</span>
+                            </div>
+
+
+
+                            <!--/ End Input Order -->
+
+
+                            <div class="details-price" id="priceDiv">
+                                <span id="priceSpan"><i class="fa fa-inr" aria-hidden="true"></i>@Html.DisplayFor(model => model.Price)</span>
+                            </div>
+                            @if (loggedInUser != null)
+                            {
+                                <div class="Benefits mt-15">
+                                    <div class="input-group">
+                                        <div class="button minus">
+                                            <button type="button" class="btn btn-primary btn-number" data-type="minus"
+                                                    data-field="quant[1]" onclick="selector('minus')">
+                                                <i class="ti-minus"></i>
+                                            </button>
+                                        </div>
+                                        <input type="text" id="slectorId" name="quant[1]" disabled="disabled" class="input-number" data-min=@Model.min_qty_to_book data-max=@Model.max_qty_to_book value=@Model.min_qty_to_book>
+                                        <div class="button plus">
+                                            <button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[1]" onclick="selector('addition')">
+                                                <i class="ti-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            }
+                        </div>
+                        <div class="Benefits mt-15">
+                            <h5>@Html.DisplayNameFor(model => model.Description):</h5>
+                            <ul class="green-circle mt-10">
+                                <li>@Html.Raw(Model.Description)</li>
+                                @*<li><span class="bold">Plant habit</span><span>:Semi-upright</span></li>
+                                <li><span class="bold">First marketable produce after transplanting (days)</span><span>:70 - 80 (fresh green) and 100-110 (red)</span></li>
+                                <li><span class="bold">Plant height (cm)</span><span>:70-90</span></li>*@
+                            </ul>
+                        </div>
+
+                        <div class="clearfix mt-3">
+                            <div class="float-left mt-2 pt-1">
+                                @*@Html.ActionLink("Back to List", "Index", "Home")*@
+                                <button onclick="BacktoList()" class="btn custom-btn">
+                                    <i class="fa fa-arrow-left fa-2x mr-2" aria-hidden="true" style="
+                            vertical-align: sub;"></i>Back to List
+                                </button>
+                            </div>
+                            <div class="float-right">
+                                <button onclick="checkSession()" class="btn custom-btn">
+                                    <i class="fa fa-shopping-cart fa-2x mr-2" aria-hidden="true" style="
+                            vertical-align: sub;"></i>Buy Now
+                                </button>
+                            </div>
+                        </div>
+                        <div class="alertbox pt-10 mt-15">
+                            <div class="alert alert-primary ">
+                                <strong>@Html.DisplayNameFor(model => model.TC):</strong> @Html.Raw(Model.TC)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 p-0">
+                    <div class="card sub-heading-card mt-md-0">
+                        <h4 class="sub-heading-after pl-0">@Resource.GrowOnline_Common_SubInfo</h4>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="sub-info-container">
+
+                                    <div class="col-md-12">
+                                        <div class="row form-group">
+                                            <div class="col-md-6">
+                                                <label>
+                                                    @Html.DisplayNameFor(model => model.CurrentQuantity):
+                                                </label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <span>
+                                                    @Html.DisplayFor(model => model.CurrentQuantity)
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="row form-group">
+                                            <div class="col-md-6">
+                                                <label>
+                                                    @Html.DisplayNameFor(model => model.min_qty_to_book):
+                                                </label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <span>
+                                                    @Html.DisplayFor(model => model.min_qty_to_book)
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="row form-group">
+                                            <div class="col-md-6">
+                                                <label>
+                                                    @Html.DisplayNameFor(model => model.crop):
+                                                </label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <span>
+                                                    @Html.DisplayFor(model => model.crop)
+                                                </span>
+                                            </div>
+                                        </div>
+                                        @*<div class="row form-group">
+                                            <div class="col-md-6">
+                                                <label>
+                                                    @Html.DisplayNameFor(model => model.max_qty_to_book):
+                                                </label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <span>
+                                                    @Html.DisplayFor(model => model.max_qty_to_book)
+                                                </span>
+                                            </div>
+                                        </div>*@
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="row form-group">
+                                            <div class="col-md-6">
+                                                <label>
+                                                    @Html.DisplayNameFor(model => model.Prd_company_name):
+                                                </label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <span>
+                                                    @Html.DisplayFor(model => model.Prd_company_name)
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    @*<div class="col-md-12">
+                                    <div class="row form-group">*@
+                                    @*<div class="col-md-6">
+                                        <label>
+                                            @Html.DisplayNameFor(model => model.Status):
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <span>
+                                            @Html.DisplayFor(model => model.Status)
+                                        </span>
+                                    </div>*@
+                                    @*</div>
+                                    </div>*@
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="sub-info-container">
+                                    <div class="col-md-12">
+                                        <div class="row form-group">
+                                            <div class="col-md-6">
+                                                <label>
+                                                    @Html.DisplayNameFor(model => model.prd_State):
+
+                                                </label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <span>
+                                                    @Html.DisplayFor(model => model.prd_State)
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="row form-group">
+                                            <div class="col-md-6">
+                                                <label>
+                                                    @Html.DisplayNameFor(model => model.crp_catagory):
+                                                </label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <span>
+                                                    @Html.DisplayFor(model => model.crp_catagory)
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="row form-group">
+                                            <div class="col-md-6">
+                                                <label>
+                                                    @Html.DisplayNameFor(model => model.crp_type):
+                                                </label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <span>
+                                                    @Html.DisplayFor(model => model.crp_type)
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="row form-group">
+                                            <div class="col-md-6">
+                                                <label>
+                                                    @Html.DisplayNameFor(model => model.packingSize):
+                                                </label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <span>
+                                                    @Html.DisplayFor(model => model.packingSize)
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    @*<div class="col-md-12">
+                                        <div class="row form-group">
+                                            <div class="col-md-6">
+                                                <label>
+                                                    @Html.DisplayNameFor(model => model.crp_priority):
+                                                </label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <span>
+                                                    @Html.DisplayFor(model => model.crp_priority)
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>*@
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</div>
+<script>
+     function BacktoList() {
+
+         window.history.back();
+    }
+
+    function checkSession() {
+
+        $("#preloader").show();
+        // save quantity for product
+        var getQuantity = $('#slectorId').val();
+        localStorage.setItem("GetQuantity", getQuantity);
+
+        if ('@loggedInUser' != '') {
+
+            var productId = @Model.pkSkuId;
+           //alert(productId)
+
+                           var url = '@Url.Action("CheckUserProfileUpdated", "ProductMaster")';
+                        $.ajax({
+                            type: "Post",
+                            url: url,
+                            dataType: "json",
+                            success: function (result) {
+
+                                if (result == "true") {
+                                    $("#preloader").hide();
+
+                                    var getQuantity = localStorage.getItem("GetQuantity");
+
+                                   $.ajax({
+                                        type: "Post",
+                                       url: '@Projectname/Order/AddCartDetailForUser?productId=' + productId + '&quantity=' + getQuantity,
+                                    dataType: "json",
+                                        success: function (result) {
+                                            //debugger;
+                                            if (result == "true") {
+                                                $("#preloader").hide();
+                                                window.location.href = "@Projectname/Order/CartInfo?productId=" + productId;
+                                                //localStorage.removeItem("ProductId");
+                                            }
+                                            else if (result = "alreadyexits")
+                                            {
+                                                $("#preloader").hide();
+                                                swal("This product is already added in cart.");
+                                                window.location.href = "@Projectname/Order/CartInfo"
+                                                //localStorage.removeItem("ProductId");
+                                            }
+                                            else {
+                                                $("#preloader").hide();
+                                                swal("Error while adding Product in cart");
+
+
+                                                window.location.href = "@Projectname/Order/CartInfo"
+                                            }
+                                        }
+
+
+                                    });
+                                    @*window.location.href = "@Projectname/Order/CartInfo";*@
+                                }
+
+
+                                else {
+                                    $("#preloader").hide();
+                                 swal("Please update your profile before saving products in cart.");
+                                    //for updating  user Profile
+
+
+                                    window.location.href = "@Projectname/Account/UpdateUserProfile?type=" + "cart";
+                                }
+                            }
+
+
+                        });
+
+                    }
+
+
+
+        else {
+
+            //$('#loginuser').modal('show');
+            $("#preloader").hide();
+             localStorage.setItem("ProductId", "@Model.pkSkuId");
+            $('#authentication-modal').modal('show');
+
+        }
+    }
+
+
+</script>
+<script>
+
+    $('#txtMobileNumber').keyup(function () {
+        if ($(this).val() != "") {
+            $("#MobileSpan").hide();
+
+        } else {
+            $("#MobileSpan").show();
+        }
+    });
+    //$('#txtOTp').keyup(function () {
+    //    if ($(this).val() != "") {
+
+    //        $("#MobileSpan").show();
+
+    //    } else {
+    //        return false;
+    //        $("#MobileSpan").show();
+    //    }
+    //});
+
+</script>
+<script>
+
+   
+    function selector(type='')
+    {
+        debugger;
+        var getSelectorValue = $("#slectorId").val();
+      
+        var selectorValue = parseInt(getSelectorValue);
+        var multipleOf = '@Model.multipleOf';
+        var Price = '@Model.Price';
+        var IntPrice = parseInt(Price);
+        var maxPrice = '@Model.max_qty_to_book';
+        var minPrice='@Model.min_qty_to_book'
+        var IntMaxPrice = parseInt(maxPrice);
+        var IntMinPrice = parseInt(minPrice);
+
+       
+
+      
+
+    
+
+
+        //core logic
+        if (selectorValue < IntMinPrice != true || selectorValue > IntMaxPrice == true) {
+
+            if (type == 'minus') {
+                var actualvalue = parseInt(selectorValue) - parseInt(multipleOf);
+                //to check min
+                if (actualvalue < IntMinPrice) {
+                    debugger;
+                    swal("minimum quantity to buy Product is " + IntMinPrice)
+                    return false;
+                }
+                else {
+                    debugger;
+
+                    var value1 = parseInt(getSelectorValue);
+                    var value2 = parseInt(multipleOf);
+                    var addition = value1 - value2;
+                    $("#slectorId").val(addition);
+                    $('#priceDiv').html('')
+                    var getTotalmultiple = $("#slectorId").val();
+                    var IntTotalmiltiple = parseInt(getTotalmultiple);
+                    var totalPrice = IntPrice * IntTotalmiltiple;
+                    $('#priceDiv').html('<div class="details-price" id = "priceDiv" > <span id="priceSpan">'+ totalPrice+'<i class="fa fa-inr" aria-hidden="true"></i></span></div >');
+
+                  
+
+                }
+            }
+
+
+
+
+
+
+
+            else {
+                //to check max
+                var actualvalue = parseInt(selectorValue) + parseInt(multipleOf);
+                if (actualvalue > IntMaxPrice) {
+                    swal("maximum quantity to buy Product is " + IntMaxPrice)
+                    return false;
+                }
+                else {
+                    debugger;
+                    var value1 = parseInt(getSelectorValue);
+                    var value2 = parseInt(multipleOf);
+                    var addition = value1 + value2;
+                    $("#slectorId").val(addition);
+                    $('#priceDiv').html('')
+                  
+                    var getTotalmultiple = $("#slectorId").val();
+                    var IntTotalmiltiple = parseInt(getTotalmultiple);
+                    var totalPrice = IntPrice * IntTotalmiltiple;
+                    $('#priceDiv').html('<div class="details-price" id = "priceDiv" > <span id="priceSpan">' + totalPrice + '<i class="fa fa-inr" aria-hidden="true"></i></span></div >');
+                   
+                }
+            }
+
+
+        }
+    }
+    
+
+
+
+
+
+
+
+
+        
+          
+      
+
+    
+    </script>
+
+
+

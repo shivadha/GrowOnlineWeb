@@ -1,0 +1,408 @@
+﻿@model List<GrowIndigo.DAL.DataEntities.Shop_CartInfo>
+@using GrowIndigo.Utilities.Resources;
+@using GrowIndigo.Utilities;
+@using GrowIndigo.DAL.DataModels.CommonModels;
+@{
+    var Projectname = ConfigReader.ProjectName;
+    var Price = ViewBag.TotalServicePrice;
+
+
+
+    var ActualPrice = ViewBag.Price;
+    var MinPrice = ViewBag.MinPrice;
+    var MaxPrice = ViewBag.MaxPrice;
+    var MultipleOf = ViewBag.MultipleOf;
+
+    double Totalsum = 0;
+
+    foreach (var sum in Model)
+    {
+        double Totalprice = Convert.ToDouble(sum.TotalPrice);
+
+        Totalsum += Totalprice;
+
+    }
+
+    LoginViewModel loggedInUser = Session["LoggedInUser"] != null ? (LoginViewModel)Session["LoggedInUser"] : null;
+    var ServerProductImage = ConfigReader.ServerProductImage;
+    var ServerSubProductImage = ConfigReader.ServerSubProductImage;
+}
+
+
+
+<script src="@Projectname/Scripts/jquery-3.3.1.min.js"></script>
+<script src="@Projectname/Scripts/jquery.validate.min.js"></script>
+<script src="@Projectname/Scripts/jquery.validate.unobtrusive.min.js"></script>
+<a id="scrollUp" href="#" style="display: none;"><span><i class="fa fa-angle-up"></i></span></a>
+<!-- Header -->
+<header class="header shop">
+    <div data-includeHTML="_HeaderPartial.html"></div>
+</header>
+
+<div class="shopping-cart section cart-info">
+    <div class="section-title">
+        <h2>@Resource.GrowOnline_Common_CartDetail</h2>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-lg-9 pull-md-3">
+                <!-- Shopping Summery -->
+                @if (Model != null)
+                {
+                    if (Model.Count > 0)
+                    {
+                        <div class="table-responsive">
+                            <table class="table shopping-summery table-striped">
+                                <thead>
+                                    <tr class="main-hading">
+                                        <th>@Resource.GrowOnline_Common_Product</th>
+                                        <th>@Resource.GrowOnline_Common_Name</th>
+                                        <th class="text-center">@Resource.GrowOnline_Common_Price</th>
+                                        <th class="text-center">GST</th>
+                                        <th class="text-center">@Resource.GrowOnline_Common_Quantity</th>
+                                        <th class="text-center">SubTotal</th>
+                                        <th class="text-center"><i class="ti-trash remove-icon"></i></th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+
+                                    @*<h2>list of address </h2>*@
+
+
+                                    @foreach (var cart in Model)
+                                    {
+                                        <tr>
+                                            <td class="image" data-title="No">
+                                                <a href="#" data-toggle="modal" data-target="#exampleModal">
+                                                    <img src="@ServerProductImage/@cart.ProductImageUrl.Split(',')[0]" alt="@cart.ProductName">
+                                                </a>
+                                            </td>
+                                            <td class="product-des" data-title="Description">
+                                                <div class="product-name mb-0"><a href="#">@cart.ProductName</a></div>
+                                                <div class="product-des">@Html.Raw(cart.ProductDescription)</div>
+                                            </td>
+                                            <td class="price" data-title="Price">
+                                                <span>@cart.Price <i class="fa fa-inr" aria-hidden="true"></i></span>
+                                            </td>
+                                            <td class="gst" data-title="GST"><span>@cart.ProductGST %</span></td>
+                                            <td class="qty" data-title="Qty">
+                                                <!-- Input Order -->
+                                                <div class="input-group">
+                                                    <div class="button minus">
+                                                        <button type="button" class="btn btn-primary btn-number" data-type="minus" data-field="quant[1]" onclick="selectorCartInfo('minus',@cart.ProductId)">
+                                                            <i class="ti-minus"></i>
+                                                        </button>
+                                                    </div>
+                                                    <input type="text" id="slectorCartId_@cart.ProductId" name="quant[1]" disabled="disabled" class="input-number" data-min=@MinPrice data-max=@MaxPrice value=@cart.Quantity>
+                                                    <div class="button plus">
+                                                        <button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[1]" onclick="selectorCartInfo('addition',@cart.ProductId)">
+                                                            <i class="ti-plus"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <!--/ End Input Order -->
+                                            </td>
+                                            <td class="Totalprice" id="CartPrice_@cart.ProductId" data-title="Total Price">
+                                                <span>@cart.TotalPrice <i class="fa fa-inr" aria-hidden="true"></i></span>
+                                            </td>
+                                            <td class="action" data-title="Remove"><a href="#" onclick="DeleteCartProduct(@cart.Id)"><i class="ti-trash remove-icon"></i></a></td>
+                                        </tr>
+
+                                    }
+
+                                </tbody>
+                            </table>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="bd-example">
+
+                            <div class="alert alert-danger" role="alert">
+                                <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> @Resource.GrowOnline_Message_NoProduct
+                            </div>
+                        </div>
+                    }
+
+                }
+                else
+                {
+                    <div class="bd-example">
+                        <h2><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></h2>
+                        <div class="alert alert-danger" role="alert">
+                            @Resource.GrowOnline_Message_NoProduct
+                        </div>
+                    </div>
+
+                }
+                <!--/ End Shopping Summery -->
+            </div>
+            <div class="col-md-4 col-lg-3">
+                @if (Model != null)
+                {
+                    if (Model.Count > 0)
+                    {
+
+                        <!-- Total Amount -->
+                        <div class="total-amount mt-0 order-details">
+                            <h2 class="block-heading">@Resource.GrowOnline_Message_CartDetail</h2>
+                            <div class="right pl-0">
+                                <ul id="cartDetails ">
+                                    <li>@Resource.GrowOnline_Common_SubTotal<span id="cartDetails1">@Totalsum<i class="fa fa-inr" aria-hidden="true"></i></span></li>
+                                    <li>@Resource.GrowOnline_Common_Shipping<span>@Resource.GrowOnline_Common_Free</span></li>
+
+                                    <li class="last">Total<span id="cartDetails2">@Totalsum <i class="fa fa-inr" aria-hidden="true"></i></span></li>
+
+
+                                    @*<li>@Resource.GrowOnline_Common_GstPercentage<span>20.00 <i class="fa fa-inr" aria-hidden="true"></i></span></li>*@
+                                </ul>
+                                <div class="button5">
+                                    <a href="@Projectname/Order/CheckOut?totalPrice= @Price" class="btn">@Resource.GrowOnline_Common_CheckOut</a>
+                                    <a href="@Projectname/Home/Index" class="btn">@Resource.GrowOnline_Common_continueShop</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/ End Total Amount -->
+
+                    }
+
+                }
+            </div>
+        </div>
+
+    </div>
+</div>
+<script>
+
+    var msg = '@TempData["SameProductOncart"]';
+
+    if (msg !='') {
+        swal(msg);
+    }
+</script>
+
+<script>
+
+     var msg = '@TempData["Added"]';
+    if (msg !='') {
+        swal(msg);
+    }
+</script>
+<script>
+        function DeleteCartProduct(cartId) {
+            //alert("delete");
+           // alert(cartId);
+           // debugger;
+            $("#preloader").show();
+
+            $.ajax({
+                type: "Post",
+                url: "@Projectname/Order/DeleteCartProduct?cartId=" + cartId,
+                data: cartId,
+                dataType: "json",
+                success: function (result) {
+                    debugger;
+                    if (result == "true") {
+                        $("#preloader").hide();
+                        swal("@Resource.GrowOnline_Message_ProductRemove");
+                        window.location.href = "@Projectname/Order/CartInfo";
+                        location.reload(true);
+                    }
+                    else {
+                        $("#preloader").hide();
+                        location.reload(true);
+                        swal("@Resource.GrowOnline_MessageError_ProductRemove")
+                        window.location.href = "@Projectname/Order/CartInfo";
+                    }
+                }
+
+
+            });
+
+        }
+
+
+</script>
+
+<script>
+    function selectorCartInfo(type = '', productId = 0) {
+        debugger;
+        var getSelectorValue = $("#slectorCartId_" + productId).val();
+
+        $.ajax({
+            type: "Get",
+            url: "@Projectname/ProductMaster/GetProductDetailForCart?productId=" + productId,
+            //data: cartId,
+            dataType: "json",
+            success: function (result) {
+                debugger;
+                //alert("in")
+                if (result != null) {
+                    //debugger;
+                    $("#preloader").hide();
+                    //console.log(result, "result");
+                    //alert("result")
+
+                    var getSelectorValue = $('#slectorCartId_' + productId).val();
+                    var selectorValue = parseInt(getSelectorValue);
+                    var multipleOf = result.multipleOf;
+                    var Price = result.Price;
+                    var maxPrice = result.max_qty_to_book;
+                    var minPrice = result.min_qty_to_book;
+                    var ProductId = result.pkSkuId;
+                    var productGST = result.GSTPercent;
+
+                    var IntPrice = parseInt(Price);
+                    var IntMaxPrice = parseInt(maxPrice);
+                    var IntMinPrice = parseInt(minPrice);
+                    var IntproductGST = parseInt(productGST);
+
+
+                    //copy code from todo notepad for query
+
+                    //core logic
+                    if (selectorValue < IntMinPrice != true || selectorValue > IntMaxPrice == true) {
+
+                        if (type == 'minus') {
+                            //alert("minnx")
+                            var actualvalue = parseInt(selectorValue) - parseInt(multipleOf);
+
+
+                            //to check min
+                            if (actualvalue < IntMinPrice) {
+                                debugger;
+                                swal("minimum quantity to buy Product is " + IntMinPrice)
+                                return false;
+                            }
+                            else {
+                                debugger;
+
+                                var value1 = parseInt(getSelectorValue);
+                                var value2 = parseInt(multipleOf);
+                                var addition = value1 - value2;
+                                $("#slectorCartId_" + productId).val(addition);
+                                $('#CartPrice_' + ProductId).html('')
+                                var getTotalmultiple = $("#slectorCartId_" + productId).val();
+                                var IntTotalmiltiple = parseInt(getTotalmultiple);
+                                var totalPrice = IntPrice * IntTotalmiltiple;
+                                if (productGST != 0) {
+                                    var gst = (totalPrice * productGST) / 100
+                                    totalPrice = totalPrice + gst;
+                                }
+                                //$('#CartPrice_' + ProductId).html('<div class="details-price" id="CartPrice_"' + result.productId + '> <span id="priceSpan">' + totalPrice + '<i class="fa fa-inr" aria-hidden="true"></i></span></div>');
+                                $('#CartPrice_' + ProductId).html('<td class="Totalprice" id="CartPrice_"' + ProductId + ' data-title="Total Price"><span>' + totalPrice + ' <i class="fa fa-inr" aria-hidden="true"></i></span></td>');
+
+                                //  to update value in cart
+
+                                $.ajax({
+                                    type: "Get",
+                                    url: "@Projectname/ProductMaster/UpdateCartDetailFOrUser?productId=" + productId + "&TotalPrice=" + totalPrice,
+                                    //data: cartId,
+                                    dataType: "json",
+                                    success: function (result) {
+                                        debugger;
+
+                                        if (result != null) {
+                                            //console.log(result, "resultForUpdate")
+                                            //alert("update min successfull")
+                                            $('#cartDetails1').html('');
+                                            $('#cartDetails2').html('');
+                                            $('#cartDetails1').html('<span id="cartDetails">' + result + '<i class="fa fa-inr" aria-hidden="true"></i></span>');
+                                            $('#cartDetails2').html('<span id="cartDetails2">' + result + ' <i class="fa fa-inr" aria-hidden="true"></i></span>');
+
+                                            
+                                        }
+                                    }
+                                });
+                            }
+                        }
+
+
+                        else {
+                            //to check max
+                            //alert("max")
+                            var actualvalue = parseInt(selectorValue) + parseInt(multipleOf);
+                            if (actualvalue > IntMaxPrice) {
+                                swal("maximum quantity to buy Product is " + IntMaxPrice)
+                                return false;
+                            }
+                            else {
+                                debugger;
+                                var value1 = parseInt(getSelectorValue);
+                                var value2 = parseInt(multipleOf);
+                                var addition = value1 + value2;
+                                $("#slectorCartId_" + productId).val(addition);
+                                $('#CartPrice_' + ProductId).html('')
+
+                                var getTotalmultiple = $("#slectorCartId_" + productId).val();
+                                var IntTotalmiltiple = parseInt(getTotalmultiple);
+                                var totalPrice = IntPrice * IntTotalmiltiple;
+                                if (productGST != 0) {
+                                    var gst = (totalPrice * productGST) / 100
+                                    totalPrice = totalPrice + gst;
+                                }
+                                //$('#CartPrice_' + ProductId).html('<div class="details-price" id="CartPrice_"' + result.productId + '> <span id="priceSpan">' + totalPrice + '<i class="fa fa-inr" aria-hidden="true"></i></span></div>');
+
+                                $('#CartPrice_' + ProductId).html('<td class="Totalprice" id="CartPrice_"' + ProductId + ' data-title="Total Price"><span>' + totalPrice + ' <i class="fa fa-inr" aria-hidden="true"></i></span></td>');
+                                 $.ajax({
+                                    type: "Get",
+                                    url: "@Projectname/ProductMaster/UpdateCartDetailFOrUser?productId=" + productId + "&TotalPrice=" + totalPrice,
+                                    //data: cartId,
+                                    dataType: "json",
+                                    success: function (result) {
+                                        debugger;
+
+                                        if (result != null) {
+                                            //console.log(result, "resultForUpdate")
+                                            //alert("update max successfull")
+                                                $('#cartDetails1').html('');
+                                            $('#cartDetails2').html('');
+                                           $('#cartDetails1').html('<span id="cartDetails">' + result + '<i class="fa fa-inr" aria-hidden="true"></i></span>');
+                                            $('#cartDetails2').html('<span id="cartDetails2">' + result + ' <i class="fa fa-inr" aria-hidden="true"></i></span>');
+
+
+                                        }
+                                    }
+                                });
+                            }
+                        }
+
+
+
+
+
+
+                    }
+                    else {
+                        alert("Eroor")
+                        $("#preloader").hide();
+                        location.reload(true);
+                        swal("Error while loading cart");
+                        window.location.href = "@Projectname/Order/CartInfo";
+                    }
+                }
+            }
+
+
+        });
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonarsource.com/msbuild/integration/2015/1">
+  <ProjectName>GrowIndigo.Utilities</ProjectName>
+  <ProjectLanguage>C#</ProjectLanguage>
+  <ProjectType>Product</ProjectType>
+  <ProjectGuid>9f12e2f4-ef21-4a8d-9785-24c11295c416</ProjectGuid>
+  <FullPath>E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.Utilities\GrowIndigo.Utilities.csproj</FullPath>
+  <IsExcluded>false</IsExcluded>
+  <AnalysisResults>
+    <AnalysisResult Id="FilesToAnalyze" Location="E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\.sonarqube\out\0\FilesToAnalyze.txt" />
+  </AnalysisResults>
+  <AnalysisSettings>
+    <Property Name="sonar.cs.roslyn.reportFilePath">E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.Utilities\bin\Debug\GrowIndigo.Utilities.dll.RoslynCA.json|E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.Utilities\bin\Debug\GrowIndigo.Utilities.dll.RoslynCA.json</Property>
+    <Property Name="sonar.cs.analyzer.projectOutPath">E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\.sonarqube\out\0</Property>
+  </AnalysisSettings>
+  <Configuration>Debug</Configuration>
+  <Platform>AnyCPU</Platform>
+</ProjectInfo>

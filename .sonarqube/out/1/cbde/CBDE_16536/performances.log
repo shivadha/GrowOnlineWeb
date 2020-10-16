@@ -1,0 +1,404 @@
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\App_Start\UnityConfig.cs
+RegisterComponents 18
+RegisterComponents 15
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\Class1.cs
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataEntities\GrowIndigoLocalDBEntities.Context.cs
+OnModelCreating 4
+OnModelCreating 0
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataEntities\GrowIndigoLocalDBEntities.cs
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataEntities\GrowIndigoLocalDBEntities.Designer.cs
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataEntities\Shop_CartInfo.cs
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataEntities\shop_catagory.cs
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataEntities\shop_cmp_image.cs
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataEntities\shop_ContactUs.cs
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataEntities\shop_crops.cs
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataEntities\Shop_Depo_Email.cs
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataEntities\shop_discountDetails.cs
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataEntities\Shop_District_Master.cs
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataEntities\Shop_Feedback.cs
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataEntities\shop_manufacture_master.cs
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataEntities\Shop_OrderLogDetails.cs
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataEntities\Shop_OrderProductDetails.cs
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataEntities\Shop_Order_Details.cs
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataEntities\shop_order_dispatch.cs
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataEntities\Shop_Order_ErrorLogDetails.cs
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataEntities\Shop_Product_Master.cs
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataEntities\Shop_Retailer_UserMaster.cs
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataEntities\shop_revalidation_details.cs
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataEntities\shop_revalidation_order.cs
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataEntities\Shop_Shipping_address.cs
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataEntities\Shop_State_Master.cs
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataEntities\shop_usermaster.cs
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataModels\CommonModels\DataTableResultModel.cs
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataModels\CommonModels\DTColumn.cs
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataModels\CommonModels\DTOrder.cs
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataModels\CommonModels\DTParameterModel.cs
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataModels\CommonModels\DTParameterModelProduct.cs
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataModels\CommonModels\DTSearch.cs
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataModels\CommonModels\LoginViewModel.cs
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataModels\CommonModels\ResponceModel.cs
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataModels\CommonModels\ResultModel.cs
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataModels\CommonModels\StateViewModel.cs
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataModels\Contact\ContactViewModel.cs
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataModels\ExtraParam.cs
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataModels\MandiModels\CartInfoViewModel.cs
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataModels\MandiModels\ShippingAddressViewModel.cs
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataModels\MandiModels\UpdateUserViewModel.cs
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataModels\MandiModels\UserInfoViewModel.cs
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataModels\MandiModels\UserVerification.cs
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataModels\Order\OrderViewModel.cs
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataModels\Product\ProductMasterViewModel.cs
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataRepositories\Common\CommonRepository.cs
+CheckMobileNumberExits 4
+CheckMobileNumberExits 0
+CheckExistingMobileNumber 2
+CheckExistingMobileNumber 0
+CheckExistingMobileNumberforLogin 2
+CheckExistingMobileNumberforLogin 0
+CheckOTPForLogin 3
+CheckOTPForLogin 0
+CheckExistingMobileNumberForLogin 2
+CheckExistingMobileNumberForLogin 0
+BindAllState 3
+BindAllState 0
+GetAddressForUser 2
+GetAddressForUser 0
+GetCartDetails 3
+GetCartDetails 0
+GetCompanyProduct 5
+GetCompanyProduct 0
+GetAllStatewithProduct 3
+GetAllStatewithProduct 0
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataRepositories\Common\ICommonRepository.cs
+CheckMobileNumberExits 2
+CheckMobileNumberExits 0
+CheckExistingMobileNumber 2
+CheckExistingMobileNumber 0
+BindAllState 2
+BindAllState 0
+CheckExistingMobileNumberForLogin 2
+CheckExistingMobileNumberForLogin 0
+CheckOTPForLogin 4
+CheckOTPForLogin 0
+GetCompanyProduct 4
+GetCompanyProduct 0
+CheckExistingMobileNumberforLogin 2
+CheckExistingMobileNumberforLogin 0
+GetAddressForUser 2
+GetAddressForUser 0
+GetCartDetails 2
+GetCartDetails 0
+GetAllStatewithProduct 3
+GetAllStatewithProduct 0
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataRepositories\Order\IOrderRepository.cs
+AddOrderDetail 2
+AddOrderDetail 0
+AddProductOrderDetail 2
+AddProductOrderDetail 0
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataRepositories\Order\OrderRepository.cs
+AddOrderDetail 2
+AddOrderDetail 0
+AddProductOrderDetail 2
+AddProductOrderDetail 0
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataRepositories\Product\IProductRepository.cs
+GetProductDetail 2
+GetProductDetail 0
+GetAllProduct 2
+GetAllProduct 0
+AddOrderDetails 2
+AddOrderDetails 0
+GetOrderProductDetails 2
+GetOrderProductDetails 0
+CheckCartProduct 2
+CheckCartProduct 0
+GetAllCategory 2
+GetAllCategory 0
+GetProductsbyCategory 2
+GetProductsbyCategory 0
+GetAllProductList 2
+GetAllProductList 0
+GetManufactureDetailsProduct 2
+GetManufactureDetailsProduct 0
+GetSubCategoryProductList 2
+GetSubCategoryProductList 0
+CheckMinProductPrice 2
+CheckMinProductPrice 0
+CheckMaxProductPrice 2
+CheckMaxProductPrice 0
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataRepositories\Product\ProductRepository.cs
+GetAllProduct 2
+GetAllProduct 0
+GetAllCategory 2
+GetAllCategory 0
+GetProductDetail 2
+GetProductDetail 0
+AddOrderDetails 2
+AddOrderDetails 0
+GetOrderDetailByOrderId 3
+GetOrderDetailByOrderId 0
+UpdateOrderDetails 2
+UpdateOrderDetails 0
+GetOrderProductDetails 2
+GetOrderProductDetails 0
+CheckCartProduct 2
+CheckCartProduct 0
+GetProductsbyCategory 2
+GetProductsbyCategory 0
+GetAllProductList 2
+GetAllProductList 0
+ProductFilter 3
+ProductFilter 0
+GetManufactureDetailsProduct 2
+GetManufactureDetailsProduct 0
+GetSubCategoryProductList 2
+GetSubCategoryProductList 0
+GetSubCategoryProductListFilter 2
+GetSubCategoryProductListFilter 0
+CheckMaxProductPrice 2
+CheckMaxProductPrice 0
+CheckMinProductPrice 2
+CheckMinProductPrice 0
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataRepositories\Repository\IRepository.cs
+GetById 2
+GetById 0
+GetAll 2
+GetAll 0
+FindBy 2
+FindBy 0
+FindBy 2
+FindBy 0
+FindBy 2
+FindBy 0
+SearchBy 2
+SearchBy 0
+SearchBy 2
+SearchBy 0
+Exists 2
+Exists 0
+Exists 2
+Exists 0
+Exists 2
+Exists 0
+Insert 3
+Insert 0
+Update 2
+Update 0
+Update 2
+Update 0
+Delete 2
+Delete 0
+Delete 2
+Delete 0
+Commit 2
+Commit 0
+Dispose 2
+Dispose 0
+GetAllList 2
+GetAllList 0
+GetQuery 2
+GetQuery 0
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataRepositories\Repository\Repository.cs
+Insert 2
+Insert 0
+GetById 2
+GetById 0
+GetAllList 4
+GetAllList 15
+GetQuery 2
+GetQuery 0
+GetAll 2
+GetAll 0
+FindBy 2
+FindBy 0
+FindBy 2
+FindBy 0
+FindBy 2
+FindBy 0
+SearchBy 2
+SearchBy 0
+SearchBy 2
+SearchBy 0
+Update 2
+Update 0
+Update 2
+Update 0
+Delete 2
+Delete 0
+Delete 2
+Delete 0
+SqlQuery 2
+SqlQuery 0
+SqlQuery 2
+SqlQuery 0
+Exists 2
+Exists 0
+Exists 4
+Exists 0
+Exists 2
+Exists 0
+Commit 2
+Commit 0
+Dispose 5
+Dispose 0
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataRepositories\UnitOfWork\IUnitOfWork.cs
+SaveChanges 2
+SaveChanges 0
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataRepositories\UnitOfWork\UnitOfWork.cs
+SaveChanges 2
+SaveChanges 0
+Dispose 2
+Dispose 0
+Dispose 3
+Dispose 0
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataRepositories\User\IUserRepository.cs
+DeleteAllCartProducts 2
+DeleteAllCartProducts 0
+GetAllCartProductDetail 2
+GetAllCartProductDetail 0
+AddUser 2
+AddUser 0
+UpdateUser 2
+UpdateUser 0
+GetOrderHistory 2
+GetOrderHistory 0
+Addcontact 2
+Addcontact 0
+GetOrderDetailByOrderId 2
+GetOrderDetailByOrderId 0
+GetOrderList 2
+GetOrderList 0
+AddProductOrderDetail 2
+AddProductOrderDetail 0
+GetUserbyMobileNumber 2
+GetUserbyMobileNumber 0
+CheckOtpFromDb 2
+CheckOtpFromDb 0
+CheckUserProfileUpdated 2
+CheckUserProfileUpdated 0
+GetuserInfo 2
+GetuserInfo 0
+GetUserInfoDetailByMobileNumber 2
+GetUserInfoDetailByMobileNumber 0
+AddAddreessForUser 2
+AddAddreessForUser 0
+DeleteCartProduct 2
+DeleteCartProduct 0
+GetCartDetailByMobileNumber 2
+GetCartDetailByMobileNumber 0
+AddOrderDetail 2
+AddOrderDetail 0
+GetOrderDetailByOrderId 2
+GetOrderDetailByOrderId 0
+UpdateOrderDetails 2
+UpdateOrderDetails 0
+GetOrderProductDetails 2
+GetOrderProductDetails 0
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\DataRepositories\User\UserRepository.cs
+AddUser 2
+AddUser 0
+UpdateUser 2
+UpdateUser 0
+GetUserbyMobileNumber 2
+GetUserbyMobileNumber 0
+GetuserInfo 2
+GetuserInfo 0
+CheckOtpFromDb 2
+CheckOtpFromDb 0
+CheckUserProfileUpdated 2
+CheckUserProfileUpdated 0
+GetUserInfoDetailByMobileNumber 2
+GetUserInfoDetailByMobileNumber 0
+AddAddreessForUser 2
+AddAddreessForUser 0
+DeleteCartProduct 2
+DeleteCartProduct 0
+GetCartDetailByMobileNumber 2
+GetCartDetailByMobileNumber 0
+AddOrderDetail 2
+AddOrderDetail 0
+AddProductOrderDetail 2
+AddProductOrderDetail 0
+GetOrderDetailByOrderId 2
+GetOrderDetailByOrderId 0
+UpdateOrderDetails 3
+UpdateOrderDetails 0
+GetOrderProductDetails 2
+GetOrderProductDetails 0
+GetAllCartProductDetail 2
+GetAllCartProductDetail 0
+DeleteAllCartProducts 2
+DeleteAllCartProducts 0
+GetOrderHistory 2
+GetOrderHistory 15
+Addcontact 3
+Addcontact 0
+GetOrderDetailByOrderId 2
+GetOrderDetailByOrderId 0
+GetOrderList 9
+GetOrderList 0
+OrderBuildWhereFilter 2
+OrderBuildWhereFilter 0
+OrderBuildOrderByFilter 2
+OrderBuildOrderByFilter 0
+
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.DAL\Properties\AssemblyInfo.cs
+
+C:\Users\Shivam dhagat\AppData\Local\Temp\.NETFramework,Version=v4.6.1.AssemblyAttributes.cs
+

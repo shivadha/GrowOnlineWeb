@@ -1,0 +1,395 @@
+E:\MycoNew\GrowIndigo\GrowIndigo.BAL\obj\Debug\GrowIndigo.BAL.csproj.CoreCompileInputs.cache
+E:\MycoNew\GrowIndigo\GrowIndigo.BAL\bin\Debug\GrowIndigo.BAL.dll.config
+E:\MycoNew\GrowIndigo\GrowIndigo.BAL\bin\Debug\GrowIndigo.BAL.dll
+E:\MycoNew\GrowIndigo\GrowIndigo.BAL\bin\Debug\GrowIndigo.BAL.pdb
+E:\MycoNew\GrowIndigo\GrowIndigo.BAL\bin\Debug\GrowIndigo.DAL.dll
+E:\MycoNew\GrowIndigo\GrowIndigo.BAL\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\MycoNew\GrowIndigo\GrowIndigo.BAL\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\MycoNew\GrowIndigo\GrowIndigo.BAL\bin\Debug\System.Web.Helpers.dll
+E:\MycoNew\GrowIndigo\GrowIndigo.BAL\bin\Debug\System.Web.Mvc.dll
+E:\MycoNew\GrowIndigo\GrowIndigo.BAL\bin\Debug\System.Web.Razor.dll
+E:\MycoNew\GrowIndigo\GrowIndigo.BAL\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\MycoNew\GrowIndigo\GrowIndigo.BAL\bin\Debug\System.Web.WebPages.dll
+E:\MycoNew\GrowIndigo\GrowIndigo.BAL\bin\Debug\System.Web.WebPages.Razor.dll
+E:\MycoNew\GrowIndigo\GrowIndigo.BAL\bin\Debug\Unity.Abstractions.dll
+E:\MycoNew\GrowIndigo\GrowIndigo.BAL\bin\Debug\Unity.Container.dll
+E:\MycoNew\GrowIndigo\GrowIndigo.BAL\bin\Debug\Unity.Mvc5.dll
+E:\MycoNew\GrowIndigo\GrowIndigo.BAL\bin\Debug\EntityFramework.dll
+E:\MycoNew\GrowIndigo\GrowIndigo.BAL\bin\Debug\GrowIndigo.Utilities.dll
+E:\MycoNew\GrowIndigo\GrowIndigo.BAL\bin\Debug\GrowIndigo.DAL.pdb
+E:\MycoNew\GrowIndigo\GrowIndigo.BAL\bin\Debug\GrowIndigo.DAL.dll.config
+E:\MycoNew\GrowIndigo\GrowIndigo.BAL\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\MycoNew\GrowIndigo\GrowIndigo.BAL\bin\Debug\System.Web.Helpers.xml
+E:\MycoNew\GrowIndigo\GrowIndigo.BAL\bin\Debug\System.Web.Mvc.xml
+E:\MycoNew\GrowIndigo\GrowIndigo.BAL\bin\Debug\System.Web.Razor.xml
+E:\MycoNew\GrowIndigo\GrowIndigo.BAL\bin\Debug\System.Web.WebPages.xml
+E:\MycoNew\GrowIndigo\GrowIndigo.BAL\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\MycoNew\GrowIndigo\GrowIndigo.BAL\bin\Debug\System.Web.WebPages.Razor.xml
+E:\MycoNew\GrowIndigo\GrowIndigo.BAL\bin\Debug\Unity.Abstractions.pdb
+E:\MycoNew\GrowIndigo\GrowIndigo.BAL\bin\Debug\Unity.Container.pdb
+E:\MycoNew\GrowIndigo\GrowIndigo.BAL\bin\Debug\EntityFramework.xml
+E:\MycoNew\GrowIndigo\GrowIndigo.BAL\bin\Debug\GrowIndigo.Utilities.pdb
+E:\MycoNew\GrowIndigo\GrowIndigo.BAL\obj\Debug\GrowIndigo.BAL.csprojAssemblyReference.cache
+E:\MycoNew\GrowIndigo\GrowIndigo.BAL\obj\Debug\GrowIndigo.BAL.csproj.CopyComplete
+E:\MycoNew\GrowIndigo\GrowIndigo.BAL\obj\Debug\GrowIndigo.BAL.dll
+E:\MycoNew\GrowIndigo\GrowIndigo.BAL\obj\Debug\GrowIndigo.BAL.pdb
+F:\sipl-project\Dotnet\Growindigo\app-setup\GrowIndigo.BAL\bin\Debug\GrowIndigo.BAL.dll.config
+F:\sipl-project\Dotnet\Growindigo\app-setup\GrowIndigo.BAL\bin\Debug\GrowIndigo.BAL.dll
+F:\sipl-project\Dotnet\Growindigo\app-setup\GrowIndigo.BAL\bin\Debug\GrowIndigo.BAL.pdb
+F:\sipl-project\Dotnet\Growindigo\app-setup\GrowIndigo.BAL\bin\Debug\GrowIndigo.DAL.dll
+F:\sipl-project\Dotnet\Growindigo\app-setup\GrowIndigo.BAL\bin\Debug\Microsoft.Web.Infrastructure.dll
+F:\sipl-project\Dotnet\Growindigo\app-setup\GrowIndigo.BAL\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+F:\sipl-project\Dotnet\Growindigo\app-setup\GrowIndigo.BAL\bin\Debug\System.Web.Helpers.dll
+F:\sipl-project\Dotnet\Growindigo\app-setup\GrowIndigo.BAL\bin\Debug\System.Web.Mvc.dll
+F:\sipl-project\Dotnet\Growindigo\app-setup\GrowIndigo.BAL\bin\Debug\System.Web.Razor.dll
+F:\sipl-project\Dotnet\Growindigo\app-setup\GrowIndigo.BAL\bin\Debug\System.Web.WebPages.Deployment.dll
+F:\sipl-project\Dotnet\Growindigo\app-setup\GrowIndigo.BAL\bin\Debug\System.Web.WebPages.dll
+F:\sipl-project\Dotnet\Growindigo\app-setup\GrowIndigo.BAL\bin\Debug\System.Web.WebPages.Razor.dll
+F:\sipl-project\Dotnet\Growindigo\app-setup\GrowIndigo.BAL\bin\Debug\Unity.Abstractions.dll
+F:\sipl-project\Dotnet\Growindigo\app-setup\GrowIndigo.BAL\bin\Debug\Unity.Container.dll
+F:\sipl-project\Dotnet\Growindigo\app-setup\GrowIndigo.BAL\bin\Debug\Unity.Mvc5.dll
+F:\sipl-project\Dotnet\Growindigo\app-setup\GrowIndigo.BAL\bin\Debug\EntityFramework.dll
+F:\sipl-project\Dotnet\Growindigo\app-setup\GrowIndigo.BAL\bin\Debug\GrowIndigo.Utilities.dll
+F:\sipl-project\Dotnet\Growindigo\app-setup\GrowIndigo.BAL\bin\Debug\GrowIndigo.DAL.pdb
+F:\sipl-project\Dotnet\Growindigo\app-setup\GrowIndigo.BAL\bin\Debug\GrowIndigo.DAL.dll.config
+F:\sipl-project\Dotnet\Growindigo\app-setup\GrowIndigo.BAL\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+F:\sipl-project\Dotnet\Growindigo\app-setup\GrowIndigo.BAL\bin\Debug\System.Web.Helpers.xml
+F:\sipl-project\Dotnet\Growindigo\app-setup\GrowIndigo.BAL\bin\Debug\System.Web.Mvc.xml
+F:\sipl-project\Dotnet\Growindigo\app-setup\GrowIndigo.BAL\bin\Debug\System.Web.Razor.xml
+F:\sipl-project\Dotnet\Growindigo\app-setup\GrowIndigo.BAL\bin\Debug\System.Web.WebPages.xml
+F:\sipl-project\Dotnet\Growindigo\app-setup\GrowIndigo.BAL\bin\Debug\System.Web.WebPages.Deployment.xml
+F:\sipl-project\Dotnet\Growindigo\app-setup\GrowIndigo.BAL\bin\Debug\System.Web.WebPages.Razor.xml
+F:\sipl-project\Dotnet\Growindigo\app-setup\GrowIndigo.BAL\bin\Debug\Unity.Abstractions.pdb
+F:\sipl-project\Dotnet\Growindigo\app-setup\GrowIndigo.BAL\bin\Debug\Unity.Container.pdb
+F:\sipl-project\Dotnet\Growindigo\app-setup\GrowIndigo.BAL\bin\Debug\EntityFramework.xml
+F:\sipl-project\Dotnet\Growindigo\app-setup\GrowIndigo.BAL\bin\Debug\GrowIndigo.Utilities.pdb
+F:\sipl-project\Dotnet\Growindigo\app-setup\GrowIndigo.BAL\bin\Debug\hi\GrowIndigo.Utilities.resources.dll
+F:\sipl-project\Dotnet\Growindigo\app-setup\GrowIndigo.BAL\bin\Debug\mr\GrowIndigo.Utilities.resources.dll
+F:\sipl-project\Dotnet\Growindigo\app-setup\GrowIndigo.BAL\bin\Debug\te\GrowIndigo.Utilities.resources.dll
+F:\sipl-project\Dotnet\Growindigo\app-setup\GrowIndigo.BAL\obj\Debug\GrowIndigo.BAL.csprojAssemblyReference.cache
+F:\sipl-project\Dotnet\Growindigo\app-setup\GrowIndigo.BAL\obj\Debug\GrowIndigo.BAL.csproj.CoreCompileInputs.cache
+F:\sipl-project\Dotnet\Growindigo\app-setup\GrowIndigo.BAL\obj\Debug\GrowIndigo.BAL.csproj.CopyComplete
+F:\sipl-project\Dotnet\Growindigo\app-setup\GrowIndigo.BAL\obj\Debug\GrowIndigo.BAL.dll
+F:\sipl-project\Dotnet\Growindigo\app-setup\GrowIndigo.BAL\obj\Debug\GrowIndigo.BAL.pdb
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\GrowIndigo.BAL.dll.config
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\GrowIndigo.BAL.dll
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\GrowIndigo.BAL.pdb
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\GrowIndigo.DAL.dll
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\Microsoft.Web.Infrastructure.dll
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\System.Web.Helpers.dll
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\System.Web.Mvc.dll
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\System.Web.Razor.dll
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\System.Web.WebPages.Deployment.dll
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\System.Web.WebPages.dll
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\System.Web.WebPages.Razor.dll
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\Unity.Abstractions.dll
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\Unity.Container.dll
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\Unity.Mvc5.dll
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\EntityFramework.dll
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\GrowIndigo.Utilities.dll
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\RestSharp.dll
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\GrowIndigo.DAL.pdb
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\GrowIndigo.DAL.dll.config
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\System.Web.Helpers.xml
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\System.Web.Mvc.xml
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\System.Web.Razor.xml
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\System.Web.WebPages.xml
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\System.Web.WebPages.Deployment.xml
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\System.Web.WebPages.Razor.xml
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\Unity.Abstractions.pdb
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\Unity.Container.pdb
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\EntityFramework.xml
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\GrowIndigo.Utilities.pdb
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\RestSharp.xml
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\hi\GrowIndigo.Utilities.resources.dll
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\mr\GrowIndigo.Utilities.resources.dll
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\te\GrowIndigo.Utilities.resources.dll
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\obj\Debug\GrowIndigo.BAL.csprojAssemblyReference.cache
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\obj\Debug\GrowIndigo.BAL.csproj.CoreCompileInputs.cache
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\obj\Debug\GrowIndigo.BAL.csproj.CopyComplete
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\obj\Debug\GrowIndigo.BAL.dll
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\obj\Debug\GrowIndigo.BAL.pdb
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\GrowIndigo.BAL.dll.config
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\GrowIndigo.BAL.dll
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\GrowIndigo.BAL.pdb
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\GrowIndigo.DAL.dll
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\Microsoft.Web.Infrastructure.dll
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\System.Web.Helpers.dll
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\System.Web.Mvc.dll
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\System.Web.Razor.dll
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\System.Web.WebPages.Deployment.dll
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\System.Web.WebPages.dll
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\System.Web.WebPages.Razor.dll
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\Unity.Abstractions.dll
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\Unity.Container.dll
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\Unity.Mvc5.dll
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\EntityFramework.dll
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\GrowIndigo.Utilities.dll
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\RestSharp.dll
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\GrowIndigo.DAL.pdb
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\GrowIndigo.DAL.dll.config
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\System.Web.Helpers.xml
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\System.Web.Mvc.xml
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\System.Web.Razor.xml
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\System.Web.WebPages.xml
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\System.Web.WebPages.Deployment.xml
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\System.Web.WebPages.Razor.xml
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\Unity.Abstractions.pdb
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\Unity.Container.pdb
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\EntityFramework.xml
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\GrowIndigo.Utilities.pdb
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\RestSharp.xml
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\hi\GrowIndigo.Utilities.resources.dll
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\mr\GrowIndigo.Utilities.resources.dll
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\te\GrowIndigo.Utilities.resources.dll
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\obj\Debug\GrowIndigo.BAL.csprojAssemblyReference.cache
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\obj\Debug\GrowIndigo.BAL.csproj.CoreCompileInputs.cache
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\obj\Debug\GrowIndigo.BAL.csproj.CopyComplete
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\obj\Debug\GrowIndigo.BAL.dll
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\obj\Debug\GrowIndigo.BAL.pdb
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\EntityFramework.SqlServer.dll
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\LinqKit.dll
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\Microsoft.Win32.Primitives.dll
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\PredicateBuilder.dll
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\System.AppContext.dll
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\System.Console.dll
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\System.Globalization.Calendars.dll
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\System.IO.Compression.dll
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\System.IO.Compression.ZipFile.dll
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\System.IO.FileSystem.dll
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\System.IO.FileSystem.Primitives.dll
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\System.Net.Http.dll
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\System.Net.Sockets.dll
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\System.Security.Cryptography.Algorithms.dll
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\System.Security.Cryptography.Encoding.dll
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\System.Security.Cryptography.Primitives.dll
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\System.Xml.ReaderWriter.dll
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\EntityFramework.SqlServer.xml
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\LinqKit.xml
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+F:\sipl-project\Dotnet\Growindigo\GrowIndigo_Ecommerce\GrowIndigo.BAL\bin\Debug\GrowIndigo.Utilities.dll.config
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\EntityFramework.SqlServer.dll
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\LinqKit.dll
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\Microsoft.Win32.Primitives.dll
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\PredicateBuilder.dll
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\System.AppContext.dll
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\System.Console.dll
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\System.Globalization.Calendars.dll
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\System.IO.Compression.dll
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\System.IO.Compression.ZipFile.dll
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\System.IO.FileSystem.dll
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\System.IO.FileSystem.Primitives.dll
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\System.Net.Http.dll
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\System.Net.Sockets.dll
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\System.Security.Cryptography.Algorithms.dll
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\System.Security.Cryptography.Encoding.dll
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\System.Security.Cryptography.Primitives.dll
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\System.Xml.ReaderWriter.dll
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\EntityFramework.SqlServer.xml
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\LinqKit.xml
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+F:\Sipl-project\Dot net\GrowIndigo\www\GrowIndigo.BAL\bin\Debug\GrowIndigo.Utilities.dll.config
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\GrowIndigo.BAL.dll.config
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\GrowIndigo.BAL.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\GrowIndigo.BAL.pdb
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\EntityFramework.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\GrowIndigo.DAL.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\GrowIndigo.Utilities.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\LinqKit.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\Microsoft.Win32.Primitives.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\PredicateBuilder.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\System.AppContext.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\System.Console.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\System.Globalization.Calendars.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\System.IO.Compression.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\System.IO.Compression.ZipFile.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\System.IO.FileSystem.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\System.IO.FileSystem.Primitives.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\System.Net.Http.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\System.Net.Sockets.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\System.Security.Cryptography.Algorithms.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\System.Security.Cryptography.Encoding.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\System.Security.Cryptography.Primitives.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\System.Web.Helpers.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\System.Web.Mvc.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\System.Web.Razor.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\System.Web.WebPages.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\System.Web.WebPages.Razor.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\System.Xml.ReaderWriter.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\Unity.Abstractions.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\Unity.Container.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\Unity.Mvc5.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\RestSharp.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\GrowIndigo.DAL.pdb
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\GrowIndigo.DAL.dll.config
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\GrowIndigo.Utilities.pdb
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\GrowIndigo.Utilities.dll.config
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\EntityFramework.xml
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\LinqKit.xml
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\System.Web.Helpers.xml
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\System.Web.Mvc.xml
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\System.Web.Razor.xml
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\System.Web.WebPages.xml
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\System.Web.WebPages.Razor.xml
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\Unity.Abstractions.pdb
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\Unity.Container.pdb
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\RestSharp.xml
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\hi\GrowIndigo.Utilities.resources.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\mr\GrowIndigo.Utilities.resources.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\bin\Debug\te\GrowIndigo.Utilities.resources.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\obj\Debug\GrowIndigo.BAL.csprojAssemblyReference.cache
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\obj\Debug\GrowIndigo.BAL.csproj.CoreCompileInputs.cache
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\obj\Debug\GrowIndigo.BAL.csproj.CopyComplete
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\obj\Debug\GrowIndigo.BAL.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\GrowIndigo.BAL\obj\Debug\GrowIndigo.BAL.pdb
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\GrowIndigo.BAL.dll.config
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\GrowIndigo.BAL.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\GrowIndigo.BAL.pdb
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\EntityFramework.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\GrowIndigo.DAL.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\GrowIndigo.Utilities.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\LinqKit.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\Microsoft.Win32.Primitives.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\PredicateBuilder.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\System.AppContext.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\System.Console.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\System.Globalization.Calendars.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\System.IO.Compression.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\System.IO.Compression.ZipFile.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\System.IO.FileSystem.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\System.IO.FileSystem.Primitives.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\System.Net.Http.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\System.Net.Sockets.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\System.Security.Cryptography.Algorithms.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\System.Security.Cryptography.Encoding.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\System.Security.Cryptography.Primitives.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\System.Web.Helpers.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\System.Web.Mvc.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\System.Web.Razor.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\System.Web.WebPages.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\System.Web.WebPages.Razor.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\System.Xml.ReaderWriter.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\Unity.Abstractions.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\Unity.Container.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\Unity.Mvc5.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\RestSharp.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\GrowIndigo.DAL.pdb
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\GrowIndigo.DAL.dll.config
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\GrowIndigo.Utilities.pdb
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\GrowIndigo.Utilities.dll.config
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\EntityFramework.xml
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\LinqKit.xml
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\System.Web.Helpers.xml
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\System.Web.Mvc.xml
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\System.Web.Razor.xml
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\System.Web.WebPages.xml
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\System.Web.WebPages.Razor.xml
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\Unity.Abstractions.pdb
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\Unity.Container.pdb
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\RestSharp.xml
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\hi\GrowIndigo.Utilities.resources.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\mr\GrowIndigo.Utilities.resources.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\bin\Debug\te\GrowIndigo.Utilities.resources.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\obj\Debug\GrowIndigo.BAL.csprojAssemblyReference.cache
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\obj\Debug\GrowIndigo.BAL.csproj.CoreCompileInputs.cache
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\obj\Debug\GrowIndigo.BAL.csproj.CopyComplete
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\obj\Debug\GrowIndigo.BAL.dll
+E:\P.R.O.J.E.C.T.S\GrowIndigoWebApplication\Project\Project\GrowIndigo.BAL\obj\Debug\GrowIndigo.BAL.pdb
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\GrowIndigo.BAL.dll.config
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\GrowIndigo.BAL.dll
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\GrowIndigo.BAL.pdb
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\EntityFramework.dll
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\EntityFramework.SqlServer.dll
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\GrowIndigo.DAL.dll
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\GrowIndigo.Utilities.dll
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\LinqKit.dll
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\Microsoft.Web.Infrastructure.dll
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\Microsoft.Win32.Primitives.dll
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\PredicateBuilder.dll
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\System.AppContext.dll
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\System.Console.dll
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\System.Globalization.Calendars.dll
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\System.IO.Compression.dll
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\System.IO.Compression.ZipFile.dll
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\System.IO.FileSystem.dll
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\System.IO.FileSystem.Primitives.dll
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\System.Net.Http.dll
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\System.Net.Sockets.dll
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\System.Security.Cryptography.Algorithms.dll
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\System.Security.Cryptography.Encoding.dll
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\System.Security.Cryptography.Primitives.dll
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\System.Web.Helpers.dll
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\System.Web.Mvc.dll
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\System.Web.Razor.dll
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\System.Web.WebPages.Deployment.dll
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\System.Web.WebPages.dll
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\System.Web.WebPages.Razor.dll
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\System.Xml.ReaderWriter.dll
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\Unity.Abstractions.dll
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\Unity.Container.dll
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\Unity.Mvc5.dll
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\RestSharp.dll
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\System.Threading.Tasks.Extensions.dll
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\GrowIndigo.DAL.pdb
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\GrowIndigo.DAL.dll.config
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\GrowIndigo.Utilities.pdb
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\GrowIndigo.Utilities.dll.config
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\EntityFramework.xml
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\EntityFramework.SqlServer.xml
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\LinqKit.xml
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\System.Web.Helpers.xml
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\System.Web.Mvc.xml
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\System.Web.Razor.xml
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\System.Web.WebPages.xml
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\System.Web.WebPages.Deployment.xml
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\System.Web.WebPages.Razor.xml
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\Unity.Abstractions.pdb
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\Unity.Container.pdb
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\RestSharp.xml
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\hi\GrowIndigo.Utilities.resources.dll
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\mr\GrowIndigo.Utilities.resources.dll
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\te\GrowIndigo.Utilities.resources.dll
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\obj\Debug\GrowIndigo.BAL.csprojAssemblyReference.cache
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\obj\Debug\GrowIndigo.BAL.csproj.CoreCompileInputs.cache
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\obj\Debug\GrowIndigo.BAL.csproj.CopyComplete
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\obj\Debug\GrowIndigo.BAL.dll
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\obj\Debug\GrowIndigo.BAL.pdb
+F:\P.R.O.J.E.C.T\GrowOnlineWebsite\Project\Project\GrowIndigo.BAL\bin\Debug\ApplicationInsights.config
