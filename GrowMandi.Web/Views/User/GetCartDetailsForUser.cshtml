@@ -45,16 +45,18 @@
     function GetPaymentMethod() {
     
        // debugger;
+        $("#preloader").show();
         var getAddress = localStorage.getItem("Address");
         //alert(getAddress);
 
         if ($("input[type=radio]:checked").length > 0) {
                // alert("it's checked");
-
+            
                 @*window.location.href = '@Projectname/Order/PaymentMethod?totalPrice=@Price &addressId=' + getAddress + '&Email=@Email &UserName=@UserName'*@
                 window.location.href = '@Projectname/Order/PaymentMethod?addressId=' + getAddress + ''
             }
-            else {
+        else {
+            $("#preloader").hide();
                 swal("Please select pick address first ")
             }
 

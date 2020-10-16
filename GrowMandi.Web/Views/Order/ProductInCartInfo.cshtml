@@ -75,7 +75,7 @@
                     <span>@Resource.GrowOnline_Common_Total</span>
                     <span class="total-amount"> @ViewBag.TotalPricePartial  <i class="fa fa-inr" aria-hidden="true"></i></span>
                 </div>
-                <a href="@Projectname/Order/CartInfo" class="btn animate">@Resource.GrowOnline_Common_CheckOut</a>
+                <a href="@Projectname/Order/CartInfo" class="btn animate" onclick="Loader()">@Resource.GrowOnline_Common_CheckOut</a>
             </div>
         }
         else
@@ -90,7 +90,9 @@
     <!--/ End Shopping Item -->
 </div>
 <script>
-
+    function Loader() {
+        $("#preloader").show();
+    }
     function DeleteProductInCart(cartId) {
 
            // alert("delete");
@@ -106,13 +108,13 @@
                 success: function (result) {
                   //  debugger;
                     if (result == "true") {
-                        $("#preloader").hide();
+                        $("#preloader").show();
                         swal("@Resource.GrowOnline_Common_ProductRemoved");
                         window.location.href = "@Projectname/Order/CartInfo";
                         location.reload(true);
                     }
                     else {
-                        $("#preloader").hide();
+                        $("#preloader").show();
                         location.reload(true);
                         swal("@Resource.GrowOnline_Common_ErrorProductRemoved")
                         window.location.href = "@Projectname/Order/CartInfo";

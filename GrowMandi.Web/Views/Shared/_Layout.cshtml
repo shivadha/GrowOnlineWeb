@@ -125,12 +125,12 @@
                                             <i class="fa fa-user-o"></i>@Resource.GrowOnline_Common_User
                                         </button>
                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                            <a class="dropdown-item" href="@Projectname/Account/UpdateUserProfile">
+                                            <a class="dropdown-item" href="@Projectname/Account/UpdateUserProfile" onclick="Loader()">
                                                 <i class="fa fa-user"></i><span>
                                                     @Resource.GrowOnline_Common_MyProfile
                                                 </span>
                                             </a>
-                                            <a class="dropdown-item" href="@Projectname/Order/OrderHistory">
+                                            <a class="dropdown-item" href="@Projectname/Order/OrderHistory" onclick="Loader()">
                                                 <i class="fa fa-shopping-basket"></i><span>
                                                     @Resource.GrowOnline_Common_MyOrders
                                                 </span>
@@ -178,7 +178,7 @@
                                         <a href="#" class="single-icon"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
                                     </div>*@
                                 <div class="sinlge-bar">
-                                    <a href="@Projectname/Account/UpdateUserProfile" class="single-icon"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+                                    <a href="@Projectname/Account/UpdateUserProfile" class="single-icon" onclick="Loader()"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
                                 </div>
 
 
@@ -675,6 +675,10 @@
    
 
 
+    }
+
+    function Loader() {
+        $('#preloader').show();
     }
 </script>
 

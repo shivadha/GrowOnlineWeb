@@ -158,8 +158,8 @@
                                     @*<li>@Resource.GrowOnline_Common_GstPercentage<span>20.00 <i class="fa fa-inr" aria-hidden="true"></i></span></li>*@
                                 </ul>
                                 <div class="button5">
-                                    <a href="@Projectname/Order/CheckOut?totalPrice= @Price" class="btn">@Resource.GrowOnline_Common_CheckOut</a>
-                                    <a href="@Projectname/Home/Index" class="btn">@Resource.GrowOnline_Common_continueShop</a>
+                                    <a href="@Projectname/Order/CheckOut?totalPrice= @Price" onclick="ForLoader()" class="btn">@Resource.GrowOnline_Common_CheckOut</a>
+                                    <a href="@Projectname/Home/Index" class="btn" onclick="ForLoader()">@Resource.GrowOnline_Common_continueShop </a>
                                 </div>
                             </div>
                         </div>
@@ -190,6 +190,9 @@
     }
 </script>
 <script>
+    function ForLoader() {
+        $("#preloader").show();
+    }
         function DeleteCartProduct(cartId) {
             //alert("delete");
            // alert(cartId);

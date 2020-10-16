@@ -6,7 +6,7 @@
 
 @{
     var Projectname = ConfigReader.ProjectName;
-
+    var ServerSubProductImage = ConfigReader.ServerSubProductImage;
     LoginViewModel loggedInUser = Session["LoggedInUser"] != null ? (LoginViewModel)Session["LoggedInUser"] : null;
 }
 
@@ -15,7 +15,7 @@
     <div class="item">
         <div class="single-product">
             <a href="#" onclick="getCompanyProduct('@companyProduct.cmpName')">
-                <img src="https://growonline.mahyco.com/otherImages/@companyProduct.imgUrl" />
+                <img src="@ServerSubProductImage@companyProduct.imgUrl" />
             </a>
         </div>
     </div>

@@ -57,7 +57,7 @@
     function SaveState() {
         //debugger;
         //alert("save")
-
+        $("#preloader").show();
         var getStateValue = $('#AllStates').val();
         var statename = $('#AllStates option:selected').text();
 
@@ -84,6 +84,7 @@
                 },
                     function (isConfirm) {
                         if (isConfirm) {
+                            $("#preloader").show();
                             window.location.href = "@Projectname";
                         }
                     });
