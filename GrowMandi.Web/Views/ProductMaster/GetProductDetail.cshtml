@@ -293,8 +293,8 @@
 
 </div>
 <script>
-     function BacktoList() {
-
+    function BacktoList() {
+        $('#preloader').show();
          window.history.back();
     }
 
@@ -335,7 +335,7 @@
                                             }
                                             else if (result = "alreadyexits")
                                             {
-                                                $("#preloader").hide();
+                                                $("#preloader").show();
                                                 swal("This product is already added in cart.");
                                                 window.location.href = "@Projectname/Order/CartInfo"
                                                 //localStorage.removeItem("ProductId");

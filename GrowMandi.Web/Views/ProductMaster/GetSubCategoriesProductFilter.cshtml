@@ -290,7 +290,7 @@
                         console.log(result, "ans");
                         for (var i = 0; i < result.length; i++) {
                             var imageurl = result[i].imageUrl.split(',', 1);
-                            $('#sectionDiv').append('<div class="col-lg-4 col-md-6 col-12"> <div class="single-product"><div class="product-img"><a href="@Projectname/Productmaster/GetProductDetail?ProductId=' + result[i].pkSkuId + '"><a href="#" onclick="GetProductDetailPage(' + result[i].pkSkuId + ')" ><img class="default-img" src="@ServerProductImage' + imageurl + '" alt="#"></a><div class="button-head"><div class="product-action"></div><div class="product-action-2"></div></div></div><div class="product-content"><h3><a href="@Projectname/ProductMaster/GetProductDetail?ProductId=' + result[i].pkSkuId + '">' + result[i].SkuName + '</a></h3><a class="addtoCart" title="Add to cart" onclick="addTocart(' + result[i].pkSkuId + ')">Add to cart</a><div class="product-price"><i class="fa fa-inr" aria-hidden="true"></i><span>' + result[i].Price + ' </span></div></div></div></div>');
+                            $('#sectionDiv').append('<div class="col-lg-4 col-md-6 col-12"> <div class="single-product"><div class="product-img"><a href="@Projectname/Productmaster/GetProductDetail?ProductId=' + result[i].pkSkuId + '"><a href="@Projectname/ProductMaster/GetProductDetail?ProductId=' + result[i].pkSkuId + '" onclick="GetProductDetailPage(' + result[i].pkSkuId + ')" ><img class="default-img" src="@ServerProductImage' + imageurl + '" alt="#"></a><div class="button-head"><div class="product-action"></div><div class="product-action-2"></div></div></div><div class="product-content"><h3><a href="@Projectname/ProductMaster/GetProductDetail?ProductId=' + result[i].pkSkuId + '"" onclick="GetProductDetailPage(' + result[i].pkSkuId + ')">' + result[i].SkuName + '</a></h3><a class="addtoCart" title="Add to cart" onclick="addTocart(' + result[i].pkSkuId + ')">Add to cart</a><div class="product-price"><i class="fa fa-inr" aria-hidden="true"></i><span>' + result[i].Price + ' </span></div></div></div></div>');
                         }
                     }
                     else {
@@ -330,43 +330,10 @@
 <script>
     function GetProductDetailPage(productId)
     {
+   
+        
         $("#preloader").show();
-        //alert("Detail")
-           var url = '@Url.Action("GetProductDetail", "ProductMaster")?ProductId=' + productId
-        $.ajax({
-
-                url: url,
-                type: "GET",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                dataType: "json",
-                beforeSend: function () {
-                    loading = true;
-                    $("#preloader").show();
-                },
-                complete: function () {
-                    loading = false;
-                    $("#preloader").hide();
-                },
-                success: function (result) {
-
-                    $("#preloader").hide();
-
-
-
-
-
-                },
-                error: function (httpRequest, textStatus, errorThrown) {
-
-
-
-
-                }
-
-
-            });
+       
     }
 </script>
 @section Scripts {

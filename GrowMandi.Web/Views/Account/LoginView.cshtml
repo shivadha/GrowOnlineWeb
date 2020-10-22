@@ -253,15 +253,20 @@
                                         success: function (result) {
                                             debugger;
                                             if (result == "true") {
-                                                $("#preloader").hide();
-                                                window.location.href = "@Projectname/Order/CartInfo"
+                                                $("#preloader").show();
+                                               // window.location.href = "@Projectname/Order/CartInfo"
+                                                //window.location.href = "@Projectname/ProductMaster/GetProductDetail?ProductId=" + ProductId;
+                                                location.reload();
+                                                    
                                                 //localStorage.removeItem("ProductId");
                                             }
                                             else if (result = "alreadyexits")
                                             {
-                                                $("#preloader").hide();
+                                                $("#preloader").show();
                                                 swal("This product is already added in cart.");
-                                                window.location.href = "@Projectname/Order/CartInfo" + productId;
+                                                location.reload();
+                                                       //window.location.href = "@Projectname/ProductMaster/GetProductDetail?ProductId=" + ProductId;
+                                                //window.location.href = "@Projectname/Order/CartInfo" + productId;
                                                 //localStorage.removeItem("ProductId");
                                             }
                                             else {

@@ -113,7 +113,7 @@
                 <div class="">
                     @*<button onclick="myFunction()">Delivery Against Advance Payment(DAP)</button>*@
 
-                    <button class="btn" onclick="PaymentMethod('DAP')">Delivery Against Advance Payment(DAP)</button>
+                    <button id="Dap" class="btn" onclick="PaymentMethod('DAP')">Delivery Against Advance Payment(DAP)</button>
 
                 </div>
             </div>
@@ -123,7 +123,7 @@
                 <div class="">
                     @*<button onclick="myFunction()">Delivery Against Advance Payment(DAP)</button>*@
 
-                    <button class="btn" onclick="PaymentMethod('COD')">Cash On Delivery(COD)</button>
+                    <button id="Cod" class="btn" onclick="PaymentMethod('COD')">Cash On Delivery(COD)</button>
 
                 </div>
             </div>
@@ -140,6 +140,17 @@
 <script>
     function PaymentMethod(type = '') {
         $("#preloader").show();
+        if (type == 'DAP') {
+
+            $('#Dap').prop('disabled', true);
+        }
+        else if (type == 'COD') {
+            $('#Cod').prop('disabled', true);
+        }
+
+
+
+       
         swal({
             title: "Order Booking",
             text: "Are you sure you want to Place Order against " + type ,
@@ -147,12 +158,19 @@
             showCancelButton: true,
             confirmButtonColor: "#DD6B55",
             confirmButtonText: "Place Order",
+            confirmButtonId: "TestTest",
             cancelButtonText: "cancel",
             closeOnConfirm: false,
             closeOnCancel: false
         },
             function (isConfirm) {
+                debugger;
+        
                 if (isConfirm) {
+                    $("#preloader").show();
+                 
+                    $("button.confirm").attr("disabled", true);
+                   
                     $.ajax({
                         type: "Get",
                         url: "@Projectname/Order/UpdateOrderDetails?orderId=" + @ServerOrderId + "&type=" + type,
@@ -162,7 +180,7 @@
                             debugger;
 
                             if (result == true) {
-                                $("#preloader").hide();
+                                $("#preloader").show();
                                 swal("Order is placed against " + type)
                                 swal({
                                     title: "Order is placed against!",
@@ -175,21 +193,27 @@
                                        window.location.href = '@Projectname';
                                         tr.hide();
                                     });
-                               
+
 
 
                             }
                             else {
+                                $("#preloader").hide();
+                                $('#Dap').prop('disabled', false);
+                                $('#Cod').prop('disabled', false);
                                 swal("Cancelled", "Your order has been cancelled. Please contact admin)", "error");
                             }
                         }
                     });
                 } else {
+                    $("#preloader").hide();
+                    $('#Dap').prop('disabled', false);
+                    $('#Cod').prop('disabled', false);
                     swal("Cancelled", "Your order has been cancelled. Please contact admin)", "error");
                 }
             });
     }
-    
+
 
 
 

@@ -239,8 +239,8 @@ namespace GrowIndigo.DAL.DataRepositories.Common
             try
             {
                 ////get user by orgid with filter parmeter.
-                var addresslist = unitOfWork.Shop_Shipping_addressRepository.SearchBy(x => x.retailer_mobile == MobileNumber).ToList();
-
+                var addresslist = unitOfWork.Shop_Shipping_addressRepository.SearchBy(x => x.retailer_mobile == MobileNumber && x.TalukaCode!=null && x.VillageCode!=null &&x.StateCode!=null && x.DistrictCode!=null).ToList();
+                var test= unitOfWork.Shop_Shipping_addressRepository.SearchBy(x => x.retailer_mobile == MobileNumber).ToList();
                 //return entity object as per result.
                 return addresslist ?? null;
             }

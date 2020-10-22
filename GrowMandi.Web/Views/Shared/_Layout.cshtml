@@ -88,7 +88,9 @@
                                 <li class="lang-wrap lang-wra-ml-0">
                                     <a href="javascript:void(0)" class="dropdown-toggle lang-select" data-toggle="dropdown" name="Chnage Language" id="sLanguage">
                                         <i class="fa fa-language" aria-hidden="true"></i>
-                                        <span id="spanLanguage">@Resource.GrowOnline_Common_ChangeLanguage</span>
+                                       
+                                        <span id="spanLanguage"></span>
+                                            
 
 
                                         <span class="icomoon-globe"></span>
@@ -135,7 +137,7 @@
                                                     @Resource.GrowOnline_Common_MyOrders
                                                 </span>
                                             </a>
-                                            <a class="dropdown-item logout" href="@Projectname/Account/LogOut">
+                                            <a class="dropdown-item logout" href="@Projectname/Account/LogOut" onclick="Loader()">
                                                 <i class="fa fa-unlock-alt"></i><span>@Resource.GrowOnline_Common_Logout</span>
                                             </a>
                                         </div>
@@ -157,7 +159,7 @@
                         <!-- Logo -->
                         <div class="logo">
                             @*<img src="~/images/GrowOnline_CMYK-page-001.jpg" />*@
-                            <a href="@Projectname/Home/Index"><img src="@Projectname/Images/GrowOnline_CMYK-page-001.jpg" alt="logo" style="height:65px"></a>
+                            <a href="@Projectname/Home/Index"><img src="@Projectname/Images/GrowOnline_CMYK-page-001.jpg" onclick="Loader()" alt="logo" style="height:65px"></a>
                         </div>
                         <!--/ End Logo -->
                         <div class="mobile-nav"></div>
@@ -203,7 +205,7 @@
                                     <div class="navbar-collapse">
                                         <div class="nav-inner">
                                             <ul class="nav main-menu menu navbar-nav">
-                                                <li class="active link"><a href="@Projectname">@Resource.GrowOnline_Common_Home</a></li>
+                                                <li class="active link"><a href="@Projectname" onclick="Loader()">@Resource.GrowOnline_Common_Home</a></li>
                                                 <li class="link"><a href="@Projectname/Home/About">@Resource.GrowOnline_Common_AboutUs</a></li>
 
                                                 @*<li>
@@ -565,8 +567,32 @@
 </script>
 <script>
     $(document).ready(function () {
-
+        $('#preloader').show();
         var culture = getCookie("Language")
+        
+        if (culture == null) {
+            $('#spanLanguage').html('English')
+            $('#preloader').hide();
+        }
+        else if (culture == '') {
+            $('#spanLanguage').html('English')
+            $('#preloader').hide();
+        }
+        else if (culture == 'hi') {
+            $('#spanLanguage').html('Hindi')
+            $('#preloader').hide();
+        }
+        else if (culture == 'mr') {
+            $('#spanLanguage').html('Marathi')
+            $('#preloader').hide();
+        } else if (culture == 'te') {
+            $('#spanLanguage').html('Telegu')
+            $('#preloader').hide();
+        }
+        else if (culture == 'en') {
+            $('#spanLanguage').html('English')
+            $('#preloader').hide();
+        }
         $('#' + culture).find("span").addClass("check fa fa-check-circle")
     });
 
@@ -577,33 +603,38 @@
         function ChangeLanguage(lang, obj) {
 
             debugger;
-
+            $('#preloader').show();
             if (lang == 'en') {
                 lang = 'en';
 
-
+                $('#Idlanguage').html('English')
                 $(obj).find("span").addClass("check fa fa-check-circle")
+                $('#preloader').hide();
 
 
             }
             else if (lang == 'hi') {
                 lang = 'hi'
-
+                $('#Idlanguage').html('Hindi')
                 $(obj).find("span").addClass("check fa fa-check-circle")
+                $('#preloader').hide();
             }
             else if (lang == 'mr') {
                 lang = 'mr'
+                $('#Idlanguage').html('Marathi')
                 $(obj).find("span").addClass("check fa fa-check-circle")
+                $('#preloader').hide();
 
 
             }
             else {
                 lang = 'te'
-
+                $('#Idlanguage').html('Telegus')
                 $(obj).find("span").addClass("check fa fa-check-circle")
+                $('#preloader').hide();
             }
             var url = '@Url.Action("ChangeLanguage", "LanguageMang")?lang=' + lang;
-
+            $('#preloader').show();
             $.ajax({
                 url: url,
                 type: "GET",
@@ -612,15 +643,17 @@
                 },
                 dataType: "json",
                 beforeSend: function () {
-                    $("#loaderImg").show();
+                     $('#preloader').show();
                 },
                 success: function (result) {
+                    $('#preloader').show();
 
                     window.location.reload();
                     location.reload(true)
 
 
                 },
+
 
             });
         }
