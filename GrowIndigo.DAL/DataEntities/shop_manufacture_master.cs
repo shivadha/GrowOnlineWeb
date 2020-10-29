@@ -34,9 +34,5 @@ namespace GrowIndigo.DAL.DataEntities
         public Nullable<int> isProfileUpdate { get; set; }
         public string termsApprove { get; set; }
         public Nullable<System.DateTime> termsApproveDate { get; set; }
-        public string alternerNumber { get; set; }
-        public string company_website { get; set; }
-        public string cmp_email { get; set; }
-        public Nullable<System.DateTime> createDate { get; set; }
     }
 }

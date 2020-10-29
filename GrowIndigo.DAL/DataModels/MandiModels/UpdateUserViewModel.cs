@@ -29,11 +29,11 @@ namespace GrowIndigo.DAL.DataModels.MandiModels
         public string mobile_number { get; set; }
 
         [RegularExpression("^[_a-zA-Z0-9-]+(.[a-zA-Z0-9-]+)@[a-z0-9-]+(.[a-z0-9-]+)*(.[a-z]{2,4})", ErrorMessageResourceType = typeof(Resource), ErrorMessageResourceName = "GrowOnline_Message_EmailCorrectFormat")]
-        [Required(ErrorMessageResourceType = typeof(Resource), ErrorMessageResourceName = "GrowOnline_Message_Email")]
+        //[Required(ErrorMessageResourceType = typeof(Resource), ErrorMessageResourceName = "GrowOnline_Message_Email")]
         [Display(ResourceType = typeof(Resource), Name = "GrowOnline_Common_Email")]
         public string email_id { get; set; }
 
-        [Required(ErrorMessageResourceType = typeof(Resource), ErrorMessageResourceName = "GrowOnline_Message_DOB")]
+       // [Required(ErrorMessageResourceType = typeof(Resource), ErrorMessageResourceName = "GrowOnline_Message_DOB")]
         [Display(ResourceType = typeof(Resource), Name = "GrowOnline_Common_DOB")]
         public string birth_date { get; set; }
 

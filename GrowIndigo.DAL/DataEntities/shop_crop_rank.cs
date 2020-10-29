@@ -12,10 +12,13 @@ namespace GrowIndigo.DAL.DataEntities
     using System;
     using System.Collections.Generic;
     
-    public partial class NewDistrict_Master
+    public partial class shop_crop_rank
     {
-        public string dist_code { get; set; }
-        public string dist_desc { get; set; }
-        public string State_code { get; set; }
+        public int tr_id { get; set; }
+        public Nullable<int> crop_id { get; set; }
+        public string state { get; set; }
+        public Nullable<int> rank { get; set; }
+        public Nullable<System.DateTime> createDate { get; set; }
+        public Nullable<System.DateTime> lastModified { get; set; }
     }
 }

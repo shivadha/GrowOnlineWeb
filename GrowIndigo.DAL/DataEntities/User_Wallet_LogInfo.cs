@@ -20,6 +20,7 @@ namespace GrowIndigo.DAL.DataEntities
         public Nullable<long> Fk_UserWalletId { get; set; }
         public Nullable<System.DateTime> CreateddDate { get; set; }
         public Nullable<System.DateTime> ModifiedDate { get; set; }
+        public string addedFrom { get; set; }
     
         public virtual User_Wallet User_Wallet { get; set; }
     }

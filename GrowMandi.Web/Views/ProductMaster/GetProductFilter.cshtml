@@ -125,7 +125,9 @@
                     </div>
                 </div>
                 <div class="rowd">
+                    <div class="row" id="sectionDivHeading"></div>
                     <div class="row" id="sectionDiv"></div>
+                    <div class="row" id="sectionDivComingSoon"></div>
                 </div>
             </div>
         </div>
@@ -253,7 +255,9 @@
             counter = 0;
             GetSubCategoryArticleList();
         });
-
+        function GetSubCategoryComingsoonArticleList() {
+            alert("coiming soon ")
+        }
         function GetSubCategoryArticleList() {
             var getState = localStorage.getItem("HomePageStateId");
             var url = '@Url.Action("GetSubCategoryProductList", "ProductMaster")?counter=' + counter + '&Category=' + categoryid + '&State=' + getState + '&Search=' + search;
@@ -286,9 +290,10 @@
                     ArticleSubList = result;
                     if (result != null) {
                         console.log(result, "ans");
+                        $("#sectionDivHeading").append('<b><p color="green"> In Stock Products</p></b>')
                         for (var i = 0; i < result.length; i++) {
 
-
+                         
                             @*$('#sectionDiv').append('<div class="col-lg-3 col-md-6 col-12"> <div class="single-product seed-sub-product"><div class="product-img"><a href="@Projectname/Productmaster/GetSubCategoriesProductFilter?CategoryName=' + result[i].crp_catagary + '&CropName=' + result[i].crp_Type + '"> <a href="@Projectname/Productmaster/GetSubCategoriesProductFilter?CategoryName=' + result[i].crp_catagary + '&CropName=' + result[i].crp_Type + '"><img class="default-img" src="@ServerSubProductImage' + result[i].imgurl + '" alt="#"></a><div class=""><div class="product-action"></div><div class="product-action-2"></div></div></div><div class="product-content"><h3><a href="@Projectname/Productmaster/GetSubCategoriesProductFilter?CategoryName=' + result[i].crp_catagary + '&CropName=' + result[i].crp_Type + '">' + result[i].crp_Type + '</a></h3><div class="product-price"><span>' + result[i].crp_catagary + ' </span></div></div></div></div>');*@
                             $('#sectionDiv').append('<div class="col-lg-3 col-md-6 col-12"> <div class="single-product seed-sub-product"><div class="product-img"><a href="@Projectname/Productmaster/GetSubCategoriesProductFilter?CategoryName=' + result[i].crp_catagary + '&CropName=' + result[i].crp_Type + '" onclick="GetProductForSubCategory()"> <a href="@Projectname/Productmaster/GetSubCategoriesProductFilter?CategoryName=' + result[i].crp_catagary + '&CropName=' + result[i].crp_Type + ' "><img class="default-img" src="@ServerSubProductImage' + result[i].imgurl + '" onclick="GetProductForSubCategory()" alt="#"></a><div class=""><div class="product-action"></div><div class="product-action-2"></div></div></div><div class="product-content"><h3><a href="@Projectname/Productmaster/GetSubCategoriesProductFilter?CategoryName=' + result[i].crp_catagary + '&CropName=' + result[i].crp_Type + '" onclick="GetProductForSubCategory()">' + result[i].crp_Type + '</a></h3><div class="product-price"><span>' + result[i].crp_catagary + ' </span></div></div></div></div>');
                         }
@@ -302,6 +307,8 @@
                         $('#sectionDiv').html('<div class="col-lg-12 col-12"><div class="bd-example w-100"><div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> @Resource.GrowOnline_Message_NoSubCatProductAvai</div></div>');
 
                     }
+                  
+              
 
 
 
@@ -319,11 +326,16 @@
             });
 
             $(window).scroll(function () {
+                debugger;
                 if (ArticleSubList.length > 0) {
                     if (!loading && $(window).scrollTop() >= ($(document).height() - $(window).height() - 100)) {
                         counter = counter + 6;
                         GetSubCategoryArticleList();
                     }
+                    //if (ArticleSubList.length == 0 || ArticleSubList == null) {
+                    //    alert("comin")
+                    //    GetSubCategoryComingsoonArticleList();
+                    //}
                 }
             });
 

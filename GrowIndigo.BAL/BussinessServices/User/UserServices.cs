@@ -355,12 +355,14 @@ namespace GrowIndigo.BAL.BussinessServices.User
                     {
                         getOrderIndo.payment_mode = "Delivery Against Payment";
                         getOrderIndo.order_status = "Submitted";
+                        getOrderIndo.rzp_payment_status = "success";
 
                     }
                     else
                     {
                         getOrderIndo.payment_mode = "Cash On Delivery";
                         getOrderIndo.order_status = "Submitted";
+                        getOrderIndo.rzp_payment_status = "success";
                     }
 
 

@@ -84,6 +84,10 @@ namespace GrowIndigo.DAL.DataModels.Product
        // [Display(Name = "State")]
         [Display(ResourceType = typeof(Resource), Name = "GrowOnline_Common_State")]
         public string prd_State { get; set; }
+        public int ? CropRank { get; set; }
+        public string CropStatusForDisplay { get; set; }
+
+        public int ? stateId { get; set; }
 
         public string ProductStatus { get; set; }
 

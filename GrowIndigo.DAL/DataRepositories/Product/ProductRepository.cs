@@ -16,6 +16,7 @@ namespace GrowIndigo.DAL.DataRepositories.Product
     {
         #region Dependencies Injection with initialization
 
+        GrowOnlineDevEntities objGrowOnlineDevEntities = new GrowOnlineDevEntities();
 
         private IUnitOfWork unitOfWork = null;
 
@@ -318,9 +319,59 @@ namespace GrowIndigo.DAL.DataRepositories.Product
 
 
 
-        //for seed sub category
+     
+   
+        public string GetStateForSubCategory(int  cropId = 0)
+        {
 
+            try
+            {
+                var stateId = (from state in objGrowOnlineDevEntities.shop_crop_rank where state.crop_id == cropId select state.state).FirstOrDefault();
+                return stateId;
+            }
+            catch (Exception ex)
+            {
 
+                throw ex;
+            }
+        }
+
+        public int ? GetCropRank(int cropId = 0)
+        {
+            try
+            {
+                var cropRank = (from rank in objGrowOnlineDevEntities.shop_crop_rank where rank.crop_id == cropId select rank.rank).FirstOrDefault();
+                return cropRank;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
+        public string GetCropStatusFromProduct(string stateId = "", string cropName="")
+        {
+       
+            if (stateId != "")
+            {
+                int stateID = Convert.ToInt32(stateId);
+                var checkCropInProductTable = (from crop in objGrowOnlineDevEntities.Shop_Product_Master where crop.crop == cropName && crop.Prd_StateId == stateID &&( crop.Status== "Active" || crop.Status=="ACTIVE") select crop).FirstOrDefault();
+                if (checkCropInProductTable == null)
+                {
+                    return "Coming Soon";
+
+                }
+                else
+                {
+                    return "In Stock";
+                }
+            }
+            else
+            {
+                return "Coming Soon";
+            }
+        }
         public List<ProductMasterViewModel> GetSubCategoryProductList(int take, int skip, string categoryid, string stateid, string searchtext, string sort = "")
         {
             try
@@ -329,7 +380,7 @@ namespace GrowIndigo.DAL.DataRepositories.Product
                 int totalCount = 0;
                 var DTParameterModel = new DTParameterModel();
                 List<ProductMasterViewModel> data = unitOfWork.Shop_cropsRepository.GetAllList(out totalCount, GetSubCategoryProductListFilter(
-             take, skip, categoryid, stateid, searchtext, sort)).Skip(skip).Take(take).Select<shop_crops, ProductMasterViewModel>((Func<shop_crops, ProductMasterViewModel>)(x =>
+             take, skip, categoryid, stateid, searchtext, sort)).Select<shop_crops, ProductMasterViewModel>((Func<shop_crops, ProductMasterViewModel>)(x =>
              {
                  //string currentLangugae = Thread.CurrentThread.CurrentCulture.ToString();
                  ProductMasterViewModel productMasterViewModel = new ProductMasterViewModel();
@@ -338,29 +389,38 @@ namespace GrowIndigo.DAL.DataRepositories.Product
                  productMasterViewModel.crp_catagary = x.crp_catagary;
                  productMasterViewModel.status = x.status;
                  productMasterViewModel.imgurl = x.imgurl;
-
+                 productMasterViewModel.prd_State = GetStateForSubCategory(x.tr_id);
+                 productMasterViewModel.CropRank = GetCropRank(x.tr_id);
+                 productMasterViewModel.CropStatusForDisplay = GetCropStatusFromProduct(stateid, x.crp_Type);
 
                  return productMasterViewModel;
              })).ToList();
 
-                if (sort.Trim() != "N/A")
-                {
-                    if (sort == "name")
-                    {
-                        return data.OrderBy(x => x.SkuName).ToList();
-                    }
-                    else if (sort == "price")
-                    {
-                        return data.OrderBy(x => x.Price).ToList();
-                    }
-                    else
-                    {
-                        return data;
-                    }
+               // var test = data;
+
+                var filter = data.Where(x => x.CropStatusForDisplay == "In Stock").ToList();
+                var result = filter.Skip(skip).Take(take);
+                return result.ToList();
+                //if (sort.Trim() != "N/A")
+                //{
+                //    if (sort == "name")
+                //    {
+
+                //        return data.OrderBy(x => x.SkuName).ToList();
+                //    }
+                //    else if (sort == "price")
+                //    {
+                //        return data.OrderBy(x => x.Price).ToList();
+                //    }
+                //    else
+                //    {
+                //        return data;
+                //    }
 
 
-                }
-                return data;
+                //}
+
+               
 
 
 
@@ -384,6 +444,7 @@ namespace GrowIndigo.DAL.DataRepositories.Product
             {
                 stateid = "N/A";
             }
+            
             if (searchtext.Trim() != "N/A")
             {
 

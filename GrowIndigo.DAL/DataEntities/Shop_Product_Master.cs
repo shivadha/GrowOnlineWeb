@@ -52,6 +52,7 @@ namespace GrowIndigo.DAL.DataEntities
         public string min_unit { get; set; }
         public string max_unit { get; set; }
         public string cur_unit { get; set; }
+        public string warranty { get; set; }
     
         public virtual Shop_State_Master Shop_State_Master { get; set; }
     }

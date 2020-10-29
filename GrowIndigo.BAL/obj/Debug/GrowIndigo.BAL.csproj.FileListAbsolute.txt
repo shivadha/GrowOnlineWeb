@@ -457,4 +457,3 @@ E:\P.R.O.J.E.C.T.S\GrowOnlineLiveNew\GrowIndigo.BAL\obj\Debug\GrowIndigo.BAL.csp
 E:\P.R.O.J.E.C.T.S\GrowOnlineLiveNew\GrowIndigo.BAL\obj\Debug\GrowIndigo.BAL.csproj.CopyComplete
 E:\P.R.O.J.E.C.T.S\GrowOnlineLiveNew\GrowIndigo.BAL\obj\Debug\GrowIndigo.BAL.dll
 E:\P.R.O.J.E.C.T.S\GrowOnlineLiveNew\GrowIndigo.BAL\obj\Debug\GrowIndigo.BAL.pdb
-E:\P.R.O.J.E.C.T.S\GrowOnlineLiveNew\GrowIndigo.BAL\bin\Debug\ApplicationInsights.config
